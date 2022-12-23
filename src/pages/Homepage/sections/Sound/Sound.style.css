@@ -1,0 +1,108 @@
+.sound-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sound-container img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* animation-name: slidein-right; */
+    animation-duration: 5s;
+    animation-delay: -5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.sound-container .sound-header {
+    width: 100%;
+}
+
+.sound-container .sound-header h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 100px;
+    color: #1B2B41;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.sound-container .sound-header h1 span {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 100px;
+    color: #C94B32;
+}
+
+.sound-container .sound-header .right_to_left {
+    /* animation-name: slidein-left; */
+    animation-duration: 5s;
+    animation-delay: -5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.sound-container .sound-header .left_to_right {
+    /* animation-name: slidein-right; */
+    animation-duration: 5s;
+    animation-delay: -5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.sound-container .sound-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 45px;
+    margin: 5rem 0;
+}
+
+.sound-container .sound-content .sound-section {
+    width: 30%;
+}
+
+.sound-container .sound-content .sound-section h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #B12F15;
+    margin-bottom: 15px;
+}
+
+.sound-container .sound-content .sound-section p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #76808D;
+    line-height: 20px;
+}
+
+.sound-container .sound-content .sound-section p span {
+    font-weight: 800;
+}
+
+@keyframes slidein-left {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slidein-right {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
