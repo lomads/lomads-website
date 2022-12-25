@@ -8,8 +8,8 @@ const Homepage = () => {
     return (
         <div className="homepage">
             <Banner />
-            <Sound />
-            <Dashboard />
+            {/* <Sound />
+            <Dashboard /> */}
         </div>
     )
 }

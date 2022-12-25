@@ -120,3 +120,107 @@
     bottom: 27%;
     right: 5%;
 }
+
+/* @media only screen and (max-width: 400px) {
+    .banner-container .heading-section {
+        height: 30vh;
+        margin-top: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: red;
+    }
+} */
+
+@media only screen and (max-width: 340px) {
+    .banner-container .heading-section {
+        height: 25vh;
+        margin-top: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: red;
+    }
+
+    .banner-container .heading-section h1 {
+        font-size: 50px;
+    }
+
+    .banner-container .heading-section h1 span {
+        font-size: 50px;
+    }
+
+    .banner-container .heading-section .heading-pill.pos1 {
+        position: absolute;
+        top: 105px;
+        left: 5px;
+    }
+
+    .banner-container .heading-section .heading-pill.pos2 {
+        position: absolute;
+        top: 145px;
+        right: 20px;
+    }
+}
+
+@media only screen and (min-width: 345px) and (max-width : 375px) {
+    .banner-container .heading-section {
+        height: 25vh;
+        margin-top: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: red;
+    }
+
+    .banner-container .heading-section h1 {
+        font-size: 60px;
+    }
+
+    .banner-container .heading-section h1 span {
+        font-size: 60px;
+    }
+
+    .banner-container .heading-section .heading-pill.pos1 {
+        position: absolute;
+        top: 47%;
+        left: 5%;
+    }
+
+    .banner-container .heading-section .heading-pill.pos2 {
+        position: absolute;
+        top: 70%;
+        right: 7%;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width : 425px) {
+    .banner-container .heading-section {
+        height: 25vh;
+        margin-top: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: red;
+    }
+
+    .banner-container .heading-section h1 {
+        font-size: 60px;
+    }
+
+    .banner-container .heading-section h1 span {
+        font-size: 60px;
+    }
+
+    .banner-container .heading-section .heading-pill.pos1 {
+        position: absolute;
+        top: 48%;
+        left: 8%;
+    }
+
+    .banner-container .heading-section .heading-pill.pos2 {
+        position: absolute;
+        top: 70%;
+        right: 13%;
+    }
+}

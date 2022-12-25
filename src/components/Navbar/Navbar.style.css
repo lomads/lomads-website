@@ -10,3 +10,17 @@
     top: 0;
     left: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .navbar-container {
+        padding: 20px;
+        height: 15vh;
+        background-color: yellow;
+    }
+
+    .navbar-container .menu {
+        height: 50px;
+        width: 50px;
+        object-fit: contain;
+    }
+}
