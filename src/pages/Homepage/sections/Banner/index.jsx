@@ -23,7 +23,7 @@ const Banner = () => {
                     <span>+1</span>
                 </div>
             </div>
-            {/* <p>Meet the ultimate operations and finance management dashboard<br />for web3 organizations, DAOs and beyond.</p>
+            <p>Meet the ultimate operations and finance management dashboard<br />for web3 organizations, DAOs and beyond.</p>
             <button className="access-btn">GET EARLY ACCESS</button>
 
             <div className="hero-section">
@@ -33,7 +33,7 @@ const Banner = () => {
                 <img src={box2} className="whitebox pos2" alt="box2" />
                 <img src={box3} className="whitebox pos3" alt="box3" />
 
-            </div> */}
+            </div>
         </div>
     )
 }

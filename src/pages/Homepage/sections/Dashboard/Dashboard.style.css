@@ -31,7 +31,7 @@
 
 .dashboard-container .dashboard-body {
     width: 100%;
-    height: 100vh;
+    height: 140vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,4 +87,50 @@
     position: absolute;
     top: 525px;
     left: 5%;
+}
+
+.dashboard-container .dashboard-body .dashboard-text {
+    width: 30%;
+}
+
+.dashboard-container .dashboard-body .dashboard-text h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+    /* identical to box height, or 100% */
+    letter-spacing: -0.011em;
+
+    /* WHITE */
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.dashboard-container .dashboard-body .dashboard-text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    /* or 133% */
+
+    /* WHITE */
+    color: #FFFFFF;
+
+    opacity: 0.8;
+}
+
+.dashboard-container .dashboard-body .dashboard-text p span {
+    font-weight: bold;
+}
+
+.dashboard-container .dashboard-body .dashboard-text.pos1 {
+    position: absolute;
+    bottom: 25%;
+    left: 15%;
+}
+
+.dashboard-container .dashboard-body .dashboard-text.pos2 {
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
 }

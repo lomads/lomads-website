@@ -1,0 +1,76 @@
+.power-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: yellow;
+}
+
+.power-container img {
+    margin-top: 100px;
+}
+
+.power-container .power-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 100px;
+    text-transform: uppercase;
+
+    /* DARK */
+
+    color: #1B2B41;
+    text-align: center;
+    margin-top: -7rem;
+}
+
+.power-container .power-title span {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 100px;
+    color: #C94B32;
+}
+
+.power-container .power-content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    /* or 120% */
+
+    text-align: center;
+
+    /* Grey */
+
+    color: #76808D;
+    margin: 30px 0 70px 0px;
+}
+
+.power-container .power-section-container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.power-container .power-section-container .power-section {
+    width: 25%;
+    margin-bottom: 100px;
+}
+
+.power-container .power-section-container .power-section h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+
+    color: #B12F15;
+    margin-bottom: 15px;
+}
+
+.power-container .power-section-container .power-section p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #76808D;
+}

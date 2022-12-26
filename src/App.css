@@ -5,6 +5,7 @@ body {
 	box-sizing: border-box;
 	/* font-family: "Muli"; */
 	user-select: none;
+	/* background: linear-gradient(169.22deg, #FDF7F7 12.19%, #EFEFEF 92%, #DD6149 92%); */
 }
 
 button {
