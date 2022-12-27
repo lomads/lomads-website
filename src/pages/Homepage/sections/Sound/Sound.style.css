@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     position: relative;
 }
 
@@ -19,11 +19,18 @@
     animation-timing-function: linear;
 }
 
-.sound-container .sound-header {
+.sound-container .sound-header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.sound-container .sound-header-container .sound-header {
     width: 100%;
 }
 
-.sound-container .sound-header h1 {
+.sound-container .sound-header-container .sound-header h1 {
     font-style: normal;
     font-weight: 800;
     font-size: 100px;
@@ -32,14 +39,14 @@
     width: 100%;
 }
 
-.sound-container .sound-header h1 span {
+.sound-container .sound-header-container .sound-header h1 span {
     font-style: italic;
     font-weight: 300;
     font-size: 100px;
     color: #C94B32;
 }
 
-.sound-container .sound-header .right_to_left {
+.sound-container .sound-header-container .sound-header .right_to_left {
     /* animation-name: slidein-left; */
     animation-duration: 5s;
     animation-delay: -5s;
@@ -47,7 +54,7 @@
     animation-timing-function: linear;
 }
 
-.sound-container .sound-header .left_to_right {
+.sound-container .sound-header-container .sound-header .left_to_right {
     /* animation-name: slidein-right; */
     animation-duration: 5s;
     animation-delay: -5s;
@@ -104,5 +111,263 @@
 
     100% {
         transform: translateX(-100%);
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .sound-container {
+        justify-content: center;
+        padding: 0 27px;
+        height: 0;
+        height: 100%;
+    }
+
+    .sound-container .sound-header-container {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sound-container .sound-header-container .sound-header {
+        width: 90%;
+    }
+
+    .sound-container .sound-header-container .sound-header h1 {
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .sound-container .sound-header-container .sound-header h1 span {
+        font-size: 30px;
+    }
+
+    .sound-container .sound-content {
+        padding: 0;
+        margin: 0;
+        margin: 80px 0;
+        flex-direction: column;
+    }
+
+    .sound-container .sound-content .sound-section {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .sound-container .sound-content .sound-section h1 {
+        text-align: center;
+    }
+
+    .sound-container .sound-content .sound-section p {
+        text-align: center;
+    }
+
+    .sound-container .sound-content .sound-section p span {
+        font-weight: 600;
+    }
+
+    .sound-container img {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 345px) and (max-width : 375px) {
+    .sound-container {
+        justify-content: center;
+        padding: 0 27px;
+        height: 0;
+        height: 100%;
+    }
+
+    .sound-container .sound-header-container {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sound-container .sound-header-container .sound-header {
+        width: 70%;
+    }
+
+    .sound-container .sound-header-container .sound-header h1 {
+        font-weight: 700;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .sound-container .sound-header-container .sound-header h1 span {
+        font-size: 40px;
+    }
+
+    .sound-container .sound-content {
+        padding: 0;
+        margin: 0;
+        margin: 80px 0;
+        flex-direction: column;
+    }
+
+    .sound-container .sound-content .sound-section {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .sound-container .sound-content .sound-section h1 {
+        text-align: center;
+    }
+
+    .sound-container .sound-content .sound-section p {
+        text-align: center;
+    }
+
+    .sound-container .sound-content .sound-section p span {
+        font-weight: 600;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width : 425px) {
+    .sound-container {
+        justify-content: center;
+        padding: 0 27px;
+        height: 0;
+        height: 100%;
+    }
+
+    .sound-container .sound-header-container {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sound-container .sound-header-container .sound-header {
+        width: 90%;
+    }
+
+    .sound-container .sound-header-container .sound-header h1 {
+        font-weight: 700;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .sound-container .sound-header-container .sound-header h1 span {
+        font-size: 50px;
+    }
+
+    .sound-container .sound-content {
+        padding: 0;
+        margin: 0;
+        margin: 80px 0;
+        flex-direction: column;
+    }
+
+    .sound-container .sound-content .sound-section {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .sound-container .sound-content .sound-section h1 {
+        text-align: center;
+    }
+
+    .sound-container .sound-content .sound-section p {
+        text-align: center;
+    }
+
+    .sound-container .sound-content .sound-section p span {
+        font-weight: 600;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width : 768px) {
+    .sound-container {
+        justify-content: center;
+        padding: 0 27px;
+        height: 0;
+        height: 100%;
+    }
+
+    .sound-container .sound-header-container {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sound-container .sound-header-container .sound-header h1 {
+        font-weight: 700;
+        font-size: 50px;
+    }
+
+    .sound-container .sound-header-container .sound-header h1 span {
+        font-size: 50px;
+    }
+
+    .sound-container .sound-content {
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 175px;
+    }
+
+    .sound-container .sound-content .sound-section h1 {
+        font-size: 20px;
+    }
+
+    .sound-container .sound-content .sound-section p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width : 1024px) {
+    .sound-container {
+        justify-content: center;
+        padding: 0 27px;
+        height: 0;
+        height: 100%;
+    }
+
+    .sound-container .sound-header-container {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sound-container .sound-header-container .sound-header h1 {
+        font-weight: 700;
+        font-size: 50px;
+    }
+
+    .sound-container .sound-header-container .sound-header h1 span {
+        font-size: 50px;
+    }
+
+    .sound-container .sound-content {
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 175px;
+    }
+
+    .sound-container .sound-content .sound-section h1 {
+        font-size: 20px;
+    }
+
+    .sound-container .sound-content .sound-section p {
+        font-size: 14px;
     }
 }

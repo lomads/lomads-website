@@ -1,0 +1,235 @@
+.fit-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #FFF;
+}
+
+.fit-container .fit-title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 100px;
+    text-transform: uppercase;
+    color: #1B2B41;
+    text-align: center;
+}
+
+.fit-container .fit-title span {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 100px;
+    color: #C94B32;
+}
+
+.fit-container .fit-p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    /* or 120% */
+    text-align: center;
+
+    /* Grey */
+    color: #76808D;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.fit-container .fit-content {
+    width: 390px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    /* or 133% */
+    text-align: center;
+
+    /* Grey */
+    color: #76808D;
+}
+
+.fit-container button {
+    margin-top: 40px;
+    margin-bottom: 140px;
+    background: #C94B32;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    width: 300px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+}
+
+.fit-container .bars-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 25px;
+}
+
+.fit-container .bars-row .bars-gray {
+    background: #F0F0F0;
+    border-radius: 20px;
+    height: 75px;
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 340px) {
+    .fit-container {
+        height: 0;
+        height: 100%;
+        padding: 0 20px;
+        overflow-x: hidden;
+
+    }
+
+    .fit-container .fit-title {
+        font-size: 30px;
+        line-height: normal;
+        margin-top: 50px;
+    }
+
+    .fit-container .fit-title span {
+        font-size: 30px;
+    }
+
+    .fit-container .fit-p {
+        font-size: 20px;
+    }
+
+    .fit-container .fit-content {
+        width: 100%;
+    }
+
+    .fit-container button {
+        margin-top: 40px;
+        margin-bottom: 140px;
+        background: #C94B32;
+        border-radius: 5px;
+        color: #fff;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        width: 250px;
+        height: 50px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+@media only screen and (min-width: 345px) and (max-width : 375px) {
+
+    .fit-container {
+        height: 0;
+        height: 100%;
+        padding: 0 20px;
+        overflow-x: hidden;
+    }
+
+    .fit-container .fit-title {
+        font-size: 40px;
+        line-height: normal;
+        margin-top: 50px;
+    }
+
+    .fit-container .fit-title span {
+        font-size: 40px;
+    }
+
+    .fit-container .fit-p {
+        font-size: 20px;
+    }
+
+    .fit-container .fit-content {
+        width: 100%;
+    }
+
+    .fit-container button {
+        margin-top: 40px;
+        margin-bottom: 140px;
+        background: #C94B32;
+        border-radius: 5px;
+        color: #fff;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        width: 250px;
+        height: 50px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width : 425px) {
+    .fit-container {
+        height: 0;
+        height: 100%;
+        padding: 0 20px;
+        overflow-x: hidden;
+    }
+
+    .fit-container .fit-title {
+        font-size: 40px;
+        line-height: normal;
+        margin-top: 50px;
+    }
+
+    .fit-container .fit-title span {
+        font-size: 40px;
+    }
+
+    .fit-container .fit-p {
+        font-size: 20px;
+    }
+
+    .fit-container .fit-content {
+        width: 100%;
+    }
+
+    .fit-container button {
+        margin-top: 40px;
+        margin-bottom: 140px;
+        background: #C94B32;
+        border-radius: 5px;
+        color: #fff;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        width: 250px;
+        height: 50px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width : 768px) {}
+
+@media only screen and (min-width: 769px) and (max-width : 1024px) {}

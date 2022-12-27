@@ -38,6 +38,14 @@
     position: relative;
 }
 
+.dashboard-container .dashboard-body .imgSm {
+    display: none;
+}
+
+.dashboard-container .dashboard-body .imgMilestone {
+    display: none;
+}
+
 .dashboard-container .dashboard-body .img1 {
     z-index: 2;
     position: absolute;
@@ -133,4 +141,488 @@
     position: absolute;
     bottom: 15%;
     right: 15%;
+}
+
+@media only screen and (max-width: 340px) {
+    .dashboard-container .dashboard-header {
+        margin-bottom: 60px;
+    }
+
+    .dashboard-container .dashboard-header h1 {
+        font-size: 30px;
+    }
+
+    .dashboard-container .dashboard-header h1 span {
+        font-size: 30px;
+    }
+
+    .dashboard-container .dashboard-body {
+        height: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dashboard-container .dashboard-body .imgSm {
+        display: block;
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .dashboard-container .dashboard-body .imgMilestone {
+        display: block;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .dashboard-container .dashboard-body .img1 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .img2 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .img3 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .img4 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .img5 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .img6 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .img7 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text {
+        width: 100%;
+        margin-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 27px;
+
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text.pos1 {
+        position: static;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text.pos2 {
+        position: static;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text h1 {
+        text-align: center;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text p {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 345px) and (max-width : 375px) {
+    .dashboard-container .dashboard-header {
+        margin-bottom: 30px;
+    }
+
+    .dashboard-container .dashboard-header h1 {
+        font-size: 40px;
+    }
+
+    .dashboard-container .dashboard-header h1 span {
+        font-size: 40px;
+    }
+
+    .dashboard-container .dashboard-body {
+        height: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dashboard-container .dashboard-body .imgSm {
+        display: block;
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .dashboard-container .dashboard-body .imgMilestone {
+        display: block;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .dashboard-container .dashboard-body .img1 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .img2 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .img3 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .img4 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .img5 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .img6 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .img7 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text {
+        width: 100%;
+        margin-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 27px;
+
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text.pos1 {
+        position: static;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text.pos2 {
+        position: static;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text h1 {
+        text-align: center;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text p {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width : 425px) {
+    .dashboard-container .dashboard-header {
+        margin-bottom: 30px;
+    }
+
+    .dashboard-container .dashboard-header h1 {
+        font-size: 40px;
+    }
+
+    .dashboard-container .dashboard-header h1 span {
+        font-size: 40px;
+    }
+
+    .dashboard-container .dashboard-body {
+        height: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dashboard-container .dashboard-body .imgSm {
+        display: block;
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .dashboard-container .dashboard-body .imgMilestone {
+        display: block;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .dashboard-container .dashboard-body .img1 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .img2 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .img3 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .img4 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .img5 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .img6 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .img7 {
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text {
+        width: 100%;
+        margin-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 27px;
+
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text.pos1 {
+        position: static;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text.pos2 {
+        position: static;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text h1 {
+        text-align: center;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text p {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width : 768px) {
+    .dashboard-container .dashboard-header {
+        margin-bottom: 30px;
+    }
+
+    .dashboard-container .dashboard-header h1 {
+        font-size: 50px;
+    }
+
+    .dashboard-container .dashboard-header h1 span {
+        font-size: 50px;
+    }
+
+    .dashboard-container .dashboard-body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .dashboard-container .dashboard-body .img1 {
+        z-index: 2;
+        position: absolute;
+        top: -20%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .dashboard-container .dashboard-body .img2 {
+        z-index: 1;
+        position: absolute;
+        top: -15%;
+        right: 0%;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        /* display: none; */
+    }
+
+    .dashboard-container .dashboard-body .img3 {
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        right: 5%;
+        /* display: none; */
+
+    }
+
+    .dashboard-container .dashboard-body .img4 {
+        z-index: 3;
+        position: absolute;
+        top: 40%;
+        right: 0%;
+        /* display: none; */
+    }
+
+    .dashboard-container .dashboard-body .img5 {
+        z-index: 3;
+        position: absolute;
+        top: 0%;
+        left: 5%;
+    }
+
+    .dashboard-container .dashboard-body .img6 {
+        /* z-index: 3;
+        position: absolute;
+        top: 350px;
+        left: 5%; */
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .img7 {
+        z-index: 3;
+        position: absolute;
+        top: 55%;
+        left: 5%;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text {
+        width: 45%;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text.pos1 {
+        position: absolute;
+        bottom: 15%;
+        left: 0%;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text.pos2 {
+        position: absolute;
+        bottom: 5%;
+        right: 0%;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text h1 {
+        text-align: center;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text p {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width : 1024px) {
+    .dashboard-container .dashboard-header {
+        margin-bottom: 30px;
+    }
+
+    .dashboard-container .dashboard-header h1 {
+        font-size: 50px;
+    }
+
+    .dashboard-container .dashboard-header h1 span {
+        font-size: 50px;
+    }
+
+    .dashboard-container .dashboard-body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .dashboard-container .dashboard-body .img1 {
+        z-index: 2;
+        position: absolute;
+        top: -20%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .dashboard-container .dashboard-body .img2 {
+        z-index: 1;
+        position: absolute;
+        top: -15%;
+        right: 0%;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        /* display: none; */
+    }
+
+    .dashboard-container .dashboard-body .img3 {
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        right: 5%;
+        /* display: none; */
+
+    }
+
+    .dashboard-container .dashboard-body .img4 {
+        z-index: 3;
+        position: absolute;
+        top: 40%;
+        right: 0%;
+        /* display: none; */
+    }
+
+    .dashboard-container .dashboard-body .img5 {
+        z-index: 3;
+        position: absolute;
+        top: 0%;
+        left: 5%;
+    }
+
+    .dashboard-container .dashboard-body .img6 {
+        /* z-index: 3;
+            position: absolute;
+            top: 350px;
+            left: 5%; */
+        display: none;
+    }
+
+    .dashboard-container .dashboard-body .img7 {
+        z-index: 3;
+        position: absolute;
+        top: 55%;
+        left: 5%;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text {
+        width: 45%;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text.pos1 {
+        position: absolute;
+        bottom: 20%;
+        left: 0%;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text.pos2 {
+        position: absolute;
+        bottom: 10%;
+        right: 0%;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text h1 {
+        text-align: center;
+    }
+
+    .dashboard-container .dashboard-body .dashboard-text p {
+        text-align: center;
+    }
 }

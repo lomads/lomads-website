@@ -6,11 +6,13 @@ import soundbar from '../../../../assets/soundbar.svg';
 const Sound = () => {
     return (
         <div className="sound-container">
-            <div className="sound-header">
-                <h1 className="right_to_left">Why hear just <span>sounds</span></h1>
-            </div>
-            <div className="sound-header">
-                <h1 className="left_to_right">when you can listen to <span>music?</span></h1>
+            <div className="sound-header-container">
+                <div className="sound-header">
+                    <h1 className="right_to_left">Why hear just <span>sounds</span></h1>
+                </div>
+                <div className="sound-header">
+                    <h1 className="left_to_right">when you can listen to <span>music?</span></h1>
+                </div>
             </div>
 
             <div className="sound-content">

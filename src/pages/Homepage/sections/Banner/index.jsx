@@ -9,6 +9,8 @@ import box1 from '../../../../assets/bannerBox1.svg'
 import box2 from '../../../../assets/bannerBox2.svg'
 import box3 from '../../../../assets/bannerBox3.svg'
 
+import { HiOutlineArrowRight } from 'react-icons/hi'
+
 const Banner = () => {
     return (
         <div className="banner-container">
@@ -24,7 +26,7 @@ const Banner = () => {
                 </div>
             </div>
             <p>Meet the ultimate operations and finance management dashboard<br />for web3 organizations, DAOs and beyond.</p>
-            <button className="access-btn">GET EARLY ACCESS</button>
+            <button className="access-btn">GET EARLY ACCESS <HiOutlineArrowRight size={20} /></button>
 
             <div className="hero-section">
                 <img src={hero} alt="hero" />
