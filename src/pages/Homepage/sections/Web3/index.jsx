@@ -8,18 +8,16 @@ import safe from '../../../../assets/safe.svg'
 
 const Web3 = () => {
     return (
-        <div className='web3-container'>
+        <section className='web3-container' data-scroll-section style={{ perspective: '1px' }}>
             <div>
-                <h1>Built using <span>best-in-class</span> components</h1>
+                <h1 data-scroll data-scroll-speed={-1}>Built using <span>best-in-class</span> components</h1>
             </div>
-            <img className='ipfs-img' src={ipfs} alt="ipfs" />
-            <img className='polygon-img' src={polygon} alt="polygon" />
-            <img className='safe-img' src={safe} alt="safe" />
-            <p>More integrations in the pipeline</p>
-            <button>join as a partner <HiOutlineArrowRight size={22} /></button>
-
-
-        </div>
+            <img className='ipfs-img' src={ipfs} alt="ipfs" data-scroll data-scroll-speed={1} />
+            <img className='polygon-img' src={polygon} alt="polygon" data-scroll data-scroll-speed={1} />
+            <img className='safe-img' src={safe} alt="safe" data-scroll data-scroll-speed={1} />
+            <p data-scroll data-scroll-speed={-1}>More integrations in the pipeline</p>
+            <button data-scroll data-scroll-speed={-1}>join as a partner <HiOutlineArrowRight size={22} /></button>
+        </section>
     )
 }
 

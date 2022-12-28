@@ -8,16 +8,16 @@
     position: relative;
 }
 
-.sound-container img {
+/* .sound-container img {
     width: 100%;
     position: absolute;
-    bottom: 0;
-    /* animation-name: slidein-right; */
+    bottom: 0%;
+    animation-name: slidein-right;
     animation-duration: 5s;
     animation-delay: -5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-}
+} */
 
 .sound-container .sound-header-container {
     width: 100%;
@@ -47,16 +47,16 @@
 }
 
 .sound-container .sound-header-container .sound-header .right_to_left {
-    /* animation-name: slidein-left; */
-    animation-duration: 5s;
+    animation-name: slidein-left;
+    animation-duration: 7.5s;
     animation-delay: -5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
 .sound-container .sound-header-container .sound-header .left_to_right {
-    /* animation-name: slidein-right; */
-    animation-duration: 5s;
+    animation-name: slidein-right;
+    animation-duration: 7.5s;
     animation-delay: -5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -92,6 +92,28 @@
 
 .sound-container .sound-content .sound-section p span {
     font-weight: 800;
+}
+
+.sound-container .sound-footer {
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    background-image: url(../../../../assets/soundbar.svg);
+    background-size: contain;
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: animatedBackground 5s linear infinite;
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -100% 0;
+    }
 }
 
 @keyframes slidein-left {
@@ -135,6 +157,14 @@
         width: 90%;
     }
 
+    .sound-container .sound-header-container .sound-header .right_to_left {
+        animation-name: none;
+    }
+
+    .sound-container .sound-header-container .sound-header .left_to_right {
+        animation-name: none;
+    }
+
     .sound-container .sound-header-container .sound-header h1 {
         font-weight: 700;
         font-size: 30px;
@@ -157,6 +187,11 @@
         margin-bottom: 70px;
     }
 
+    .sound-container .sound-content .sound-section:last-child {
+        margin: 0;
+        margin-bottom: 35px;
+    }
+
     .sound-container .sound-content .sound-section h1 {
         text-align: center;
     }
@@ -173,6 +208,11 @@
         width: 100%;
         position: absolute;
         bottom: 0;
+    }
+
+    .sound-container .sound-footer {
+        height: 60px;
+        animation: none;
     }
 }
 
@@ -197,6 +237,14 @@
         width: 70%;
     }
 
+    .sound-container .sound-header-container .sound-header .right_to_left {
+        animation-name: none;
+    }
+
+    .sound-container .sound-header-container .sound-header .left_to_right {
+        animation-name: none;
+    }
+
     .sound-container .sound-header-container .sound-header h1 {
         font-weight: 700;
         font-size: 40px;
@@ -229,6 +277,11 @@
 
     .sound-container .sound-content .sound-section p span {
         font-weight: 600;
+    }
+
+    .sound-container .sound-footer {
+        height: 75px;
+        animation: none;
     }
 }
 
@@ -253,6 +306,14 @@
         width: 90%;
     }
 
+    .sound-container .sound-header-container .sound-header .right_to_left {
+        animation-name: none;
+    }
+
+    .sound-container .sound-header-container .sound-header .left_to_right {
+        animation-name: none;
+    }
+
     .sound-container .sound-header-container .sound-header h1 {
         font-weight: 700;
         font-size: 50px;
@@ -285,6 +346,11 @@
 
     .sound-container .sound-content .sound-section p span {
         font-weight: 600;
+    }
+
+    .sound-container .sound-footer {
+        height: 85px;
+        animation: none;
     }
 }
 

@@ -5,10 +5,107 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: transparent;
+}
+
+.navbar-container button {
+    background: transparent;
+}
+
+.full-screen-menu {
+    width: 100%;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
+    background: linear-gradient(178.31deg, #C94B32 0.74%, #A54536 63.87%);
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-100vh);
+}
+
+.full-screen-menu .menu-header {
+    width: 100%;
+    height: 10vh;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.full-screen-menu .menu-header button {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+}
+
+.full-screen-menu .menu-contents {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.full-screen-menu .menu-contents .menu-row {
+    width: 100%;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-screen-menu .menu-contents .menu-row h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.full-screen-menu .menu-contents .menu-row h1 span {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+
+.slideDown {
+    animation-name: slide-down;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.slideUp {
+    animation-name: slide-up;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100vh);
+    }
+
+    100% {
+        transform: translateY(0vh);
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(0vh);
+    }
+
+    100% {
+        transform: translateY(-100vh);
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -22,4 +119,46 @@
         width: 50px;
         object-fit: contain;
     }
+
+    .full-screen-menu .menu-header {
+        height: 15vh;
+        padding: 20px;
+    }
+
+    .full-screen-menu .menu-header button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .full-screen-menu .menu-contents {
+        height: 85vh;
+    }
+
+    .full-screen-menu .menu-contents .menu-row {
+        width: 100%;
+        margin-bottom: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .full-screen-menu .menu-contents .menu-row h1 {
+        text-align: center;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 35px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFF;
+        line-height: normal;
+        cursor: pointer;
+    }
+
+    .full-screen-menu .menu-contents .menu-row h1 span {
+        font-style: italic;
+        font-weight: 300;
+        font-size: 35px;
+    }
+
+
 }

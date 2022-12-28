@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     position: relative;
     background-color: #FFF;
 }
@@ -17,6 +17,7 @@
     text-transform: uppercase;
     color: #1B2B41;
     text-align: center;
+    margin-top: 50px;
 }
 
 .fit-container .fit-title span {
@@ -81,13 +82,37 @@
     bottom: 0;
     left: 0;
     margin-bottom: 25px;
+    /* background-color: red; */
+}
+
+.fit-container .bars-row img {
+    margin: 0 1rem 1rem 1rem;
+    transform: translateY(-125px);
 }
 
 .fit-container .bars-row .bars-gray {
     background: #F0F0F0;
     border-radius: 20px;
     height: 75px;
-    margin-right: 20px;
+}
+
+.drop-animation {
+    animation-name: drop;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    transform: translateY(0px);
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(-125px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 @media only screen and (max-width: 340px) {
@@ -102,7 +127,7 @@
     .fit-container .fit-title {
         font-size: 30px;
         line-height: normal;
-        margin-top: 50px;
+        margin-top: 100px;
     }
 
     .fit-container .fit-title span {
@@ -134,6 +159,10 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 18px;
+    }
+
+    .fit-container .bars-row {
+        position: static;
     }
 }
 
@@ -149,7 +178,7 @@
     .fit-container .fit-title {
         font-size: 40px;
         line-height: normal;
-        margin-top: 50px;
+        margin-top: 100px;
     }
 
     .fit-container .fit-title span {
@@ -181,6 +210,10 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 18px;
+    }
+
+    .fit-container .bars-row {
+        position: static;
     }
 }
 
@@ -195,7 +228,7 @@
     .fit-container .fit-title {
         font-size: 40px;
         line-height: normal;
-        margin-top: 50px;
+        margin-top: 100px;
     }
 
     .fit-container .fit-title span {
@@ -227,6 +260,10 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 18px;
+    }
+
+    .fit-container .bars-row {
+        position: static;
     }
 }
 

@@ -4,7 +4,7 @@ import nishant from '../../../../assets/nishant.png';
 
 const Contributors = () => {
     return (
-        <div className='contributors-container'>
+        <section className='contributors-container' data-scroll-section style={{ perspective: '1px' }}>
             <h1 className='contributors-title'>{`We <3 `}<span>web3</span></h1>
             <p className='contributors-p'>Meet our core contributors and backers.</p>
 
@@ -83,7 +83,7 @@ const Contributors = () => {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 }
 

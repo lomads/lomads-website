@@ -7,18 +7,56 @@
     justify-content: center;
     position: relative;
     background-color: #FFF;
+    overflow: hidden;
 }
 
 .hands-container .left-img {
     position: absolute;
-    top: -10%;
+    top: -12%;
     left: 0;
+    transform: rotate(0deg);
 }
+
+.rotate-right {
+    animation-name: rotate-right;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate-right {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
 
 .hands-container .right-img {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -1%;
+    transform: rotate(0deg);
+}
+
+.rotate-left {
+    animation-name: rotate-left;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate-left {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
 }
 
 .hands-container .hands-title {
