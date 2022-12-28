@@ -1,21 +1,24 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import './Sound.style.css';
 
-import soundbar from '../../../../assets/soundbar.svg';
+import useOnScreen from "../../../../hooks/useOnScreen";
 
 const Sound = () => {
+    const ref = useRef();
+    const isVisible = useOnScreen(ref);
+
     return (
-        <div className="sound-container">
+        <section className="sound-container" id="sound-container" data-scroll-section style={{ perspective: '1px' }}>
             <div className="sound-header-container">
-                <div className="sound-header">
-                    <h1 className="right_to_left">Why hear just <span>sounds</span></h1>
+                <div className="sound-header" data-scroll data-scroll-direction="horizontal">
+                    <h1 className="right_to_left" id="right_to_left" >Why hear just <span>sounds</span></h1>
                 </div>
                 <div className="sound-header">
-                    <h1 className="left_to_right">when you can listen to <span>music?</span></h1>
+                    <h1 className="left_to_right" data-scroll data-scroll-direction="horizontal">when you can listen to <span>music?</span></h1>
                 </div>
             </div>
 
-            <div className="sound-content">
+            <div ref={ref} className={isVisible ? "sound-content animate__animated animate__fadeIn animate__delay-1s" : "sound-content"}>
                 <div className="sound-section">
                     <h1>Deploy capital efficiently</h1>
                     <p>Deploy capital to create maximum impact through batch transactions, recurring payments, task-based and milestone-based compensations.<br />
@@ -33,8 +36,10 @@ const Sound = () => {
                 </div>
             </div>
 
-            <img src={soundbar} alt="soundbar" />
-        </div>
+            <div className="sound-footer"></div>
+
+            {/* <img src={soundbar} alt="soundbar" /> */}
+        </section>
     )
 }
 

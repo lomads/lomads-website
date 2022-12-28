@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import './Banner.style.css';
 
 import hero from '../../../../assets/HERO.svg';
@@ -12,31 +12,30 @@ import box3 from '../../../../assets/bannerBox3.svg'
 import { HiOutlineArrowRight } from 'react-icons/hi'
 
 const Banner = () => {
+
     return (
-        <div className="banner-container">
+        <section className="banner-container" data-scroll-section style={{ perspective: '1px' }}>
             <div className="heading-section">
-                <h1>A <span>WOW</span> WAY <br />TO DAO</h1>
-                <div className="heading-pill pos1">
+                <h1 data-scroll data-scroll-speed={2} className="animate__animated animate__fadeIn animate__fast">A <span>WOW</span> WAY <br />TO DAO</h1>
+                <div className="heading-pill pos1 animate__animated animate__bounceIn animate__delay-2s animate__faster">
                     <img src={pill1} alt="pill1" />
                     <span>+1</span>
                 </div>
-                <div className="heading-pill pos2">
+                <div className="heading-pill pos2 animate__animated animate__bounceIn animate__delay-2s animate__faster">
                     <img src={pill2} alt="pill1" />
                     <span>+1</span>
                 </div>
             </div>
-            <p>Meet the ultimate operations and finance management dashboard<br />for web3 organizations, DAOs and beyond.</p>
-            <button className="access-btn">GET EARLY ACCESS <HiOutlineArrowRight size={20} /></button>
+            <p data-scroll data-scroll-speed={2} className="animate__animated animate__fadeIn animate__delay-1s">Meet the ultimate operations and finance management dashboard<br />for web3 organizations, DAOs and beyond.</p>
+            <button data-scroll data-scroll-speed={2} className="access-btn animate__animated animate__fadeIn animate__delay-1s">GET EARLY ACCESS <HiOutlineArrowRight size={20} /></button>
 
-            <div className="hero-section">
-                <img src={hero} alt="hero" />
-
-                <img src={box1} className="whitebox pos1" alt="box1" />
-                <img src={box2} className="whitebox pos2" alt="box2" />
-                <img src={box3} className="whitebox pos3" alt="box3" />
-
+            <div id="hero-section" className="hero-section animate__animated animate__fadeInUp animate__slow">
+                <img src={hero} alt="hero" data-scroll data-scroll-speed={-2} />
+                <img src={box1} className="whitebox pos1" alt="box1" data-scroll data-scroll-speed={1} />
+                <img src={box2} className="whitebox pos2" alt="box2" data-scroll data-scroll-speed={2} />
+                <img src={box3} className="whitebox pos3" alt="box3" data-scroll data-scroll-speed={1} />
             </div>
-        </div>
+        </section>
     )
 }
 
