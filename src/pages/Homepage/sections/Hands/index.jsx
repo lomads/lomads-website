@@ -10,7 +10,9 @@ const Hands = () => {
             <img className='right-img' src={right} alt="left" data-scroll data-scroll-class="rotate-left" data-scroll-repeat={true} />
 
             <h1 className='hands-title' data-scroll data-scroll-speed={4}>You <span>use</span><br />You <span>own</span></h1>
-            <p className='hands-p' data-scroll data-scroll-speed={4}>The future of customer-platform relationships is here.<br />Here, everyone matters, everyone contributes, and<br /> everyone thrives, together.</p>
+            <div className='hands-p-container'>
+                <p className='hands-p' data-scroll data-scroll-speed={4}>The future of customer-platform relationships is here. Here, everyone matters, everyone contributes, and everyone thrives, together.</p>
+            </div>
 
             <div className='hands-section-row'>
                 <div className='hands-section' data-scroll data-scroll-speed={4}>

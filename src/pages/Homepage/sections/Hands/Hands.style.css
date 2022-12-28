@@ -75,7 +75,11 @@
     color: #C94B32;
 }
 
-.hands-container .hands-p {
+.hands-container .hands-p-container {
+    width: 50%;
+}
+
+.hands-container .hands-p-container .hands-p {
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
@@ -98,7 +102,7 @@
 
 .hands-container .hands-section-row .hands-section {
     width: 40%;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
 .hands-container .hands-section-row .hands-section:first-child {
@@ -146,9 +150,13 @@
         font-size: 30px;
     }
 
-    .hands-container .hands-p {
-        font-size: 20px;
+    .hands-container .hands-p-container {
+        width: 80%;
         margin-top: 100px;
+    }
+
+    .hands-container .hands-p-container .hands-p {
+        font-size: 20px;
     }
 
     .hands-container .hands-section-row {
@@ -191,6 +199,14 @@
         right: -3%;
         transform: rotate(10deg);
     }
+
+    .rotate-right {
+        animation-name: none;
+    }
+
+    .rotate-left {
+        animation-name: none;
+    }
 }
 
 @media only screen and (min-width: 345px) and (max-width : 375px) {
@@ -210,9 +226,13 @@
         font-size: 40px;
     }
 
-    .hands-container .hands-p {
+    .hands-container .hands-p-container {
+        width: 80%;
+        margin-top: 100px;
+    }
+
+    .hands-container .hands-p-container .hands-p {
         font-size: 20px;
-        margin-top: 150px;
     }
 
     .hands-container .hands-section-row {
@@ -254,6 +274,14 @@
         top: 10%;
         right: -3%;
         transform: rotate(10deg);
+    }
+
+    .rotate-right {
+        animation-name: none;
+    }
+
+    .rotate-left {
+        animation-name: none;
     }
 }
 
@@ -274,9 +302,13 @@
         font-size: 40px;
     }
 
-    .hands-container .hands-p {
+    .hands-container .hands-p-container {
+        width: 80%;
+        margin-top: 100px;
+    }
+
+    .hands-container .hands-p-container .hands-p {
         font-size: 20px;
-        margin-top: 150px;
     }
 
     .hands-container .hands-section-row {
@@ -286,7 +318,7 @@
     }
 
     .hands-container .hands-section-row .hands-section {
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -318,6 +350,14 @@
         top: 10%;
         right: -3%;
         transform: rotate(10deg);
+    }
+
+    .rotate-right {
+        animation-name: none;
+    }
+
+    .rotate-left {
+        animation-name: none;
     }
 }
 

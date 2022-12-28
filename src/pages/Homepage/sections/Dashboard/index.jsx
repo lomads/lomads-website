@@ -30,12 +30,12 @@ const Dashboard = () => {
 
                 <div className="dashboard-text pos1">
                     <h1>Easy information access</h1>
-                    <p>The Lomads dashboard is expertly designed to help you<br /> focus on tasks that matter,<span> without overwhelming you<br /> with information.</span></p>
+                    <p>The Lomads dashboard is expertly designed to help you focus on tasks that matter,<span> without overwhelming you with information.</span></p>
                 </div>
 
                 <div className="dashboard-text pos2">
                     <h1>Efficient workflow automation</h1>
-                    <p>Our in-built automations help you save time by<br /> eliminating repetitive tasks. With just a click, a project<br /> milestone can be approved and in just a snap, a<br /> transaction is created for the respective team,<br /> automatically. <span>Sleek OP!</span></p>
+                    <p>Our in-built automations help you save time by eliminating repetitive tasks. With just a click, a project milestone can be approved and in just a snap, a transaction is created for the respective team, automatically. <span>Sleek OP!</span></p>
                 </div>
 
                 <img className="imgMilestone" src={milestonesm} alt="" />

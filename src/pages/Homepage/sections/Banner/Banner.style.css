@@ -218,17 +218,6 @@
     right: 5%;
 }
 
-/* @media only screen and (max-width: 400px) {
-    .banner-container .heading-section {
-        height: 30vh;
-        margin-top: 5vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: red;
-    }
-} */
-
 @media only screen and (max-width: 340px) {
     .banner-container {
         overflow-x: hidden;

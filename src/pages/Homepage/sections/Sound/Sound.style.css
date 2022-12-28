@@ -28,6 +28,7 @@
 
 .sound-container .sound-header-container .sound-header {
     width: 100%;
+    overflow: hidden;
 }
 
 .sound-container .sound-header-container .sound-header h1 {

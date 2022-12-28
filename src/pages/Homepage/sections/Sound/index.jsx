@@ -10,11 +10,11 @@ const Sound = () => {
     return (
         <section className="sound-container" id="sound-container" data-scroll-section style={{ perspective: '1px' }}>
             <div className="sound-header-container">
-                <div className="sound-header" data-scroll data-scroll-direction="horizontal">
+                <div className="sound-header">
                     <h1 className="right_to_left" id="right_to_left" >Why hear just <span>sounds</span></h1>
                 </div>
                 <div className="sound-header">
-                    <h1 className="left_to_right" data-scroll data-scroll-direction="horizontal">when you can listen to <span>music?</span></h1>
+                    <h1 className="left_to_right">when you can listen to <span>music?</span></h1>
                 </div>
             </div>
 
