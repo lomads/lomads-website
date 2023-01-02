@@ -59,6 +59,7 @@
     justify-content: center;
     overflow: hidden;
     cursor: pointer;
+    margin-right: 0.75rem;
 }
 
 .contributors-container .contributor-row .contributor-card img {
@@ -137,12 +138,20 @@
 
     .contributors-container .contributor-row {
         width: 100%;
+        height: 300px !important;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 20px;
-        overflow: auto;
-        margin-bottom: 100px;
+        overflow-x: auto;
+        margin-bottom: 50px;
+    }
+
+    .contributors-container .contributor-row .contributor-card {
+        overflow: visible;
+    }
+
+    .contributors-container .contributor-row .contributor-card:first-child {
+        margin-left: 55rem;
     }
 }
 
@@ -167,12 +176,20 @@
 
     .contributors-container .contributor-row {
         width: 100%;
+        height: 300px !important;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 20px;
-        overflow: auto;
-        margin-bottom: 100px;
+        overflow-x: auto;
+        margin-bottom: 50px;
+    }
+
+    .contributors-container .contributor-row .contributor-card {
+        overflow: visible;
+    }
+
+    .contributors-container .contributor-row .contributor-card:first-child {
+        margin-left: 50rem;
     }
 }
 
@@ -197,12 +214,20 @@
 
     .contributors-container .contributor-row {
         width: 100%;
+        height: 300px !important;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 20px;
-        overflow: auto;
-        margin-bottom: 100px;
+        overflow-x: auto;
+        margin-bottom: 50px;
+    }
+
+    .contributors-container .contributor-row .contributor-card {
+        overflow: visible;
+    }
+
+    .contributors-container .contributor-row .contributor-card:first-child {
+        margin-left: 50rem;
     }
 }
 
