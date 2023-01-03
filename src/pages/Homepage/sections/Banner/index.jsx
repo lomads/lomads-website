@@ -11,7 +11,7 @@ import box3 from '../../../../assets/bannerBox3.svg'
 
 import { HiOutlineArrowRight } from 'react-icons/hi'
 
-const Banner = () => {
+const Banner = ({ toggleModal }) => {
 
     return (
         <section className="banner-container" data-scroll-section style={{ perspective: '1px' }}>
@@ -27,7 +27,7 @@ const Banner = () => {
                 </div>
             </div>
             <p data-scroll data-scroll-speed={2} className="animate__animated animate__fadeIn animate__delay-1s">Meet the ultimate operations and finance management dashboard<br />for web3 organizations, DAOs and beyond.</p>
-            <button data-scroll data-scroll-speed={2} className="access-btn animate__animated animate__fadeIn animate__delay-1s">GET EARLY ACCESS <HiOutlineArrowRight size={20} /></button>
+            <button data-scroll data-scroll-speed={2} className="access-btn animate__animated animate__fadeIn animate__delay-1s" onClick={() => toggleModal(true)}>GET EARLY ACCESS <HiOutlineArrowRight size={20} /></button>
 
             <div id="hero-section" className="hero-section animate__animated animate__fadeInUp animate__slow">
                 <img src={hero} alt="hero" data-scroll data-scroll-speed={-2} />

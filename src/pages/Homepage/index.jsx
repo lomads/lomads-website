@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import './Homepage.style.css';
 import Navbar from '../../components/Navbar';
 import Banner from "./sections/Banner";
@@ -12,8 +12,13 @@ import Sound from "./sections/Sound";
 import Web3 from "./sections/Web3";
 
 import LocomotiveScroll from 'locomotive-scroll';
+import EarlyAccessForm from "./forms/EarlyAccess";
+import PartnerForm from "./forms/Partner";
 
 const Homepage = () => {
+
+    const [openEarlyAccess, setopenEarlyAccess] = useState(false);
+    const [openPartner, setopenPartner] = useState(false);
 
     useEffect(() => {
         const scroll = new LocomotiveScroll({
@@ -28,15 +33,25 @@ const Homepage = () => {
     return (
         <div className="homepage" data-scroll-container>
             <Navbar />
-            <Banner />
+            <Banner toggleModal={(value) => setopenEarlyAccess(value)} />
             <Sound />
             <Dashboard />
             <Power />
-            <Web3 />
+            <Web3 toggleModal={(value) => setopenPartner(value)} />
             <Hands />
             <Fit />
             <Contributors />
             <Contact />
+
+            {/* Early access form --- full screen modal */}
+            {
+                openEarlyAccess && <EarlyAccessForm toggleModal={(value) => setopenEarlyAccess(value)} />
+            }
+
+            {/* Partner form --- full screen modal */}
+            {
+                openPartner && <PartnerForm toggleModal={(value) => setopenPartner(value)} />
+            }
         </div>
     )
 }
