@@ -23,7 +23,7 @@ const Fit = () => {
     }, [])
 
     return (
-        <section className='fit-container' data-scroll-section style={{ perspective: '1px' }}>
+        <section className='fit-container'>
             <h1 className='fit-title'>You don’t<br />have to <span>fit in</span></h1>
             <p className='fit-p'>Lomads plugs seamlessly into your web3 organization.</p>
             <p className='fit-content'>Imagine Lomads as a lego set of web3 tools. Simply get on Lomads with your gang and keep adding tool-legos as your needs evolve.</p>

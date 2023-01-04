@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 const Contributors = () => {
 
     return (
-        <section className='contributors-container' data-scroll-section style={{ perspective: '1px' }}>
+        <section className='contributors-container'>
             <h1 className='contributors-title'>{`We <3 `}<span>web3</span></h1>
             <p className='contributors-p'>Meet our core contributors and backers.</p>
 

@@ -243,19 +243,18 @@
 
     .banner-container .heading-section .heading-pill.pos1 {
         position: absolute;
-        top: 105px;
-        left: 5px;
+        top: 32%;
+        left: 0%;
     }
 
     .banner-container .heading-section .heading-pill.pos2 {
         position: absolute;
-        top: 145px;
-        right: 20px;
+        top: 50%;
+        right: 6%;
     }
 
     .banner-container p {
         font-size: 20px;
-        margin: 0px 30px 20px 30px;
     }
 
     .banner-container .hero-section {
@@ -295,13 +294,13 @@
 
     .banner-container .heading-section .heading-pill.pos1 {
         position: absolute;
-        top: 47%;
-        left: 5%;
+        top: 30%;
+        left: 2%;
     }
 
     .banner-container .heading-section .heading-pill.pos2 {
         position: absolute;
-        top: 70%;
+        top: 50%;
         right: 7%;
     }
 
@@ -348,13 +347,13 @@
 
     .banner-container .heading-section .heading-pill.pos1 {
         position: absolute;
-        top: 48%;
+        top: 32%;
         left: 8%;
     }
 
     .banner-container .heading-section .heading-pill.pos2 {
         position: absolute;
-        top: 70%;
+        top: 52%;
         right: 13%;
     }
 

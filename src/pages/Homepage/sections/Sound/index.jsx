@@ -61,7 +61,7 @@ const Sound = () => {
                 </div>
             </div>
 
-            <div ref={ref} className="sound-content">
+            <div ref={ref} className={isVisible ? "sound-content animate__animated animate__fadeIn" : "sound-content"}>
                 <div className="sound-section">
                     <h1>Deploy capital efficiently</h1>
                     <p>Deploy capital to create maximum impact through batch transactions, recurring payments, task-based and milestone-based compensations.<br />

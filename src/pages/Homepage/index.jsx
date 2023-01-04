@@ -51,17 +51,18 @@ const Homepage = () => {
                         <Contributors />
                         <Contact />
                     </div>
+
                 </div>
             </div>
             {/* Early access form --- full screen modal */}
-            {
+            {/* {
                 openEarlyAccess && <EarlyAccessForm toggleModal={(value) => setopenEarlyAccess(value)} />
-            }
+            } */}
 
             {/* Partner form --- full screen modal */}
-            {
+            {/* {
                 openPartner && <PartnerForm toggleModal={(value) => setopenPartner(value)} />
-            }
+            } */}
         </>
     )
 }

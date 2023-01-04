@@ -7,7 +7,7 @@ import { FaDiscord, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 
 const Contact = () => {
     return (
-        <section className='contact-container' data-scroll-section style={{ perspective: '1px' }}>
+        <section className='contact-container'>
             <img src={logo} alt="logo" />
             <h1><span>CONTACT</span> US</h1>
             <p>The best is yet to come! Be a part of our journey.</p>

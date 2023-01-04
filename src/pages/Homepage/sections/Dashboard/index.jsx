@@ -12,12 +12,12 @@ import project from '../../../../assets/project_card.svg';
 
 const Dashboard = () => {
     return (
-        <section className="dashboard-container" data-scroll-section style={{ perspective: '1px' }}>
-            <div className="dashboard-header" data-scroll>
+        <section className="dashboard-container">
+            <div className="dashboard-header">
                 <h1>ONE <span>DASHING</span><br />DASHBOARD</h1>
             </div>
 
-            <div className="dashboard-body" data-scroll>
+            <div className="dashboard-body">
                 <img className="imgSm" src={dashboardsm} alt="" />
 
                 <img className="img1" src={dashboard} alt="" />

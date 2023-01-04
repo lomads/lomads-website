@@ -5,6 +5,10 @@
     overflow-y: scroll;
 }
 
+#smooth-wrapper {
+    background: linear-gradient(169.22deg, #FDF7F7 12.19%, #EFEFEF 100%, #DD6149 92%) !important;
+}
+
 .marker-container {
     width: 10vw;
     height: 90vh;
