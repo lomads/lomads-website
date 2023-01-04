@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    background:  transparent;
 }
 
 .web3-container div {

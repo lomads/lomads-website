@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import './Power.style.css';
 
 import powerimg from '../../../../assets/power.svg'
 
 const Power = () => {
+
+    useEffect(() => {
+
+    }, [])
+
     return (
-        <section className="power-container" data-scroll-section style={{ perspective: '1px' }}>
-            <img src={powerimg} data-scroll data-scroll-speed={-1} />
+        <section  className="power-container">
+            <img data-speed="0.9" src={powerimg} data-scroll data-scroll-speed={-1} />
             <h1 className="power-title" data-scroll data-scroll-speed={2}>
                 one <span> power-packed</span><br />
                 Token

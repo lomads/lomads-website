@@ -1,11 +1,31 @@
 .sound-container {
-    width: 100%;
+    /* width: 100%; */
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
     position: relative;
+    background: transparent;
+}
+
+.sound-container .scroll-placeholder {
+    height: 200vh;
+    position: absolute
+}
+
+.sound-container .scale-down {
+    transform: scale(1),
+}
+
+.sound-container .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: 1;
 }
 
 /* .sound-container img {
@@ -48,19 +68,24 @@
 }
 
 .sound-container .sound-header-container .sound-header .right_to_left {
-    animation-name: slidein-left;
+    text-transform: uppercase;
+    width: 200%;
+    /* animation-name: slidein-left;
     animation-duration: 7.5s;
     animation-delay: -5s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: linear; */
 }
 
 .sound-container .sound-header-container .sound-header .left_to_right {
-    animation-name: slidein-right;
+    text-transform: uppercase;
+    width: 200%;
+    margin-left: 200px;
+    /* animation-name: slidein-right;
     animation-duration: 7.5s;
     animation-delay: -5s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: linear; */
 }
 
 .sound-container .sound-content {
@@ -97,14 +122,14 @@
 
 .sound-container .sound-footer {
     width: 100%;
-    height: 150px;
+    height: 200px;
     position: absolute;
     bottom: 0;
     background-image: url(../../../../assets/soundbar.svg);
     background-size: contain;
     background-position: 0px 0px;
     background-repeat: repeat-x;
-    animation: animatedBackground 5s linear infinite;
+    /* animation: animatedBackground 5s linear infinite; */
 }
 
 @keyframes animatedBackground {
@@ -159,11 +184,11 @@
     }
 
     .sound-container .sound-header-container .sound-header .right_to_left {
-        animation-name: none;
+        /* animation-name: none; */
     }
 
     .sound-container .sound-header-container .sound-header .left_to_right {
-        animation-name: none;
+        /* animation-name: none; */
     }
 
     .sound-container .sound-header-container .sound-header h1 {
