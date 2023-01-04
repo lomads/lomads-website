@@ -91,10 +91,12 @@
 
 
 .banner-container {
+    padding-top: 10vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: transparent;
 }
 
 .banner-container .heading-section {

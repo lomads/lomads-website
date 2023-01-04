@@ -9,6 +9,11 @@
     background: linear-gradient(178.31deg, #C94B32 0.74%, #A54536 63.87%);
 }
 
+.contributors-container .scale {
+    transform: scale(1)
+}
+
+
 .contributors-container .contributors-title {
     font-style: normal;
     font-weight: 800;

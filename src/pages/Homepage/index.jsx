@@ -30,8 +30,8 @@ const Homepage = () => {
                 smoothTouch: 0.1,
                 normalizeScroll: true       // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
             });
+
         }, [10])
-        console.log(window.ScrollSmoother)
 
     }, []);
 

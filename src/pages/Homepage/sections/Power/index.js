@@ -6,10 +6,13 @@ import powerimg from '../../../../assets/power.svg'
 
 const Power = () => {
 
+    useEffect(() => {
+
+    }, [])
 
     return (
-        <section className="power-container">
-            <img src={powerimg} data-scroll data-scroll-speed={-1} />
+        <section  className="power-container">
+            <img data-speed="0.9" src={powerimg} data-scroll data-scroll-speed={-1} />
             <h1 className="power-title" data-scroll data-scroll-speed={2}>
                 one <span> power-packed</span><br />
                 Token

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Dashboard.style.css';
 
 import dashboard from '../../../../assets/DASHBOARD.svg';
@@ -11,8 +11,13 @@ import notify from '../../../../assets/NOTIF.svg';
 import project from '../../../../assets/project_card.svg';
 
 const Dashboard = () => {
+
+    useEffect(() => {
+
+    }, [])
+
     return (
-        <section className="dashboard-container" data-scroll-section style={{ perspective: '1px' }}>
+        <section className="dashboard-container panel" data-scroll-section style={{ perspective: '1px' }}>
             <div className="dashboard-header" data-scroll>
                 <h1>ONE <span>DASHING</span><br />DASHBOARD</h1>
             </div>
