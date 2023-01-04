@@ -6,7 +6,7 @@ import ipfs from '../../../../assets/ipfs.svg'
 import polygon from '../../../../assets/polygon.svg'
 import safe from '../../../../assets/safe.svg'
 
-const Web3 = () => {
+const Web3 = ({ toggleModal }) => {
     return (
         <section className='web3-container' data-scroll-section style={{ perspective: '1px' }}>
             <div>
@@ -16,7 +16,7 @@ const Web3 = () => {
             <img className='polygon-img' src={polygon} alt="polygon" data-scroll data-scroll-speed={1} />
             <img className='safe-img' src={safe} alt="safe" data-scroll data-scroll-speed={1} />
             <p data-scroll data-scroll-speed={-1}>More integrations in the pipeline</p>
-            <button data-scroll data-scroll-speed={-1}>join as a partner <HiOutlineArrowRight size={22} /></button>
+            <button data-scroll data-scroll-speed={-1} onClick={() => toggleModal(true)}>join as a partner <HiOutlineArrowRight size={22} /></button>
         </section>
     )
 }

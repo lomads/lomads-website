@@ -25,7 +25,7 @@ const Navbar = () => {
         <>
             <section className="navbar-container" data-scroll-section style={{ perspective: '1px' }}>
                 <img src={logo} alt="logo" />
-                <button onClick={handleSlideDownAnimation}><img className="menu" src={menu} alt="logo" /></button>
+                {/* <button onClick={handleSlideDownAnimation}><img className="menu" src={menu} alt="logo" /></button> */}
             </section>
 
             {/* open menu  */}
