@@ -20,6 +20,18 @@ const Homepage = () => {
     const [openEarlyAccess, setopenEarlyAccess] = useState(false);
     const [openPartner, setopenPartner] = useState(false);
 
+    const arr = [
+        <Banner toggleModal={(value) => setopenEarlyAccess(value)} />,
+        <Sound />,
+        <Dashboard />,
+        <Power />,
+        <Web3 toggleModal={(value) => setopenPartner(value)} />,
+        <Hands />,
+        <Fit />,
+        <Contributors />,
+        <Contact />
+    ]
+
     useEffect(() => {
         const scroll = new LocomotiveScroll({
             el: document.querySelector('[data-scroll-container]'),
@@ -32,8 +44,29 @@ const Homepage = () => {
 
     return (
         <div className="homepage" data-scroll-container>
+
+            {/* marker */}
+            {/* <div className="marker-container">
+                <div className="markers active"></div>
+                <div className="markers"></div>
+                <div className="markers"></div>
+                <div className="markers"></div>
+                <div className="markers"></div>
+                <div className="markers"></div>
+                <div className="markers"></div>
+                <div className="markers"></div>
+                <div className="markers"></div>
+            </div> */}
+
             <Navbar />
-            <Banner toggleModal={(value) => setopenEarlyAccess(value)} />
+
+            {
+                arr.map((_item, _index) => {
+                    return _item;
+                })
+            }
+
+            {/* <Banner toggleModal={(value) => setopenEarlyAccess(value)} />
             <Sound />
             <Dashboard />
             <Power />
@@ -41,7 +74,7 @@ const Homepage = () => {
             <Hands />
             <Fit />
             <Contributors />
-            <Contact />
+            <Contact /> */}
 
             {/* Early access form --- full screen modal */}
             {
