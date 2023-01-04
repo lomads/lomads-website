@@ -9,44 +9,44 @@ const Sound = () => {
 
     useEffect(() => {
         setTimeout(() => {
-        window.gsap.to('.right_to_left', { 
-            duration: 20, x: -500, ease: "none",
-            scrollTrigger: {
-                trigger: ".sound-container",
-                scrub: true,
-                pin: false,
-                start: "-=100%",
-                end: "+=3000"
-              }
-        })
-        window.gsap.to(".left_to_right", { 
-            duration: 20, x: 800,  ease: "none",
-            scrollTrigger: {
-              trigger: ".sound-container",
-              scrub: true,
-              pin: false,
-              start: "-=100%",
-              end: "+=3000",
-              //pinSpacing: false
-            },
-          });
-        //   window.gsap.to('.sound-container', { yPercent: -50 })
-        //   window.ScrollTrigger.create({
-        //     trigger: ".sound-container",
-        //     pin: true,
-        //     markers: true,
-        //     start: "top top",
-        //     end: "+=300"
-        //   });
-          window.gsap.to('#sound-container', {
-            scrollTrigger: {
-              trigger: "#sound-container",
-              start: "top",
-              markers: true,
-              pin: false,
-              pinSpacing: false
-            }
-        })
+            window.gsap.to('.right_to_left', {
+                duration: 20, x: -500, ease: "none",
+                scrollTrigger: {
+                    trigger: ".sound-container",
+                    scrub: true,
+                    pin: false,
+                    start: "-=100%",
+                    end: "+=3000"
+                }
+            })
+            window.gsap.to(".left_to_right", {
+                duration: 20, x: 800, ease: "none",
+                scrollTrigger: {
+                    trigger: ".sound-container",
+                    scrub: true,
+                    pin: false,
+                    start: "-=100%",
+                    end: "+=3000",
+                    //pinSpacing: false
+                },
+            });
+            //   window.gsap.to('.sound-container', { yPercent: -50 })
+            //   window.ScrollTrigger.create({
+            //     trigger: ".sound-container",
+            //     pin: true,
+            //     markers: true,
+            //     start: "top top",
+            //     end: "+=300"
+            //   });
+            window.gsap.to('#sound-container', {
+                scrollTrigger: {
+                    trigger: "#sound-container",
+                    start: "top",
+                    //   markers: true,
+                    pin: false,
+                    pinSpacing: false
+                }
+            })
         }, [])
     }, [])
 

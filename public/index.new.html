@@ -52,13 +52,13 @@
 
     #init {
       box-sizing: border-box;
-      background-color: rgba(255,255,255,1);
+      background-color: rgba(255, 255, 255, 1);
     }
 
     #first {
       z-index: 0;
       box-sizing: border-box;
-      background-color: rgba(255,255,255,1);
+      background-color: rgba(255, 255, 255, 1);
     }
 
     #second {
@@ -82,7 +82,7 @@
       height: 8px;
       margin: 0 0 10px 0;
       position: relative;
-      background-color: rgba(255,255,255,1);
+      background-color: rgba(255, 255, 255, 1);
     }
 
     .section-container {
@@ -104,6 +104,7 @@
       background-size: cover;
       z-index: -1;
     }
+
     .overlay {
       position: absolute;
       width: 100%;
@@ -114,6 +115,7 @@
       opacity: 0;
       z-index: 1;
     }
+
     .content-toright {
       width: 200%;
       font-weight: bold;
@@ -123,6 +125,7 @@
       white-space: nowrap;
       text-transform: uppercase;
     }
+
     .content-toleft {
       position: absolute;
       top: 120px;
@@ -132,7 +135,8 @@
       font-weight: bold;
       white-space: nowrap;
     }
-    .soundbar{
+
+    .soundbar {
       bottom: 0;
       position: absolute;
       bottom: 0;
@@ -141,6 +145,7 @@
       width: 100%;
       z-index: 1;
     }
+
     .section-content {
       display: flex;
       padding: '0 32px';
@@ -155,6 +160,7 @@
       align-items: center;
       justify-content: space-between;
     }
+
     .scroll-title {
       font-size: 6rem;
       transform: scale(1);
@@ -168,34 +174,40 @@
   <section id="init">test</section>
   <section class="section" id="first">
     <div class="section-container">
-    <div class="bg"></div>
-    <div class="overlay"></div>
-    <div class="scroll-title">
-      <div class="content-toright">
-        Why hear just sounds
+      <div class="bg"></div>
+      <div class="overlay"></div>
+      <div class="scroll-title">
+        <div class="content-toright">
+          Why hear just sounds
+        </div>
+        <div class="content-toleft">
+          When you can listen to music?
+        </div>
       </div>
-      <div class="content-toleft">
-        When you can listen to music?
+      <div class="section-content">
+        <div>
+          <div>Deploy capital efficiently</div>
+          <p>Deploy capital to create maximum impact through batch transactions, recurring payments, task-based and
+            milestone-based compensations.<br />
+            <span>Say goodbye to repetition and hello to automation!</span>
+          </p>1
+        </div>
+        <div>
+          <div>Streamline decisions</div>
+          <p>Capture the work and time contribution of your organization’s members. Utilize these metrics to
+            automatically assign shares of voice in decision-making, permissions and rewards.<br />
+            <span>Sweat counts!</span>
+          </p>
+        </div>
+        <div>
+          <div>Build accountability</div>
+          <p>Cultivate an efficient and autonomous decision-making environment by clearly defining the scope of
+            decision-making across various groups and levels in the organization.<br />
+            <span>And, implement decisions in a heartbeat.</span>
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="section-content">
-      <div>
-        <div>Deploy capital efficiently</div>
-        <p>Deploy capital to create maximum impact through batch transactions, recurring payments, task-based and milestone-based compensations.<br />
-          <span>Say goodbye to repetition and hello to automation!</span></p>1
-      </div>
-      <div>
-        <div>Streamline decisions</div>
-        <p>Capture the work and time contribution of your organization’s members. Utilize these metrics to automatically assign shares of voice in decision-making, permissions and rewards.<br />
-          <span>Sweat counts!</span></p>
-      </div>
-      <div>
-        <div>Build accountability</div>
-        <p>Cultivate an efficient and autonomous decision-making environment by clearly defining the scope of decision-making across various groups and levels in the organization.<br />
-          <span>And, implement decisions in a heartbeat.</span></p>
-      </div>
-    </div>
-    <img class="soundbar" src="./soundbar.svg" />
+      <img class="soundbar" src="./soundbar.svg" />
     </div>
   </section>
   <section class="section second" id="second">
@@ -223,151 +235,151 @@
 
 <script>
 
-// gsap.create("#first", {
-//   scrollTrigger: {
-//     trigger: "#first",
-//     start: "bottom",
-//     end: "+=100%",
-//     scrub: true,
-//     markers: true,
-//     pin: true,
-//     pinSpacing: false
-//   }
-// });
+  // gsap.create("#first", {
+  //   scrollTrigger: {
+  //     trigger: "#first",
+  //     start: "bottom",
+  //     end: "+=100%",
+  //     scrub: true,
+  //     markers: true,
+  //     pin: true,
+  //     pinSpacing: false
+  //   }
+  // });
 
   gsap.to(".bg", {
-  yPercent: -10,
-  ease: "none",
-  duration: 2,
-  scrollTrigger: {
-    trigger: "#first",
-    start: "top top",
-    end: "+=200%",
-    scrub: true,
-    markers: true,
-    pin: "#first",
-   pinSpacing: false
-  }
-});
+    yPercent: -10,
+    ease: "none",
+    duration: 2,
+    scrollTrigger: {
+      trigger: "#first",
+      start: "top top",
+      end: "+=200%",
+      scrub: true,
+      // markers: true,
+      pin: "#first",
+      pinSpacing: false
+    }
+  });
 
-// gsap.create(".bg", {
-//   yPercent: -50,
-//   ease: "none",
-//   duration: 2,
-//   scrollTrigger: {
-//     trigger: ".bg",
-//     start: "end",
-//     end: "+=100%",
-//     scrub: true,
-//     markers: true,
-//     pin: "#first",
-//     pinSpacing: false
-//   }
-// });
+  // gsap.create(".bg", {
+  //   yPercent: -50,
+  //   ease: "none",
+  //   duration: 2,
+  //   scrollTrigger: {
+  //     trigger: ".bg",
+  //     start: "end",
+  //     end: "+=100%",
+  //     scrub: true,
+  //     markers: true,
+  //     pin: "#first",
+  //     pinSpacing: false
+  //   }
+  // });
 
-gsap.to(".content-toright", {
-  scrollTrigger: {
-    trigger: "#init",
-    scrub: true,
-    pin: false,
-    start: "top",
-    end: "+=3000",
-    pinSpacing: false
-  },
-  duration: 20,
-  x: 800, 
-  ease: "none"
-});
+  gsap.to(".content-toright", {
+    scrollTrigger: {
+      trigger: "#init",
+      scrub: true,
+      pin: false,
+      start: "top",
+      end: "+=3000",
+      pinSpacing: false
+    },
+    duration: 20,
+    x: 800,
+    ease: "none"
+  });
 
-gsap.to(".content-toleft", {
-  scrollTrigger: {
-    trigger: "#init",
-    scrub: true,
-    pin: false,
-    start: "top",
-    end: "+=3000"
-  },
-  duration: 20,
-  x: -1800, 
-  ease: "none"
-});
+  gsap.to(".content-toleft", {
+    scrollTrigger: {
+      trigger: "#init",
+      scrub: true,
+      pin: false,
+      start: "top",
+      end: "+=3000"
+    },
+    duration: 20,
+    x: -1800,
+    ease: "none"
+  });
 
-gsap.to(".soundbar", {
-  scrollTrigger: {
-    trigger: "#init",
-    scrub: true,
-    pin: false,
-    start: "top",
-    end: "+=3000"
-  },
-  duration: 20,
-  x: -800, 
-  ease: "none"
-});
+  gsap.to(".soundbar", {
+    scrollTrigger: {
+      trigger: "#init",
+      scrub: true,
+      pin: false,
+      start: "top",
+      end: "+=3000"
+    },
+    duration: 20,
+    x: -800,
+    ease: "none"
+  });
 
-gsap.to(".overlay", {
-  opacity: 0.2,
-  scrollTrigger: {
-    trigger: "#second",
-    markers: true,
-    start: "-=60%",
-    toggleActions: "play none none reverse"
-  },
-});
+  gsap.to(".overlay", {
+    opacity: 0.2,
+    scrollTrigger: {
+      trigger: "#second",
+      // markers: true,
+      start: "-=60%",
+      toggleActions: "play none none reverse"
+    },
+  });
 
-gsap.to(".scroll-title", {
-  transform: "scale(0.9)",
-  scrollTrigger: {
-    trigger: "#second",
-    markers: true,
-    start: "-=60%",
-    toggleActions: "play none none reverse"
-  },
-});
+  gsap.to(".scroll-title", {
+    transform: "scale(0.9)",
+    scrollTrigger: {
+      trigger: "#second",
+      // markers: true,
+      start: "-=60%",
+      toggleActions: "play none none reverse"
+    },
+  });
 
-gsap.to(".section-content", {
-  transform: "scale(0.9)",
-  scrollTrigger: {
-    trigger: "#second",
-    markers: true,
-    start: "-=80%",
-    toggleActions: "play none none reverse"
-  },
-});
+  gsap.to(".section-content", {
+    transform: "scale(0.9)",
+    scrollTrigger: {
+      trigger: "#second",
+      // markers: true,
+      start: "-=80%",
+      toggleActions: "play none none reverse"
+    },
+  });
 
-gsap.to(".section-content", {
-  opacity: 1,
-  scrollTrigger: {
-    trigger: "#first",
-    markers: true,
-    start: "-=50px",
-    toggleActions: "play none none reverse"
-  },
-});
+  gsap.to(".section-content", {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: "#first",
+      // markers: true,
+      start: "-=50px",
+      toggleActions: "play none none reverse"
+    },
+  });
 
-gsap.to(".third", {
-  yPercent: -150,
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".third",
-    start: "-=150%",
-    end: "top",
-    pin: '.third',
-    markers: true,
-  },
-});
+  gsap.to(".third", {
+    yPercent: -150,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".third",
+      start: "-=150%",
+      end: "top",
+      pin: '.third',
+      // markers: true,
+    },
+  });
 
-gsap.to(".fourth", {
-  transform: 'translate(0, -250%)',
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".fourth",
-    start: "top",
-    end: "top",
-    pin: '.fourth',
-    markers: true,
-  },
-});
+  gsap.to(".fourth", {
+    transform: 'translate(0, -250%)',
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".fourth",
+      start: "top",
+      end: "top",
+      pin: '.fourth',
+      // markers: true,
+    },
+  });
 
 // gsap.to(".fourth", {
 //   yPercent: -100,

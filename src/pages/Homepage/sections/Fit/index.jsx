@@ -8,16 +8,16 @@ const Fit = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            window.gsap.to('.hold', { 
+            window.gsap.to('.hold', {
                 duration: 1, y: 10, ease: "none",
                 scrollTrigger: {
                     trigger: ".fit-container",
                     scrub: 1,
                     pin: false,
                     start: "top+=15%",
-                    markers: true,
+                    // markers: true,
                     end: "top+=30%"
-                  }
+                }
             })
         })
     }, [])
@@ -32,7 +32,7 @@ const Fit = () => {
             <div className='bars-row'>
                 <div className='bars-gray' style={{ width: '338px' }}></div>
                 <div className='bars-gray' style={{ width: '338px', marginLeft: '1rem' }}></div>
-                <img className='hold' src={dropbtn}  />
+                <img className='hold' src={dropbtn} />
                 <div className='bars-gray' style={{ width: '338px' }}></div>
                 <div className='bars-gray' style={{ width: '338px', marginLeft: '1rem' }}></div>
             </div>

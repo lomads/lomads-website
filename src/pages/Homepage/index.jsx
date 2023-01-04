@@ -21,18 +21,6 @@ const Homepage = () => {
     const [openEarlyAccess, setopenEarlyAccess] = useState(false);
     const [openPartner, setopenPartner] = useState(false);
 
-    // const arr = [
-    //     <Banner toggleModal={(value) => setopenEarlyAccess(value)} />,
-    //     <Sound />,
-    //     <Dashboard />,
-    //     <Power />,
-    //     <Web3 toggleModal={(value) => setopenPartner(value)} />,
-    //     <Hands />,
-    //     <Fit />,
-    //     <Contributors />,
-    //     <Contact />
-    // ]
-
     useEffect(() => {
         setTimeout(() => {
             window.gsap.registerPlugin(window.ScrollTrigger, window.ScrollSmoother)
@@ -48,22 +36,23 @@ const Homepage = () => {
     }, []);
 
     return (
-        <div id="smooth-wrapper">
-            <div id="smooth-content">
-                <div className="homepage">
-                    <Navbar />
-                    <Banner />
-                    <Sound />
-                    <Dashboard />
-                    <Power />
-                    <Web3 />
-                    <Hands />
-                    <Fit />
-                    <Contributors />
-                    <Contact />
+        <>
+            <div id="smooth-wrapper">
+                <div id="smooth-content">
+                    <div className="homepage">
+                        <Navbar />
+                        <Banner toggleModal={(value) => setopenEarlyAccess(value)} />
+                        <Sound />
+                        <Dashboard />
+                        <Power />
+                        <Web3 toggleModal={(value) => setopenPartner(value)} />
+                        <Hands />
+                        <Fit />
+                        <Contributors />
+                        <Contact />
+                    </div>
                 </div>
             </div>
-
             {/* Early access form --- full screen modal */}
             {
                 openEarlyAccess && <EarlyAccessForm toggleModal={(value) => setopenEarlyAccess(value)} />
@@ -73,7 +62,7 @@ const Homepage = () => {
             {
                 openPartner && <PartnerForm toggleModal={(value) => setopenPartner(value)} />
             }
-        </div>
+        </>
     )
 }
 
