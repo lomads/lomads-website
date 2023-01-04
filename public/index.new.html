@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>Lomads</title>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
+
+    body {
+      font-family: "Signika Negative", sans-serif;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    main {
+      display: flex;
+      width: 100%;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    section {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #init {
+      box-sizing: border-box;
+      background-color: rgba(255,255,255,1);
+    }
+
+    #first {
+      z-index: 0;
+      box-sizing: border-box;
+      background-color: rgba(255,255,255,1);
+    }
+
+    #second {
+      z-index: 1;
+      height: 150vh;
+      background-color: blue;
+    }
+
+    #third {
+      z-index: 0;
+      background-color: orangered;
+    }
+
+    #fourth {
+      background-color: greenyellow
+    }
+
+    .content {
+      width: 100%;
+      max-width: 800px;
+      height: 8px;
+      margin: 0 0 10px 0;
+      position: relative;
+      background-color: rgba(255,255,255,1);
+    }
+
+    .section-container {
+      transform: scale(1);
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      /* background-image: url("https://picsum.photos/id/237/1920/1080"); */
+      background-size: cover;
+      z-index: -1;
+    }
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: red;
+      opacity: 0;
+      z-index: 1;
+    }
+    .content-toright {
+      width: 200%;
+      font-weight: bold;
+      position: absolute;
+      top: 0;
+      left: -200px;
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+    .content-toleft {
+      position: absolute;
+      top: 120px;
+      text-transform: uppercase;
+      width: 200%;
+      right: -400px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    .soundbar{
+      bottom: 0;
+      position: absolute;
+      bottom: 0;
+      right: -500px;
+      height: 250px;
+      width: 100%;
+      z-index: 1;
+    }
+    .section-content {
+      display: flex;
+      padding: '0 32px';
+      align-items: center;
+      justify-content: center;
+      transform: scale(1);
+      opacity: 0;
+      width: 100%;
+      top: 200px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .scroll-title {
+      font-size: 6rem;
+      transform: scale(1);
+      position: relative;
+    }
+  </style>
+
+</head>
+
+<body>
+  <section id="init">test</section>
+  <section class="section" id="first">
+    <div class="section-container">
+    <div class="bg"></div>
+    <div class="overlay"></div>
+    <div class="scroll-title">
+      <div class="content-toright">
+        Why hear just sounds
+      </div>
+      <div class="content-toleft">
+        When you can listen to music?
+      </div>
+    </div>
+    <div class="section-content">
+      <div>
+        <div>Deploy capital efficiently</div>
+        <p>Deploy capital to create maximum impact through batch transactions, recurring payments, task-based and milestone-based compensations.<br />
+          <span>Say goodbye to repetition and hello to automation!</span></p>1
+      </div>
+      <div>
+        <div>Streamline decisions</div>
+        <p>Capture the work and time contribution of your organization’s members. Utilize these metrics to automatically assign shares of voice in decision-making, permissions and rewards.<br />
+          <span>Sweat counts!</span></p>
+      </div>
+      <div>
+        <div>Build accountability</div>
+        <p>Cultivate an efficient and autonomous decision-making environment by clearly defining the scope of decision-making across various groups and levels in the organization.<br />
+          <span>And, implement decisions in a heartbeat.</span></p>
+      </div>
+    </div>
+    <img class="soundbar" src="./soundbar.svg" />
+    </div>
+  </section>
+  <section class="section second" id="second">
+    <div style="font-size: 20rem;">Revealing section</div>
+  </section>
+  <section class="section third" id="third">
+    <div class="section-third-content">
+      <div style="font-size: 20rem;">Revealing section</div>
+    </div>
+  </section>
+  <section class="section fourth" id="fourth">
+    <div style="font-size: 20rem;">Revealing section</div>
+  </section>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+
+<script>
+
+// gsap.create("#first", {
+//   scrollTrigger: {
+//     trigger: "#first",
+//     start: "bottom",
+//     end: "+=100%",
+//     scrub: true,
+//     markers: true,
+//     pin: true,
+//     pinSpacing: false
+//   }
+// });
+
+  gsap.to(".bg", {
+  yPercent: -10,
+  ease: "none",
+  duration: 2,
+  scrollTrigger: {
+    trigger: "#first",
+    start: "top top",
+    end: "+=200%",
+    scrub: true,
+    markers: true,
+    pin: "#first",
+   pinSpacing: false
+  }
+});
+
+// gsap.create(".bg", {
+//   yPercent: -50,
+//   ease: "none",
+//   duration: 2,
+//   scrollTrigger: {
+//     trigger: ".bg",
+//     start: "end",
+//     end: "+=100%",
+//     scrub: true,
+//     markers: true,
+//     pin: "#first",
+//     pinSpacing: false
+//   }
+// });
+
+gsap.to(".content-toright", {
+  scrollTrigger: {
+    trigger: "#init",
+    scrub: true,
+    pin: false,
+    start: "top",
+    end: "+=3000",
+    pinSpacing: false
+  },
+  duration: 20,
+  x: 800, 
+  ease: "none"
+});
+
+gsap.to(".content-toleft", {
+  scrollTrigger: {
+    trigger: "#init",
+    scrub: true,
+    pin: false,
+    start: "top",
+    end: "+=3000"
+  },
+  duration: 20,
+  x: -1800, 
+  ease: "none"
+});
+
+gsap.to(".soundbar", {
+  scrollTrigger: {
+    trigger: "#init",
+    scrub: true,
+    pin: false,
+    start: "top",
+    end: "+=3000"
+  },
+  duration: 20,
+  x: -800, 
+  ease: "none"
+});
+
+gsap.to(".overlay", {
+  opacity: 0.2,
+  scrollTrigger: {
+    trigger: "#second",
+    markers: true,
+    start: "-=60%",
+    toggleActions: "play none none reverse"
+  },
+});
+
+gsap.to(".scroll-title", {
+  transform: "scale(0.9)",
+  scrollTrigger: {
+    trigger: "#second",
+    markers: true,
+    start: "-=60%",
+    toggleActions: "play none none reverse"
+  },
+});
+
+gsap.to(".section-content", {
+  transform: "scale(0.9)",
+  scrollTrigger: {
+    trigger: "#second",
+    markers: true,
+    start: "-=80%",
+    toggleActions: "play none none reverse"
+  },
+});
+
+gsap.to(".section-content", {
+  opacity: 1,
+  scrollTrigger: {
+    trigger: "#first",
+    markers: true,
+    start: "-=50px",
+    toggleActions: "play none none reverse"
+  },
+});
+
+gsap.to(".third", {
+  yPercent: -150,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".third",
+    start: "-=150%",
+    end: "top",
+    pin: '.third',
+    markers: true,
+  },
+});
+
+gsap.to(".fourth", {
+  transform: 'translate(0, -250%)',
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".fourth",
+    start: "top",
+    end: "top",
+    pin: '.fourth',
+    markers: true,
+  },
+});
+
+// gsap.to(".fourth", {
+//   yPercent: -100,
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: ".third",
+//     start: "bottom",
+//     end: "-=100%",
+//     //pinSpacing:false,
+//     markers: true,
+//     scrub: true,
+//     pin: false,
+//   },
+// });
+
+</script>
+
+</html>

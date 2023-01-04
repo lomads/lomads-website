@@ -1,11 +1,16 @@
 .sound-container {
-    width: 100%;
+    /* width: 100%; */
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
     position: relative;
+}
+
+.sound-container .scroll-placeholder {
+    height: 200vh;
+    position: absolute
 }
 
 /* .sound-container img {
@@ -48,19 +53,19 @@
 }
 
 .sound-container .sound-header-container .sound-header .right_to_left {
-    animation-name: slidein-left;
+    /* animation-name: slidein-left;
     animation-duration: 7.5s;
     animation-delay: -5s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: linear; */
 }
 
 .sound-container .sound-header-container .sound-header .left_to_right {
-    animation-name: slidein-right;
+    /* animation-name: slidein-right;
     animation-duration: 7.5s;
     animation-delay: -5s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: linear; */
 }
 
 .sound-container .sound-content {
@@ -159,11 +164,11 @@
     }
 
     .sound-container .sound-header-container .sound-header .right_to_left {
-        animation-name: none;
+        /* animation-name: none; */
     }
 
     .sound-container .sound-header-container .sound-header .left_to_right {
-        animation-name: none;
+        /* animation-name: none; */
     }
 
     .sound-container .sound-header-container .sound-header h1 {

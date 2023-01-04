@@ -1,8 +1,10 @@
 import './Contributors.style.css';
 
 import nishant from '../../../../assets/nishant.png';
+import { useEffect } from 'react';
 
 const Contributors = () => {
+
     return (
         <section className='contributors-container' data-scroll-section style={{ perspective: '1px' }}>
             <h1 className='contributors-title'>{`We <3 `}<span>web3</span></h1>

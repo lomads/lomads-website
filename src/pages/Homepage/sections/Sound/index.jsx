@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import './Sound.style.css';
 
 import useOnScreen from "../../../../hooks/useOnScreen";
@@ -7,8 +7,51 @@ const Sound = () => {
     const ref = useRef();
     const isVisible = useOnScreen(ref);
 
+    useEffect(() => {
+        setTimeout(() => {
+        window.gsap.to('.right_to_left', { 
+            duration: 20, x: -500, ease: "none",
+            scrollTrigger: {
+                trigger: ".sound-container",
+                scrub: true,
+                pin: false,
+                start: "-=100%",
+                end: "+=3000"
+              }
+        })
+        window.gsap.to(".left_to_right", { 
+            duration: 20, x: 800,  ease: "none",
+            scrollTrigger: {
+              trigger: ".sound-container",
+              scrub: true,
+              pin: false,
+              start: "-=100%",
+              end: "+=3000",
+              //pinSpacing: false
+            },
+          });
+        //   window.gsap.to('.sound-container', { yPercent: -50 })
+        //   window.ScrollTrigger.create({
+        //     trigger: ".sound-container",
+        //     pin: true,
+        //     markers: true,
+        //     start: "top top",
+        //     end: "+=300"
+        //   });
+          window.gsap.to('#sound-container', {
+            scrollTrigger: {
+              trigger: "#sound-container",
+              start: "top",
+              markers: true,
+              pin: false,
+              pinSpacing: false
+            }
+        })
+        }, [])
+    }, [])
+
     return (
-        <section className="sound-container" id="sound-container" data-scroll-section style={{ perspective: '1px' }}>
+        <section className="sound-container" id="sound-container">
             <div className="sound-header-container">
                 <div className="sound-header">
                     <h1 className="right_to_left" id="right_to_left" >Why hear just <span>sounds</span></h1>
@@ -18,7 +61,7 @@ const Sound = () => {
                 </div>
             </div>
 
-            <div ref={ref} className={isVisible ? "sound-content animate__animated animate__fadeIn animate__delay-1s" : "sound-content"}>
+            <div ref={ref} className="sound-content">
                 <div className="sound-section">
                     <h1>Deploy capital efficiently</h1>
                     <p>Deploy capital to create maximum impact through batch transactions, recurring payments, task-based and milestone-based compensations.<br />

@@ -1,13 +1,53 @@
+
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import './Hands.style.css';
 
 import left from '../../../../assets/left.svg';
 import right from '../../../../assets/right.svg';
 
 const Hands = () => {
+
+
+    useEffect(() => {
+        setTimeout(() => {
+        window.gsap.set('.left-img', {xPercent: -5});
+        window.gsap.set('.right-img', {xPercent: 0});
+
+        window.gsap.timeline({
+            scrollTrigger:{
+              trigger: ".hands-container",
+              pin: false,
+              scrub:0.2,
+              start: 'top-=50%',
+              end:'+=10000',
+            }
+          })
+          .to('.left-img', {
+            rotation:-360*0.7,
+            duration: 5, ease:'none',
+          })
+
+          window.gsap.timeline({
+            scrollTrigger:{
+              trigger: ".hands-container",
+              pin: false,
+              scrub:0.2,
+              start: 'top-=50%',
+              end:'+=10000',
+            }
+          })
+          .to('.right-img', {
+            rotation:360*0.4,
+            duration: 5, ease:'none',
+          })
+
+        }, [50])
+    }, [])
+
     return (
         <section className='hands-container' data-scroll-section style={{ perspective: '1px' }}>
-            <img className='left-img' src={left} alt="left" data-scroll data-scroll-class="rotate-right" data-scroll-repeat={true} />
-            <img className='right-img' src={right} alt="left" data-scroll data-scroll-class="rotate-left" data-scroll-repeat={true} />
+            <img className='left-img' src={left} alt="left" />
+            <img className='right-img' src={right} alt="left"  />
 
             <h1 className='hands-title' data-scroll data-scroll-speed={4}>You <span>use</span><br />You <span>own</span></h1>
             <div className='hands-p-container'>
