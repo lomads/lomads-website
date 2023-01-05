@@ -7,7 +7,7 @@ import polygon from '../../../../assets/polygon.svg'
 import safe from '../../../../assets/safe.svg'
 import { useEffect } from 'react';
 
-const Web3 = ({ toggleModal }) => {
+const Web3 = () => {
 
     return (
         <section className='web3-container'>
@@ -18,7 +18,7 @@ const Web3 = ({ toggleModal }) => {
             <img className='polygon-img' src={polygon} />
             <img className='safe-img' src={safe} alt="safe" />
             <p data-speed="0.9">More integrations in the pipeline</p>
-            <button data-speed="0.9" onClick={() => toggleModal(true)}>join as a partner <HiOutlineArrowRight size={22} /></button>
+            <button data-speed="0.9" onClick={() => { window.location.href = "/partner" }}>join as a partner <HiOutlineArrowRight size={22} /></button>
         </section>
     )
 }

@@ -4,8 +4,10 @@ import logo from '../../../../assets/logo.svg';
 
 import { IoCloseOutline } from 'react-icons/io5'
 import { HiOutlinePlus } from 'react-icons/hi'
+import { useNavigate } from "react-router-dom";
 
 const PartnerForm = ({ toggleModal }) => {
+    const navigate = useNavigate();
     const [check, setCheck] = useState('YES');
     const [name, setName] = useState('');
     const [orgName, setOrgName] = useState('');
@@ -22,7 +24,7 @@ const PartnerForm = ({ toggleModal }) => {
         <div className="modal-container">
             <div className="form-header">
                 <img src={logo} alt="logo" />
-                <button onClick={() => toggleModal(false)}><IoCloseOutline size={30} color="#C94B32" /></button>
+                <button onClick={() => navigate(-1)}><IoCloseOutline size={30} color="#C94B32" /></button>
             </div>
             <div className="form-container">
                 <div className="form-title">

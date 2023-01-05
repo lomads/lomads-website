@@ -10,9 +10,9 @@ import box2 from '../../../../assets/bannerBox2.svg'
 import box3 from '../../../../assets/bannerBox3.svg'
 
 import { HiOutlineArrowRight } from 'react-icons/hi'
+import { useNavigate } from "react-router-dom";
 
-const Banner = ({ toggleModal }) => {
-
+const Banner = () => {
     return (
         <section className="banner-container">
             <div className="heading-section">
@@ -27,7 +27,7 @@ const Banner = ({ toggleModal }) => {
                 </div>
             </div>
             <p data-speed="1.2" className="animate__animated animate__fadeIn animate__delay-1s">Meet the ultimate operations and finance management dashboard<br />for web3 organizations, DAOs and beyond.</p>
-            <button data-speed="1.2" className="access-btn animate__animated animate__fadeIn animate__delay-1s" onClick={() => toggleModal(true)}>GET EARLY ACCESS <HiOutlineArrowRight size={20} /></button>
+            <button data-speed="1.2" className="access-btn animate__animated animate__fadeIn animate__delay-1s" onClick={() => { window.location.href = "/earlyAccess" }}>GET EARLY ACCESS <HiOutlineArrowRight size={20} /></button>
 
             <div id="hero-section" className="hero-section animate__animated animate__fadeInUp animate__slow">
                 <img src={hero} alt="hero" data-speed="1" />

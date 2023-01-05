@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import './Homepage.style.css';
 import Navbar from '../../components/Navbar';
 import Banner from "./sections/Banner";
@@ -13,13 +13,7 @@ import Web3 from "./sections/Web3";
 
 //import LocomotiveScroll from 'locomotive-scroll';
 
-import EarlyAccessForm from "./forms/EarlyAccess";
-import PartnerForm from "./forms/Partner";
-
 const Homepage = () => {
-
-    const [openEarlyAccess, setopenEarlyAccess] = useState(false);
-    const [openPartner, setopenPartner] = useState(false);
 
     useEffect(() => {
         setTimeout(() => {
@@ -41,22 +35,15 @@ const Homepage = () => {
                 <div id="smooth-content">
                     <div className="homepage">
                         <Navbar />
-                        <Banner toggleModal={(value) => setopenEarlyAccess(value)} />
+                        <Banner />
                         <Sound />
                         <Dashboard />
                         <Power />
-                        <Web3 toggleModal={(value) => setopenPartner(value)} />
+                        <Web3 />
                         <Hands />
-                        <Fit toggleModal={(value) => setopenEarlyAccess(value)} />
+                        <Fit />
                         <Contributors />
                         <Contact />
-                        {
-                            openEarlyAccess && <EarlyAccessForm toggleModal={(value) => setopenEarlyAccess(value)} />
-                        }
-
-                        {
-                            openPartner && <PartnerForm toggleModal={(value) => setopenPartner(value)} />
-                        }
                     </div>
                 </div>
             </div>
