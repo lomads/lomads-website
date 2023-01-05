@@ -6,6 +6,27 @@
     flex-direction: column;
 }
 
+.msg-container {
+    width: 50%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.msg-container p {
+    color: #1B2B41;
+    font-weight: 500;
+}
+
+.msg-container span {
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 1rem;
+    color: #76808D;
+}
+
 .modal-container .form-header {
     width: 100%;
     height: 10vh;
@@ -64,6 +85,13 @@
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
+}
+
+.modal-container .form-container .form-input-wrapper .error-msg {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #B12F15;
+    font-style: italic;
 }
 
 .modal-container .form-container .form-input-wrapper .form-input-row {
