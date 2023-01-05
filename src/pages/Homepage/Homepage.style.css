@@ -3,7 +3,25 @@
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-    background:  linear-gradient(169.22deg, #FDF7F7 12.19%, #EFEFEF 92%);
+    background: linear-gradient(169.22deg, #FDF7F7 12.19%, #EFEFEF 92%);
+}
+
+.over {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: red;
+
+    z-index: 999;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    margin-bottom: 1rem;
 }
 
 .marker-container {
@@ -41,7 +59,6 @@
     z-index: 99999;
     display: flex;
     flex-direction: column;
-    /* transform: translateY(-100vh); */
 }
 
 .modal-container .form-header {
@@ -66,7 +83,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .modal-container .form-container .form-title {

@@ -24,12 +24,12 @@ const Homepage = () => {
     useEffect(() => {
         setTimeout(() => {
             window.gsap.registerPlugin(window.ScrollTrigger, window.ScrollSmoother)
-            window.ScrollSmoother.create({
-                smooth: 1,               // how long (in seconds) it takes to "catch up" to the native scroll position
-                effects: true,           // looks for data-speed and data-lag attributes on elements
-                smoothTouch: 0.1,
-                normalizeScroll: true       // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
-            });
+            // window.ScrollSmoother.create({
+            //     smooth: 1,               // how long (in seconds) it takes to "catch up" to the native scroll position
+            //     effects: true,           // looks for data-speed and data-lag attributes on elements
+            //     smoothTouch: 0.1,
+            //     normalizeScroll: true       // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
+            // });
 
         }, [10])
 
@@ -47,21 +47,19 @@ const Homepage = () => {
                         <Power />
                         <Web3 toggleModal={(value) => setopenPartner(value)} />
                         <Hands />
-                        <Fit />
+                        <Fit toggleModal={(value) => setopenEarlyAccess(value)} />
                         <Contributors />
                         <Contact />
+                        {
+                            openEarlyAccess && <EarlyAccessForm toggleModal={(value) => setopenEarlyAccess(value)} />
+                        }
+
+                        {
+                            openPartner && <PartnerForm toggleModal={(value) => setopenPartner(value)} />
+                        }
                     </div>
                 </div>
             </div>
-            {/* Early access form --- full screen modal */}
-            {
-                openEarlyAccess && <EarlyAccessForm toggleModal={(value) => setopenEarlyAccess(value)} />
-            }
-
-            {/* Partner form --- full screen modal */}
-            {
-                openPartner && <PartnerForm toggleModal={(value) => setopenPartner(value)} />
-            }
         </>
     )
 }
