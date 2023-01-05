@@ -20,6 +20,7 @@
 
 .sound-container .overlay {
     position: absolute;
+    background-color: #C94B32;
     width: 100%;
     height: 100%;
     left: 0;
