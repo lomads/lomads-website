@@ -47,21 +47,19 @@ const Homepage = () => {
                         <Power />
                         <Web3 toggleModal={(value) => setopenPartner(value)} />
                         <Hands />
-                        <Fit />
+                        <Fit toggleModal={(value) => setopenEarlyAccess(value)} />
                         <Contributors />
                         <Contact />
+                        {
+                            openEarlyAccess && <EarlyAccessForm toggleModal={(value) => setopenEarlyAccess(value)} />
+                        }
+
+                        {
+                            openPartner && <PartnerForm toggleModal={(value) => setopenPartner(value)} />
+                        }
                     </div>
                 </div>
             </div>
-            {/* Early access form --- full screen modal */}
-            {
-                openEarlyAccess && <EarlyAccessForm toggleModal={(value) => setopenEarlyAccess(value)} />
-            }
-
-            {/* Partner form --- full screen modal */}
-            {
-                openPartner && <PartnerForm toggleModal={(value) => setopenPartner(value)} />
-            }
         </>
     )
 }

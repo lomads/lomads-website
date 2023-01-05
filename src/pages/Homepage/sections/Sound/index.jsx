@@ -41,53 +41,53 @@ const Sound = () => {
 
             window.gsap.to(".sound-footer", {
                 scrollTrigger: {
-                  trigger: "#sound-container",
-                  scrub: true,
-                  pin: false,
-                  start: "top center",
-                  end: "bottom"
+                    trigger: "#sound-container",
+                    scrub: true,
+                    pin: false,
+                    start: "top center",
+                    end: "bottom"
                 },
                 duration: 20,
                 x: -300,
                 ease: "none"
-              });
+            });
 
-             window.gsap.to(".overlay", {
+            window.gsap.to(".overlay", {
                 opacity: 0.2,
                 scrollTrigger: {
-                  trigger: ".dashboard-container",
-                  start: "-=40%",
-                  toggleActions: "play none none reverse"
+                    trigger: ".dashboard-container",
+                    start: "-=40%",
+                    toggleActions: "play none none reverse"
                 },
-              });
+            });
 
-              window.gsap.to(".left_to_right", {
+            window.gsap.to(".left_to_right", {
                 transform: "scale(0.9)",
                 scrollTrigger: {
-                 trigger: ".dashboard-container",
-                  start: "top-=40%",
-                  toggleActions: "play none none reverse"
+                    trigger: ".dashboard-container",
+                    start: "top-=40%",
+                    toggleActions: "play none none reverse"
                 },
-              });
+            });
 
-              window.gsap.to(".right_to_left", {
+            window.gsap.to(".right_to_left", {
                 transform: "scale(0.9)",
                 scrollTrigger: {
-                 trigger: ".dashboard-container",
-                  start: "top-=40%",
-                  toggleActions: "play none none reverse"
+                    trigger: ".dashboard-container",
+                    start: "top-=40%",
+                    toggleActions: "play none none reverse"
                 },
-              });
+            });
 
-              window.gsap.to(".scale-down", {
+            window.gsap.to(".scale-down", {
                 transform: "scale(0.9)",
                 scrollTrigger: {
-                 trigger: ".dashboard-container",
-                  start: "top-=40%",
-                  toggleActions: "play none none reverse"
+                    trigger: ".dashboard-container",
+                    start: "top-=40%",
+                    toggleActions: "play none none reverse"
                 },
-              });
-            
+            });
+
         }, 50)
     }, [])
 
