@@ -113,8 +113,7 @@
 
 @media only screen and (max-width: 600px) {
     .navbar-container {
-        padding: 20px;
-        height: 15vh;
+        padding: 0 20px;
     }
 
     .navbar-container .menu {

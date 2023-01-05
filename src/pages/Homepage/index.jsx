@@ -24,12 +24,12 @@ const Homepage = () => {
     useEffect(() => {
         setTimeout(() => {
             window.gsap.registerPlugin(window.ScrollTrigger, window.ScrollSmoother)
-            // window.ScrollSmoother.create({
-            //     smooth: 1,               // how long (in seconds) it takes to "catch up" to the native scroll position
-            //     effects: true,           // looks for data-speed and data-lag attributes on elements
-            //     smoothTouch: 0.1,
-            //     normalizeScroll: true       // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
-            // });
+            window.ScrollSmoother.create({
+                smooth: 1,               // how long (in seconds) it takes to "catch up" to the native scroll position
+                effects: true,           // looks for data-speed and data-lag attributes on elements
+                smoothTouch: 0.1,
+                normalizeScroll: true       // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
+            });
 
         }, [10])
 
