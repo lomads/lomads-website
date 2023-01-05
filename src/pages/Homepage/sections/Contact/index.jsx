@@ -18,15 +18,17 @@ const Contact = () => {
             <div className='contact-row'>
                 <div className='logo-container'>
                     <div className='logo-box'>
-                        <HiMail size={22} color="#FFF" />
+                        <a href="mailto:hello@lomads.co" rel="noopener noreferrer" target={"_blank"}>
+                            <HiMail size={22} color="#FFF" />
+                        </a>
                     </div>
-                    <div className='logo-box'>
+                    <div className='logo-box' onClick={() => { window.open("https://discord.com/invite/szqhfekbTy") }}>
                         <FaDiscord size={22} color="#FFF" />
                     </div>
-                    <div className='logo-box'>
+                    <div className='logo-box' onClick={() => { window.open("https://twitter.com/lomads_co") }}>
                         <FaTwitter size={22} color="#FFF" />
                     </div>
-                    <div className='logo-box'>
+                    <div className='logo-box' onClick={() => { window.open("https://www.linkedin.com/company/lomads/") }}>
                         <FaLinkedinIn size={22} color="#FFF" />
                     </div>
                 </div>
