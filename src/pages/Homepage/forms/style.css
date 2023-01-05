@@ -148,17 +148,17 @@
     justify-content: space-between;
 }
 
-.modal-container .form-container .form-input-wrapper .form-input-row div {
+.modal-container .form-container .form-input-wrapper .form-input-row .box-input-div {
     display: flex;
     height: 75px;
     flex-direction: column;
 }
 
-.modal-container .form-container .form-input-wrapper .form-input-row div.md {
+.modal-container .form-container .form-input-wrapper .form-input-row .box-input-div.md {
     width: 40%;
 }
 
-.modal-container .form-container .form-input-wrapper .form-input-row div.lg {
+.modal-container .form-container .form-input-wrapper .form-input-row .box-input-div.lg {
     width: 50%;
 }
 
@@ -396,11 +396,11 @@
         width: 100%;
     }
 
-    .modal-container .form-container .form-input-wrapper .form-input-row div.md {
+    .modal-container .form-container .form-input-wrapper .form-input-row .box-input-div.md {
         width: 100%;
     }
 
-    .modal-container .form-container .form-input-wrapper .form-input-row div.lg {
+    .modal-container .form-container .form-input-wrapper .form-input-row .box-input-div.lg {
         width: 100%;
         margin: 1rem 0;
     }
@@ -456,11 +456,11 @@
         width: 100%;
     }
 
-    .modal-container .form-container .form-input-wrapper .form-input-row div.md {
+    .modal-container .form-container .form-input-wrapper .form-input-row .box-input-div.md {
         width: 100%;
     }
 
-    .modal-container .form-container .form-input-wrapper .form-input-row div.lg {
+    .modal-container .form-container .form-input-wrapper .form-input-row .box-input-div.lg {
         width: 100%;
         margin: 1rem 0;
     }
@@ -515,11 +515,11 @@
         width: 100%;
     }
 
-    .modal-container .form-container .form-input-wrapper .form-input-row div.md {
+    .modal-container .form-container .form-input-wrapper .form-input-row .box-input-div.md {
         width: 100%;
     }
 
-    .modal-container .form-container .form-input-wrapper .form-input-row div.lg {
+    .modal-container .form-container .form-input-wrapper .form-input-row .box-input-div.lg {
         width: 100%;
         margin: 1rem 0;
     }

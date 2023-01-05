@@ -176,15 +176,15 @@ const PartnerForm = ({ toggleModal }) => {
                                     </div>
                                 </div>
                                 <div className="form-input-row mt-15">
-                                    <div className="md">
+                                    <div className="box-input-div md">
                                         <input className="box-input" placeholder="Title" value={title} onChange={(e) => { setTitle(e.target.value); document.getElementById('title-error').innerHTML = '' }} />
                                         <span className="error-msg" id="title-error"></span>
                                     </div>
-                                    <div className="lg">
+                                    <div className="box-input-div lg">
                                         <input className="box-input" placeholder="Link" value={link} onChange={(e) => { setLink(e.target.value); document.getElementById('link-error').innerHTML = '' }} />
                                         <span className="error-msg" id="link-error"></span>
                                     </div>
-                                    <div>
+                                    <div className="box-input-div">
                                         <button className="form-add-btn" style={link !== '' && title !== '' ? { background: '#C84A32' } : null} onClick={handleAddResource}><HiOutlinePlus size={24} color="#FFF" /></button>
                                     </div>
                                 </div>
