@@ -71,6 +71,17 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 18px;
+    transition: background-color 0.5s linear;
+    transition: box-shadow 0.25s linear;
+}
+
+.fit-container button:hover {
+    background-color: #EA6447;
+    box-shadow: 3px 5px 20px rgba(27, 43, 65, 0.12), 0px 0px 20px rgba(201, 75, 50, 0.18);
+}
+
+.fit-container button:focus {
+    background-color: #b12e15;
 }
 
 .fit-container .bars-row {
@@ -157,7 +168,7 @@
         height: 50px;
         font-style: normal;
         font-weight: 400;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 18px;
     }
 
@@ -208,7 +219,7 @@
         height: 50px;
         font-style: normal;
         font-weight: 400;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 18px;
     }
 
@@ -258,7 +269,7 @@
         height: 50px;
         font-style: normal;
         font-weight: 400;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 18px;
     }
 

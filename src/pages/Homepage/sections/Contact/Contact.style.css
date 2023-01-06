@@ -73,6 +73,17 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: background-color 0.5s linear;
+    transition: box-shadow 0.25s linear;
+}
+
+.contact-container .contact-row .logo-container .logo-box:hover {
+    background-color: #EA6447;
+    box-shadow: 3px 5px 20px rgba(27, 43, 65, 0.12), 0px 0px 20px rgba(201, 75, 50, 0.18);
+}
+
+.contact-container .contact-row .logo-container .logo-box:focus {
+    background-color: #b12e15;
 }
 
 @media only screen and (max-width: 340px) {

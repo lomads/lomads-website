@@ -345,6 +345,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.5s linear;
+    transition: box-shadow 0.25s linear;
 }
 
 .modal-container .form-container .form-footer button:first-child {
@@ -353,10 +355,24 @@
     background-color: transparent;
 }
 
+.modal-container .form-container .form-footer button:first-child:hover {
+    background-color: #EA6447;
+    color: #FFF;
+    box-shadow: 3px 5px 20px rgba(27, 43, 65, 0.12), 0px 0px 20px rgba(201, 75, 50, 0.18);
+}
+
 .modal-container .form-container .form-footer button:last-child {
     color: #FFF;
     background-color: #C94B32;
-    ;
+}
+
+.modal-container .form-container .form-footer button:last-child:hover {
+    background-color: #EA6447;
+    box-shadow: 3px 5px 20px rgba(27, 43, 65, 0.12), 0px 0px 20px rgba(201, 75, 50, 0.18);
+}
+
+.modal-container .form-container .form-footer button:last-child:focus {
+    background-color: #b12e15;
 }
 
 @media only screen and (max-width: 340px) {

@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    background:  transparent;
+    background: transparent;
 }
 
 .web3-container div {
@@ -58,6 +58,17 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 18px;
+    transition: background-color 0.5s linear;
+    transition: box-shadow 0.25s linear;
+}
+
+.web3-container button:hover {
+    background-color: #EA6447;
+    box-shadow: 3px 5px 20px rgba(27, 43, 65, 0.12), 0px 0px 20px rgba(201, 75, 50, 0.18);
+}
+
+.web3-container button:focus {
+    background-color: #b12e15;
 }
 
 .web3-container .ipfs-img {
@@ -157,7 +168,7 @@
     }
 
     .web3-container div h1 span {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .web3-container .ipfs-img {
@@ -218,7 +229,7 @@
     }
 
     .web3-container div h1 span {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .web3-container .ipfs-img {

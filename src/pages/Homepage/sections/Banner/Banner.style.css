@@ -167,7 +167,7 @@
 }
 
 .banner-container .access-btn {
-    background: #C94B32;
+    background-color: #C94B32;
     border-radius: 5px;
     width: 265px;
     height: 50px;
@@ -182,7 +182,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0 20px;
+    transition: background-color 0.5s linear;
+    transition: box-shadow 0.25s linear;
+}
+
+.banner-container .access-btn:hover {
+    background-color: #EA6447;
+    box-shadow: 3px 5px 20px rgba(27, 43, 65, 0.12), 0px 0px 20px rgba(201, 75, 50, 0.18);
+}
+
+.banner-container .access-btn:focus {
+    background-color: #b12e15;
 }
 
 .banner-container .hero-section {
@@ -269,6 +280,10 @@
     .banner-container .hero-section .whitebox {
         display: none;
     }
+
+    .banner-container .access-btn {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (min-width: 345px) and (max-width : 375px) {
@@ -321,6 +336,10 @@
 
     .banner-container .hero-section .whitebox {
         display: none;
+    }
+
+    .banner-container .access-btn {
+        font-size: 16px;
     }
 }
 
@@ -378,6 +397,10 @@
 
     .banner-container .hero-section .whitebox {
         display: none;
+    }
+
+    .banner-container .access-btn {
+        font-size: 16px;
     }
 }
 
