@@ -7,8 +7,6 @@ import { FaDiscord, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import { useEffect } from 'react';
 
 const Contact = () => {
-
-
     return (
         <section className='contact-container' data-scroll-section style={{ perspective: '1px' }}>
             <img src={logo} alt="logo" />

@@ -13,6 +13,7 @@ import { HiOutlineArrowRight } from 'react-icons/hi'
 import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
+
     return (
         <section className="banner-container">
             <div className="heading-section">

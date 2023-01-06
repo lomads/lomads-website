@@ -185,11 +185,14 @@
     }
 
     .sound-container .sound-header-container .sound-header .right_to_left {
-        /* animation-name: none; */
+        text-transform: uppercase;
+        width: 100%;
     }
 
     .sound-container .sound-header-container .sound-header .left_to_right {
-        /* animation-name: none; */
+        text-transform: uppercase;
+        width: 100%;
+        margin-left: 0;
     }
 
     .sound-container .sound-header-container .sound-header h1 {
@@ -266,10 +269,15 @@
     }
 
     .sound-container .sound-header-container .sound-header .right_to_left {
+        text-transform: uppercase;
+        width: 100%;
         animation-name: none;
     }
 
     .sound-container .sound-header-container .sound-header .left_to_right {
+        text-transform: uppercase;
+        width: 100%;
+        margin-left: 0;
         animation-name: none;
     }
 
@@ -336,21 +344,26 @@
     }
 
     .sound-container .sound-header-container .sound-header .right_to_left {
+        text-transform: uppercase;
+        width: 100%;
         animation-name: none;
     }
 
     .sound-container .sound-header-container .sound-header .left_to_right {
+        text-transform: uppercase;
+        width: 100%;
+        margin-left: 0;
         animation-name: none;
     }
 
     .sound-container .sound-header-container .sound-header h1 {
         font-weight: 700;
-        font-size: 50px;
+        font-size: 40px;
         text-align: center;
     }
 
     .sound-container .sound-header-container .sound-header h1 span {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .sound-container .sound-content {

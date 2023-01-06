@@ -8,87 +8,89 @@ const Sound = () => {
     const isVisible = useOnScreen(ref);
 
     useEffect(() => {
-        setTimeout(() => {
-            window.gsap.to('.right_to_left', {
-                duration: 10, x: 800, ease: "none",
-                scrollTrigger: {
-                    trigger: ".sound-container",
-                    scrub: true,
-                    pin: false,
-                    start: "-=100%",
-                    end: "+=3000"
-                }
-            })
-            window.gsap.to(".left_to_right", {
-                duration: 40, x: -1200, ease: "none",
-                scrollTrigger: {
-                    trigger: ".sound-container",
-                    scrub: true,
-                    pin: false,
-                    start: "-=100%",
-                    end: "+=3000",
-                },
-            });
+        if (window.innerWidth >= 426) {
+            setTimeout(() => {
+                window.gsap.to('.right_to_left', {
+                    duration: 10, x: 800, ease: "none",
+                    scrollTrigger: {
+                        trigger: ".sound-container",
+                        scrub: true,
+                        pin: false,
+                        start: "-=100%",
+                        end: "+=3000"
+                    }
+                })
+                window.gsap.to(".left_to_right", {
+                    duration: 40, x: -1200, ease: "none",
+                    scrollTrigger: {
+                        trigger: ".sound-container",
+                        scrub: true,
+                        pin: false,
+                        start: "-=100%",
+                        end: "+=3000",
+                    },
+                });
 
-            window.gsap.timeline({
-                scrollTrigger: {
-                    trigger: "#sound-container",
-                    start: "top",
-                    end: "bottom",
-                    pin: true,
-                }
-            })
+                window.gsap.timeline({
+                    scrollTrigger: {
+                        trigger: "#sound-container",
+                        start: "top",
+                        end: "bottom",
+                        pin: true,
+                    }
+                })
 
-            window.gsap.to(".sound-footer", {
-                scrollTrigger: {
-                    trigger: "#sound-container",
-                    scrub: true,
-                    pin: false,
-                    start: "top center",
-                    end: "bottom"
-                },
-                duration: 20,
-                x: -300,
-                ease: "none"
-            });
+                window.gsap.to(".sound-footer", {
+                    scrollTrigger: {
+                        trigger: "#sound-container",
+                        scrub: true,
+                        pin: false,
+                        start: "top center",
+                        end: "bottom"
+                    },
+                    duration: 20,
+                    x: -300,
+                    ease: "none"
+                });
 
-            window.gsap.to(".overlay", {
-                opacity: 0.2,
-                scrollTrigger: {
-                    trigger: ".dashboard-container",
-                    start: "-=40%",
-                    toggleActions: "play none none reverse"
-                },
-            });
+                window.gsap.to(".overlay", {
+                    opacity: 0.2,
+                    scrollTrigger: {
+                        trigger: ".dashboard-container",
+                        start: "-=40%",
+                        toggleActions: "play none none reverse"
+                    },
+                });
 
-            window.gsap.to(".left_to_right", {
-                transform: "scale(0.9)",
-                scrollTrigger: {
-                    trigger: ".dashboard-container",
-                    start: "top-=40%",
-                    toggleActions: "play none none reverse"
-                },
-            });
+                window.gsap.to(".left_to_right", {
+                    transform: "scale(0.9)",
+                    scrollTrigger: {
+                        trigger: ".dashboard-container",
+                        start: "top-=40%",
+                        toggleActions: "play none none reverse"
+                    },
+                });
 
-            window.gsap.to(".right_to_left", {
-                transform: "scale(0.9)",
-                scrollTrigger: {
-                    trigger: ".dashboard-container",
-                    start: "top-=40%",
-                    toggleActions: "play none none reverse"
-                },
-            });
+                window.gsap.to(".right_to_left", {
+                    transform: "scale(0.9)",
+                    scrollTrigger: {
+                        trigger: ".dashboard-container",
+                        start: "top-=40%",
+                        toggleActions: "play none none reverse"
+                    },
+                });
 
-            window.gsap.to(".scale-down", {
-                transform: "scale(0.9)",
-                scrollTrigger: {
-                    trigger: ".dashboard-container",
-                    start: "top-=40%",
-                    toggleActions: "play none none reverse"
-                },
-            });
+                window.gsap.to(".scale-down", {
+                    transform: "scale(0.9)",
+                    scrollTrigger: {
+                        trigger: ".dashboard-container",
+                        start: "top-=40%",
+                        toggleActions: "play none none reverse"
+                    },
+                });
 
-        }, 50)
+            }, 50)
+        }
     }, [])
 
     return (

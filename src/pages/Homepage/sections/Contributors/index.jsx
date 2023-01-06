@@ -6,28 +6,30 @@ import { useEffect } from 'react';
 const Contributors = () => {
 
     useEffect(() => {
-        setTimeout(() => {
-            window.ScrollTrigger.create({
-                trigger: '.contributors-container',
-                start: "top top", 
-                pin: true, 
-                pinSpacing: false 
-              });
+        if (window.innerWidth >= 426) {
+            setTimeout(() => {
+                window.ScrollTrigger.create({
+                    trigger: '.contributors-container',
+                    start: "top top",
+                    pin: true,
+                    pinSpacing: false
+                });
 
-              window.gsap.to(".scale", {
-                transform: "scale(0.95)",
-                scrollTrigger: {
-                 trigger: ".contributors-container",
-                  start: "top top",
-                  toggleActions: "play none none reverse"
-                },
-              });
+                window.gsap.to(".scale", {
+                    transform: "scale(0.95)",
+                    scrollTrigger: {
+                        trigger: ".contributors-container",
+                        start: "top top",
+                        toggleActions: "play none none reverse"
+                    },
+                });
 
-        }, 50)
+            }, 50)
+        }
     }, [])
 
     return (
-        <section className='contributors-container' data-scroll-section style={{ perspective: '1px' }}>
+        <section className='contributors-container'>
             <div className="overlay"></div>
             <div className="scale">
                 <h1 className='contributors-title'>{`We <3 `}<span>web3</span></h1>
