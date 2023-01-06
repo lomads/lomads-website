@@ -41,7 +41,8 @@ const Homepage = () => {
                         <Web3 />
                         <Hands />
                         <Fit />
-                        <Contributors />
+                        { window.innerWidth >= 426 &&
+                        <Contributors /> }
                         <Contact />
                     </div>
                 </div>

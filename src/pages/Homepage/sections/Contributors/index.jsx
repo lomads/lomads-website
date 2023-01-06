@@ -1,6 +1,14 @@
 import './Contributors.style.css';
 
-import nishant from '../../../../assets/nishant.png';
+import nishant from '../../../../assets/team/Nishant.jpg';
+import naman from '../../../../assets/team/Naman.jpg';
+import harish from '../../../../assets/team/Harish.jpg';
+import Fred from '../../../../assets/team/Fred.jpg';
+import Tamaghna from '../../../../assets/team/Tamaghna.jpeg';
+import Zohaib from '../../../../assets/team/Zohaib.png';
+import Roshi from '../../../../assets/team/Roshi.jpeg';
+import Joshua from '../../../../assets/team/Joshua.jpg';
+
 import { useEffect } from 'react';
 
 const Contributors = () => {
@@ -47,65 +55,65 @@ const Contributors = () => {
                     </div>
 
                     <div className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '2' }}>
-                        <img src={nishant} alt="nishant" />
+                        <img src={naman} alt="nishant" />
                         <div className='contributor-overlay'></div>
                         <div className='contributor-content'>
-                            <h1>Nishant<br />Bhaskar</h1>
+                            <h1>Naman<br />Negi</h1>
                             <p>Co founder</p>
                         </div>
                     </div>
 
-                    <div className='contributor-card' style={{ transform: 'rotate(-4.26deg)', zIndex: '3' }}>
-                        <img src={nishant} alt="nishant" />
+                    {/* <div className='contributor-card' style={{ transform: 'rotate(-4.26deg)', zIndex: '3' }}>
+                        <img src={harish} alt="nishant"  />
                         <div className='contributor-overlay'></div>
                         <div className='contributor-content'>
-                            <h1>Nishant<br />Bhaskar</h1>
-                            <p>Co founder</p>
+                            <h1>Harish<br />S N</h1>
+                            <p>Full stack dev Sr.</p>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '4' }}>
-                        <img src={nishant} alt="nishant" />
+                        <img src={Fred} alt="nishant" />
                         <div className='contributor-overlay'></div>
                         <div className='contributor-content'>
-                            <h1>Nishant<br />Bhaskar</h1>
-                            <p>Co founder</p>
+                            <h1>Frederic<br />Ranet</h1>
+                            <p>BD & Ops</p>
                         </div>
                     </div>
 
-                    <div className='contributor-card' style={{ transform: 'rotate(13.48deg)', zIndex: '5' }}>
-                        <img src={nishant} alt="nishant" />
+                    {/* <div className='contributor-card' style={{ transform: 'rotate(13.48deg)', zIndex: '5' }}>
+                        <img src={Tamaghna} alt="nishant"  />
                         <div className='contributor-overlay'></div>
                         <div className='contributor-content'>
-                            <h1>Nishant<br />Bhaskar</h1>
-                            <p>Co founder</p>
+                            <h1>Tamaghna<br />Chowdhury</h1>
+                            <p>Product Mngt.</p>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '6' }}>
-                        <img src={nishant} alt="nishant" />
+                        <img src={Zohaib} alt="nishant" style={{ height: '100%' }} />
                         <div className='contributor-overlay'></div>
                         <div className='contributor-content'>
-                            <h1>Nishant<br />Bhaskar</h1>
-                            <p>Co founder</p>
+                            <h1>Zohaib<br />Kibria</h1>
+                            <p>Full stack dev Jr.</p>
                         </div>
                     </div>
 
                     <div className='contributor-card' style={{ transform: 'rotate(-0.71deg)', zIndex: '7' }}>
-                        <img src={nishant} alt="nishant" />
+                        <img src={Roshi} alt="nishant" style={{ height: '100%' }}  />
                         <div className='contributor-overlay'></div>
                         <div className='contributor-content'>
-                            <h1>Nishant<br />Bhaskar</h1>
-                            <p>Co founder</p>
+                            <h1>Roshi<br />Sharma</h1>
+                            <p>Legal</p>
                         </div>
                     </div>
 
                     <div className='contributor-card' style={{ transform: 'rotate(11.81deg)', zIndex: '8' }}>
-                        <img src={nishant} alt="nishant" />
+                        <img src={Joshua} alt="nishant" style={{ height: '100%' }}  />
                         <div className='contributor-overlay'></div>
                         <div className='contributor-content'>
-                            <h1>Nishant<br />Bhaskar</h1>
-                            <p>Co founder</p>
+                            <h1>Joshua<br /></h1>
+                            <p>Marketing</p>
                         </div>
                     </div>
 
