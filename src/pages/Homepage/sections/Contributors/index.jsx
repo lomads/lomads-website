@@ -6,7 +6,7 @@ import harish from '../../../../assets/team/Harish.jpg';
 import Fred from '../../../../assets/team/Fred.jpg';
 import Tamaghna from '../../../../assets/team/Tamaghna.jpeg';
 import Zohaib from '../../../../assets/team/Zohaib.png';
-import Roshi from '../../../../assets/team/Roshi.jpeg';
+import Roshi from '../../../../assets/team/Roshi.jpg';
 import Joshua from '../../../../assets/team/Joshua.jpg';
 
 import { useEffect } from 'react';
@@ -76,7 +76,7 @@ const Contributors = () => {
                         <img src={Fred} alt="nishant" />
                         <div className='contributor-overlay'></div>
                         <div className='contributor-content'>
-                            <h1>Frederic<br />Ranet</h1>
+                            <h1>Frederic<br />Ramet</h1>
                             <p>BD & Ops</p>
                         </div>
                     </div>
