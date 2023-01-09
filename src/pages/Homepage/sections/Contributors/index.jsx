@@ -2,7 +2,7 @@ import './Contributors.style.css';
 
 import nishant from '../../../../assets/team/Nishant.jpg';
 import naman from '../../../../assets/team/Naman.jpg';
-import harish from '../../../../assets/team/Harish.jpg';
+import harish from '../../../../assets/team/Harish.png';
 import Fred from '../../../../assets/team/Fred.jpg';
 import Tamaghna from '../../../../assets/team/Tamaghna.jpeg';
 import Zohaib from '../../../../assets/team/Zohaib.png';
@@ -63,14 +63,14 @@ const Contributors = () => {
                         </div>
                     </div>
 
-                    {/* <div className='contributor-card' style={{ transform: 'rotate(-4.26deg)', zIndex: '3' }}>
+                    <div className='contributor-card' style={{ transform: 'rotate(-4.26deg)', zIndex: '3' }}>
                         <img src={harish} alt="nishant"  />
                         <div className='contributor-overlay'></div>
                         <div className='contributor-content'>
                             <h1>Harish<br />S N</h1>
                             <p>Full stack dev Sr.</p>
                         </div>
-                    </div> */}
+                    </div> 
 
                     <div className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '4' }}>
                         <img src={Fred} alt="nishant" />
