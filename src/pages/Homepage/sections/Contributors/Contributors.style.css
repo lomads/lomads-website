@@ -69,7 +69,10 @@
 }
 
 .contributors-container .contributor-row .contributor-card img {
-    transform: rotate(10.65deg);
+    /* transform: rotate(10.65deg); */
+    width: 151px;
+    height: auto;
+    object-fit: cover;
 }
 
 .contributors-container .contributor-row .contributor-card .contributor-overlay {
@@ -92,10 +95,12 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
+    
     /* or 129% */
 
     /* WHITE */
     color: #FFFFFF;
+    text-shadow: 1px 1px 16px #000000;
 }
 
 .contributors-container .contributor-row .contributor-card .contributor-content p {
@@ -104,6 +109,7 @@
     font-size: 12px;
     line-height: 20px;
     color: #FFFFFF;
+    text-shadow: 1px 1px 8px #000000;
 }
 
 .contributors-container .contributor-row .contributor-card:hover .contributor-overlay {
