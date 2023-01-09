@@ -5,6 +5,7 @@ import logo from '../../../../assets/logo.svg';
 
 import { IoCloseOutline } from 'react-icons/io5'
 import { FiCheck } from 'react-icons/fi'
+import { FaDiscord, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -17,17 +18,17 @@ const EarlyAccessForm = () => {
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
 
-    useEffect(() => {
-        if (success) {
-            let time = setTimeout(() => {
-                navigate(-1);
-            }, 5000);
+    // useEffect(() => {
+    //     if (success) {
+    //         let time = setTimeout(() => {
+    //             navigate(-1);
+    //         }, 5000);
 
-            return () => {
-                clearTimeout(time);
-            }
-        }
-    }, [success]);
+    //         return () => {
+    //             clearTimeout(time);
+    //         }
+    //     }
+    // }, [success]);
 
     const handleEraseForm = () => {
         setCheck("YES");
@@ -79,8 +80,18 @@ const EarlyAccessForm = () => {
                     success
                         ?
                         <div className="msg-container">
-                            <p>Thank you for showing interest. We will get back to you soon!</p>
-                            <span>Redirecting to home in few seconds.</span>
+                            <p style={{ fontSize : 20, color: '#76808D' }}>Thank you for your interest in Lomads. You will hear from us soon.</p>
+                            <div style={{ display: 'flex', flexDirection: 'row', marginTop: 16 }}>
+                                Join us on
+                                <div className='logo-box' style={{ marginLeft: 8 }} onClick={() => { window.open("https://discord.com/invite/szqhfekbTy") }}>
+                                    <FaDiscord size={22} color="#C94B32" />
+                                </div>
+                                <div style={{ height: 20, width: 1, backgroundColor: '#444', margin: '0 16px' }}></div>
+                                    Follow us on
+                                    <div className='logo-box' style={{ marginLeft: 8 }} onClick={() => { window.open("https://twitter.com/lomads_co") }}>
+                                        <FaTwitter size={22} color="#C94B32" />
+                                    </div>
+                            </div>
                         </div>
                         :
                         <>
@@ -102,7 +113,7 @@ const EarlyAccessForm = () => {
                                     <h1>Which web2 and/or web3 tools are you using for your
                                         organisation/community?</h1>
                                     <div className="form-tag">
-                                        <p>Optionnal</p>
+                                        <p>Optional</p>
                                     </div>
                                 </div>
                                 <div className="form-input-row">

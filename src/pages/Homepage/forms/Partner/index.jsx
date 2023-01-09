@@ -5,6 +5,7 @@ import logo from '../../../../assets/logo.svg';
 import { IoCloseOutline } from 'react-icons/io5'
 import { HiOutlinePlus } from 'react-icons/hi'
 import { useNavigate } from "react-router-dom";
+import { FaDiscord, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 
 import { isValidUrl } from '../../../../utils';
 
@@ -24,17 +25,17 @@ const PartnerForm = ({ toggleModal }) => {
     const [title, setTitle] = useState('');
     const [link, setLink] = useState('');
 
-    useEffect(() => {
-        if (success) {
-            let time = setTimeout(() => {
-                navigate(-1);
-            }, 5000);
+    // useEffect(() => {
+    //     if (success) {
+    //         let time = setTimeout(() => {
+    //             navigate(-1);
+    //         }, 5000);
 
-            return () => {
-                clearTimeout(time);
-            }
-        }
-    }, [success]);
+    //         return () => {
+    //             clearTimeout(time);
+    //         }
+    //     }
+    // }, [success]);
 
     const handleAddResource = () => {
         if (title === '') {
@@ -129,8 +130,18 @@ const PartnerForm = ({ toggleModal }) => {
                     success
                         ?
                         <div className="msg-container">
-                            <p>Thank you for showing interest. We will get back to you soon!</p>
-                            <span>Redirecting to home in few seconds.</span>
+                            <p style={{ fontSize : 20, color: '#76808D' }}>Thank you for your interest in Lomads. You will hear from us soon.</p>
+                            <div style={{ display: 'flex', flexDirection: 'row', marginTop: 16 }}>
+                                Join us on
+                                <div className='logo-box' style={{ marginLeft: 8 }} onClick={() => { window.open("https://discord.com/invite/szqhfekbTy") }}>
+                                    <FaDiscord size={22} color="#C94B32" />
+                                </div>
+                                <div style={{ height: 20, width: 1, backgroundColor: '#444', margin: '0 16px' }}></div>
+                                    Follow us on
+                                    <div className='logo-box' style={{ marginLeft: 8 }} onClick={() => { window.open("https://twitter.com/lomads_co") }}>
+                                        <FaTwitter size={22} color="#C94B32" />
+                                    </div>
+                            </div>
                         </div>
                         :
                         <>
@@ -164,7 +175,7 @@ const PartnerForm = ({ toggleModal }) => {
                                 <div className="form-input-row">
                                     <h1>Your organisation’s name</h1>
                                     <div className="form-tag">
-                                        <p>Optionnal</p>
+                                        <p>Optional</p>
                                     </div>
                                 </div>
                                 <div className="form-input-row">
@@ -176,7 +187,7 @@ const PartnerForm = ({ toggleModal }) => {
                                 <div className="form-input-row">
                                     <h1>{`Link(s) related to your organisation`}</h1>
                                     <div className="form-tag">
-                                        <p>Optionnal</p>
+                                        <p>Optional</p>
                                     </div>
                                 </div>
                                 <div className="form-input-row mt-15">
@@ -219,7 +230,7 @@ const PartnerForm = ({ toggleModal }) => {
                                 <div className="form-input-row">
                                     <h1>Long description</h1>
                                     <div className="form-tag">
-                                        <p>Optionnal</p>
+                                        <p>Optional</p>
                                     </div>
                                 </div>
                                 <div className="form-input-row">
