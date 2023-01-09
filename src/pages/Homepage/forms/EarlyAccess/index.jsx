@@ -51,10 +51,11 @@ const EarlyAccessForm = () => {
             formData.Tools = tool;
             formData.Funding = check;
 
-            // axios.post("https://sheet.best/api/sheets/99493ca4-d6d8-4f73-8018-15a2de80014f", formData)
+            // axios.post("https://sheetdb.io/api/v1/nzz0npcvh322j", formData)
             //     .then((data) => { handleEraseForm(); setLoading(false); setSuccess(true); })
             //     .catch((error) => console.error("Error : ", error));
-            axios.post("https://sheetdb.io/api/v1/nzz0npcvh322j", formData)
+
+            axios.post("https://sheetdb.io/api/v1/baw8f8ftnxj6k", formData)
                 .then((data) => { handleEraseForm(); setLoading(false); setSuccess(true); })
                 .catch((error) => console.error("Error : ", error));
         }

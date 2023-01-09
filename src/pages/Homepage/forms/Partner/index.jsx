@@ -101,7 +101,11 @@ const PartnerForm = ({ toggleModal }) => {
             formData.Description = desc;
             formData.Links = resourceList;
 
-            axios.post("https://sheetdb.io/api/v1/lf5q94x0dozl8", formData)
+            // axios.post("https://sheetdb.io/api/v1/lf5q94x0dozl8", formData)
+            //     .then((data) => { handleEraseForm(); setLoading(false); setSuccess(true); })
+            //     .catch((error) => console.error("Error : ", error));
+
+            axios.post("https://sheetdb.io/api/v1/4ewp3vp147hej", formData)
                 .then((data) => { handleEraseForm(); setLoading(false); setSuccess(true); })
                 .catch((error) => console.error("Error : ", error));
         }
