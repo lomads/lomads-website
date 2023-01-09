@@ -8,26 +8,26 @@ const Sound = () => {
     const isVisible = useOnScreen(ref);
 
     useEffect(() => {
-        if (window.innerWidth >= 426) {
+        if (window.innerWidth > 768) {
             setTimeout(() => {
                 window.gsap.to('.right_to_left', {
-                    duration: 10, x: 800, ease: "none",
+                    duration: 30, x: 800, ease: "none",
                     scrollTrigger: {
                         trigger: ".sound-container",
                         scrub: true,
                         pin: false,
                         start: "-=100%",
-                        end: "+=3000"
+                        end: "+=4000"
                     }
                 })
                 window.gsap.to(".left_to_right", {
-                    duration: 40, x: -1200, ease: "none",
+                    duration: 10, x: -1200, ease: "none",
                     scrollTrigger: {
                         trigger: ".sound-container",
                         scrub: true,
                         pin: false,
                         start: "-=100%",
-                        end: "+=3000",
+                        end: "+=4000",
                     },
                 });
 
@@ -45,46 +45,51 @@ const Sound = () => {
                         trigger: "#sound-container",
                         scrub: true,
                         pin: false,
-                        start: "top center",
-                        end: "bottom"
+                        start: "top bottom-=100",
+                        end: "bottom center",
+                        //markers: true
                     },
-                    duration: 20,
-                    x: -300,
+                    duration: 0.1,
+                    x: -2000,
                     ease: "none"
                 });
 
                 window.gsap.to(".overlay", {
                     opacity: 0.2,
+                    duration: 1,
                     scrollTrigger: {
                         trigger: ".dashboard-container",
-                        start: "-=40%",
+                        start: "top bottom",
                         toggleActions: "play none none reverse"
                     },
                 });
 
                 window.gsap.to(".left_to_right", {
                     transform: "scale(0.9)",
+                    duration: 0.3,
                     scrollTrigger: {
                         trigger: ".dashboard-container",
-                        start: "top-=40%",
+                        start: "top bottom",
                         toggleActions: "play none none reverse"
                     },
                 });
 
                 window.gsap.to(".right_to_left", {
                     transform: "scale(0.9)",
+                    duration: 0.3,
                     scrollTrigger: {
                         trigger: ".dashboard-container",
-                        start: "top-=40%",
+                        start: "top bottom",
                         toggleActions: "play none none reverse"
                     },
                 });
 
                 window.gsap.to(".scale-down", {
                     transform: "scale(0.9)",
+                    duration: 0.3,
                     scrollTrigger: {
                         trigger: ".dashboard-container",
-                        start: "top-=40%",
+                        start: "top bottom",
                         toggleActions: "play none none reverse"
                     },
                 });

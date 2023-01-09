@@ -12,7 +12,7 @@ const Power = () => {
 
     return (
         <section className="power-container">
-            <img data-speed="0.9" src={powerimg} data-scroll data-scroll-speed={-1} />
+            <img data-speed={window.innerWidth > 1024 ? "0.9" : "1"}  src={powerimg} data-scroll data-scroll-speed={-1} />
             <h1 className="power-title" data-scroll data-scroll-speed={2}>
                 one <span> power-packed</span><br />
                 Token

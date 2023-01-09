@@ -49,12 +49,12 @@ const Hands = () => {
             <img className='left-img' src={left} alt="left" />
             <img className='right-img' src={right} alt="left"  />
 
-            <h1 data-speed="1.5" className='hands-title'>You <span>use</span><br />You <span>own</span></h1>
-            <div data-speed="1.5" className='hands-p-container'>
+            <h1 data-speed={window.innerWidth > 1024 ? "1.5" : "1"} className='hands-title'>You <span>use</span><br />You <span>own</span></h1>
+            <div data-speed={window.innerWidth > 1024 ? "1.5" : "1"} className='hands-p-container'>
                 <p className='hands-p'>The future of customer-platform relationships is here. Here, everyone matters, everyone contributes, and everyone thrives, together.</p>
             </div>
 
-            <div data-speed="1.5" className='hands-section-row'>
+            <div data-speed={window.innerWidth > 1024 ? "1.5" : "1"} className='hands-section-row'>
                 <div className='hands-section'>
                     <h1>A piece of Lomads</h1>
                     <p>Pay for what you use in USDC or fiat, and in return own a piece of the platform.</p>

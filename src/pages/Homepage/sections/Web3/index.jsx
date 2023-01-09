@@ -12,13 +12,13 @@ const Web3 = () => {
     return (
         <section className='web3-container'>
             <div>
-                <h1 data-speed="0.9">Built using <span>best-in-class</span> components</h1>
+                <h1 data-speed={window.innerWidth > 1024 ? "0.9" : "1"} >Built using <span>best-in-class</span> components</h1>
             </div>
             <img className='ipfs-img' src={ipfs} alt="ipfs" />
             <img className='polygon-img' src={polygon} />
             <img className='safe-img' src={safe} alt="safe" />
-            <p data-speed="0.9">More integrations in the pipeline</p>
-            <button data-speed="0.9" onClick={() => { window.location.href = "/partner" }}>join as a partner <HiOutlineArrowRight size={22} /></button>
+            <p data-speed={window.innerWidth > 1024 ? "0.9" : "1"}>More integrations in the pipeline</p>
+            <button data-speed={window.innerWidth > 1024 ? "0.9" : "1"} onClick={() => { window.location.href = "/partner" }}>join as a partner <HiOutlineArrowRight size={22} /></button>
         </section>
     )
 }
