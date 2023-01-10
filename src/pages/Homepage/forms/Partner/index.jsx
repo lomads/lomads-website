@@ -16,7 +16,7 @@ const PartnerForm = ({ toggleModal }) => {
     const [name, setName] = useState('');
     const [orgName, setOrgName] = useState('');
     const [email, setEmail] = useState('');
-    const [desc, setDesc] = useState('');
+    const [msg, setMsg] = useState('');
 
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
@@ -75,7 +75,7 @@ const PartnerForm = ({ toggleModal }) => {
         setName('');
         setOrgName('');
         setEmail('');
-        setDesc('');
+        setMsg('');
         setResourceList([]);
     }
 
@@ -99,7 +99,7 @@ const PartnerForm = ({ toggleModal }) => {
             formData.Name = name;
             formData.Email = email;
             formData.Organisation = orgName;
-            formData.Description = desc;
+            formData.Message = msg;
             formData.Links = resourceList;
 
             // axios.post("https://sheetdb.io/api/v1/lf5q94x0dozl8", formData)
@@ -130,17 +130,17 @@ const PartnerForm = ({ toggleModal }) => {
                     success
                         ?
                         <div className="msg-container">
-                            <p style={{ fontSize : 20, color: '#76808D' }}>Thank you for your interest in Lomads. You will hear from us soon.</p>
+                            <p style={{ fontSize: 20, color: '#76808D' }}>Thank you for your interest in Lomads. You will hear from us soon.</p>
                             <div style={{ display: 'flex', flexDirection: 'row', marginTop: 16 }}>
                                 Join us on
                                 <div className='logo-box' style={{ marginLeft: 8 }} onClick={() => { window.open("https://discord.com/invite/szqhfekbTy") }}>
                                     <FaDiscord size={22} color="#C94B32" />
                                 </div>
                                 <div style={{ height: 20, width: 1, backgroundColor: '#444', margin: '0 16px' }}></div>
-                                    Follow us on
-                                    <div className='logo-box' style={{ marginLeft: 8 }} onClick={() => { window.open("https://twitter.com/lomads_co") }}>
-                                        <FaTwitter size={22} color="#C94B32" />
-                                    </div>
+                                Follow us on
+                                <div className='logo-box' style={{ marginLeft: 8 }} onClick={() => { window.open("https://twitter.com/lomads_co") }}>
+                                    <FaTwitter size={22} color="#C94B32" />
+                                </div>
                             </div>
                         </div>
                         :
@@ -228,13 +228,13 @@ const PartnerForm = ({ toggleModal }) => {
 
                             <div className="form-input-wrapper">
                                 <div className="form-input-row">
-                                    <h1>Long description</h1>
+                                    <h1>Message</h1>
                                     <div className="form-tag">
                                         <p>Optional</p>
                                     </div>
                                 </div>
                                 <div className="form-input-row">
-                                    <textarea placeholder="Enter description" value={desc} onChange={(e) => setDesc(e.target.value)} />
+                                    <textarea placeholder="Enter message" value={msg} onChange={(e) => setMsg(e.target.value)} />
                                 </div>
                             </div>
 
