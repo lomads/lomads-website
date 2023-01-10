@@ -457,6 +457,13 @@
 }
 
 @media only screen and (max-width: 340px) {
+
+    .msg-container {
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+
     .marker-container {
         display: none;
     }
@@ -517,6 +524,12 @@
 }
 
 @media only screen and (min-width: 345px) and (max-width : 375px) {
+    .msg-container {
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+
     .marker-container {
         display: none;
     }
@@ -576,6 +589,12 @@
 }
 
 @media only screen and (min-width: 376px) and (max-width : 425px) {
+    .msg-container {
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+
     .marker-container {
         display: none;
     }

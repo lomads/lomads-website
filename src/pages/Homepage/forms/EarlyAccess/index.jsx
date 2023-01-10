@@ -5,13 +5,16 @@ import logo from '../../../../assets/logo.svg';
 
 import { IoCloseOutline } from 'react-icons/io5'
 import { FiCheck } from 'react-icons/fi'
+import { HiOutlinePlus } from 'react-icons/hi'
 import { FaDiscord, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+import { isValidUrl } from '../../../../utils';
+
 const EarlyAccessForm = () => {
     const navigate = useNavigate();
-    const [check, setCheck] = useState('YES');
+    const [check, setCheck] = useState('');
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [address, setAddress] = useState('');
@@ -20,12 +23,24 @@ const EarlyAccessForm = () => {
     const [role, setRole] = useState('');
     const [contributorCount, setContributorCount] = useState('');
     const [priorities, setPriorities] = useState('');
-    const [links, setLinks] = useState('');
     const [tool, setTool] = useState('');
     const [how, setHow] = useState('');
 
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
+
+    const [resourceList, setResourceList] = useState([]);
+    const [title, setTitle] = useState('');
+    const [link, setLink] = useState('');
+
+    const [cryptoTransaction, setCryptoTransaction] = useState('');
+    const [projectMilestones, setProjectMilestones] = useState('');
+    const [bounties, setBounties] = useState('');
+    const [contributionTrack, setContributionTrack] = useState('');
+    const [accessControl, setAccessControl] = useState('');
+    const [governance, setGovernance] = useState('');
+    const [tokenLaunch, setTokenLaunch] = useState('');
+
 
     // useEffect(() => {
     //     if (success) {
@@ -50,8 +65,51 @@ const EarlyAccessForm = () => {
         setContributorCount("");
         setTool("");
         setPriorities("");
-        setLinks("");
         setHow("");
+        setResourceList([]);
+        setTitle("");
+        setLink("");
+        setCryptoTransaction("");
+        setProjectMilestones("");
+        setBounties("");
+        setContributionTrack("");
+        setAccessControl("");
+        setGovernance("");
+        setTokenLaunch("");
+    }
+
+    const handleAddResource = () => {
+        if (title === '') {
+            const element = document.getElementById('title-error');
+            element.innerHTML = 'Enter valid title';
+            return;
+        }
+        else if (link === '') {
+            const element = document.getElementById('link-error');
+            element.innerHTML = 'Enter a link';
+            return;
+        }
+        else if (!isValidUrl(link)) {
+            const element = document.getElementById('link-error');
+            element.innerHTML = 'Please enter a valid link';
+            return;
+        }
+        else {
+            let tempLink = link;
+            if (tempLink.indexOf('https://') === -1 && tempLink.indexOf('http://') === -1) {
+                tempLink = 'https://' + tempLink;
+            }
+            let resource = {};
+            resource.title = title;
+            resource.link = tempLink;
+            setResourceList([...resourceList, resource]);
+            setTitle('');
+            setLink('');
+        }
+    }
+
+    const handleRemoveResource = (position) => {
+        setResourceList(resourceList.filter((_, index) => index !== position));
     }
 
     const handleSubmitForm = (e) => {
@@ -59,36 +117,42 @@ const EarlyAccessForm = () => {
         if (name === '') {
             const element = document.getElementById('name-error');
             element.innerHTML = 'Enter name';
+            element.scrollIntoView({ behavior: 'smooth', block: "end", inline: "nearest" });
             setLoading(false);
             return;
         }
         else if (email === '') {
             const element = document.getElementById('email-error');
             element.innerHTML = 'Enter email';
+            element.scrollIntoView({ behavior: 'smooth', block: "end", inline: "nearest" });
             setLoading(false);
             return;
         }
         else if (address === '') {
             const element = document.getElementById('address-error');
             element.innerHTML = 'Enter eth address';
+            element.scrollIntoView({ behavior: 'smooth', block: "end", inline: "nearest" });
             setLoading(false);
             return;
         }
         else if (orgAim === '') {
             const element = document.getElementById('orgAim-error');
             element.innerHTML = 'Enter appropriate answer';
+            element.scrollIntoView({ behavior: 'smooth', block: "end", inline: "nearest" });
             setLoading(false);
             return;
         }
         else if (role === '') {
             const element = document.getElementById('role-error');
             element.innerHTML = 'Enter your role in the organisation';
+            element.scrollIntoView({ behavior: 'smooth', block: "end", inline: "nearest" });
             setLoading(false);
             return;
         }
         else if (contributorCount === '') {
             const element = document.getElementById('count-error');
             element.innerHTML = 'Enter number of active contributors';
+            element.scrollIntoView({ behavior: 'smooth', block: "end", inline: "nearest" });
             setLoading(false);
             return;
         }
@@ -99,6 +163,24 @@ const EarlyAccessForm = () => {
             formData.Name = name;
             formData.Tools = tool;
             formData.Funding = check;
+            formData.Email = email;
+            formData.Eth_address = address;
+            formData.Organisation = orgName;
+            formData.Organisation_function = orgAim;
+            formData.Role = role;
+            formData.Contributors = contributorCount;
+            formData.Crypto_Transaction = cryptoTransaction;
+            formData.Project_Milestones = projectMilestones;
+            formData.Bounties = bounties;
+            formData.Contribution_Track = contributionTrack;
+            formData.Access_control = accessControl;
+            formData.Governance = governance;
+            formData.Token_launch = tokenLaunch;
+            formData.Other_priorities = priorities;
+            formData.Links = resourceList;
+            formData.Contact_reference = how;
+
+            console.log("Formdata : ", formData);
 
             // axios.post("https://sheetdb.io/api/v1/nzz0npcvh322j", formData)
             //     .then((data) => { handleEraseForm(); setLoading(false); setSuccess(true); })
@@ -298,19 +380,29 @@ const EarlyAccessForm = () => {
                                             </div>
 
                                             <div className="scale-div">
-                                                <div className="radio-checked"><div className="inner-circle"></div></div>
+                                                <div className={cryptoTransaction === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(1)}>
+                                                    {cryptoTransaction === 1 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={cryptoTransaction === 2 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(2)}>
+                                                    {cryptoTransaction === 2 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={cryptoTransaction === 3 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(3)}>
+                                                    {cryptoTransaction === 3 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={cryptoTransaction === 4 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(4)}>
+                                                    {cryptoTransaction === 4 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={cryptoTransaction === 5 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(5)}>
+                                                    {cryptoTransaction === 5 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                         </div>
 
@@ -320,19 +412,29 @@ const EarlyAccessForm = () => {
                                             </div>
 
                                             <div className="scale-div">
-                                                <div className="radio-checked"><div className="inner-circle"></div></div>
+                                                <div className={projectMilestones === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setProjectMilestones(1)}>
+                                                    {projectMilestones === 1 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={projectMilestones === 2 ? "radio-checked" : "radio-unchecked"} onClick={() => setProjectMilestones(2)}>
+                                                    {projectMilestones === 2 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={projectMilestones === 3 ? "radio-checked" : "radio-unchecked"} onClick={() => setProjectMilestones(3)}>
+                                                    {projectMilestones === 3 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={projectMilestones === 4 ? "radio-checked" : "radio-unchecked"} onClick={() => setProjectMilestones(4)}>
+                                                    {projectMilestones === 4 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={projectMilestones === 5 ? "radio-checked" : "radio-unchecked"} onClick={() => setProjectMilestones(5)}>
+                                                    {projectMilestones === 5 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                         </div>
 
@@ -342,19 +444,29 @@ const EarlyAccessForm = () => {
                                             </div>
 
                                             <div className="scale-div">
-                                                <div className="radio-checked"><div className="inner-circle"></div></div>
+                                                <div className={bounties === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setBounties(1)}>
+                                                    {bounties === 1 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={bounties === 2 ? "radio-checked" : "radio-unchecked"} onClick={() => setBounties(2)}>
+                                                    {bounties === 2 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={bounties === 3 ? "radio-checked" : "radio-unchecked"} onClick={() => setBounties(3)}>
+                                                    {bounties === 3 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={bounties === 4 ? "radio-checked" : "radio-unchecked"} onClick={() => setBounties(4)}>
+                                                    {bounties === 4 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={bounties === 5 ? "radio-checked" : "radio-unchecked"} onClick={() => setBounties(5)}>
+                                                    {bounties === 5 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                         </div>
 
@@ -364,19 +476,29 @@ const EarlyAccessForm = () => {
                                             </div>
 
                                             <div className="scale-div">
-                                                <div className="radio-checked"><div className="inner-circle"></div></div>
+                                                <div className={contributionTrack === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setContributionTrack(1)}>
+                                                    {contributionTrack === 1 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={contributionTrack === 2 ? "radio-checked" : "radio-unchecked"} onClick={() => setContributionTrack(2)}>
+                                                    {contributionTrack === 2 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={contributionTrack === 3 ? "radio-checked" : "radio-unchecked"} onClick={() => setContributionTrack(3)}>
+                                                    {contributionTrack === 3 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={contributionTrack === 4 ? "radio-checked" : "radio-unchecked"} onClick={() => setContributionTrack(4)}>
+                                                    {contributionTrack === 4 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={contributionTrack === 5 ? "radio-checked" : "radio-unchecked"} onClick={() => setContributionTrack(5)}>
+                                                    {contributionTrack === 5 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                         </div>
 
@@ -386,19 +508,29 @@ const EarlyAccessForm = () => {
                                             </div>
 
                                             <div className="scale-div">
-                                                <div className="radio-checked"><div className="inner-circle"></div></div>
+                                                <div className={accessControl === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setAccessControl(1)}>
+                                                    {accessControl === 1 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={accessControl === 2 ? "radio-checked" : "radio-unchecked"} onClick={() => setAccessControl(2)}>
+                                                    {accessControl === 2 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={accessControl === 3 ? "radio-checked" : "radio-unchecked"} onClick={() => setAccessControl(3)}>
+                                                    {accessControl === 3 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={accessControl === 4 ? "radio-checked" : "radio-unchecked"} onClick={() => setAccessControl(4)}>
+                                                    {accessControl === 4 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={accessControl === 5 ? "radio-checked" : "radio-unchecked"} onClick={() => setAccessControl(5)}>
+                                                    {accessControl === 5 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                         </div>
 
@@ -408,19 +540,29 @@ const EarlyAccessForm = () => {
                                             </div>
 
                                             <div className="scale-div">
-                                                <div className="radio-checked"><div className="inner-circle"></div></div>
+                                                <div className={governance === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setGovernance(1)}>
+                                                    {governance === 1 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={governance === 2 ? "radio-checked" : "radio-unchecked"} onClick={() => setGovernance(2)}>
+                                                    {governance === 2 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={governance === 3 ? "radio-checked" : "radio-unchecked"} onClick={() => setGovernance(3)}>
+                                                    {governance === 3 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={governance === 4 ? "radio-checked" : "radio-unchecked"} onClick={() => setGovernance(4)}>
+                                                    {governance === 4 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={governance === 5 ? "radio-checked" : "radio-unchecked"} onClick={() => setGovernance(5)}>
+                                                    {governance === 5 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                         </div>
 
@@ -430,19 +572,29 @@ const EarlyAccessForm = () => {
                                             </div>
 
                                             <div className="scale-div">
-                                                <div className="radio-checked"><div className="inner-circle"></div></div>
+                                                <div className={tokenLaunch === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setTokenLaunch(1)}>
+                                                    {tokenLaunch === 1 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={tokenLaunch === 2 ? "radio-checked" : "radio-unchecked"} onClick={() => setTokenLaunch(2)}>
+                                                    {tokenLaunch === 2 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={tokenLaunch === 3 ? "radio-checked" : "radio-unchecked"} onClick={() => setTokenLaunch(3)}>
+                                                    {tokenLaunch === 3 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={tokenLaunch === 4 ? "radio-checked" : "radio-unchecked"} onClick={() => setTokenLaunch(4)}>
+                                                    {tokenLaunch === 4 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                             <div className="scale-div">
-                                                <div className="radio-unchecked"></div>
+                                                <div className={tokenLaunch === 5 ? "radio-checked" : "radio-unchecked"} onClick={() => setTokenLaunch(5)}>
+                                                    {tokenLaunch === 5 && <div className="inner-circle"></div>}
+                                                </div>
                                             </div>
                                         </div>
 
@@ -452,7 +604,7 @@ const EarlyAccessForm = () => {
 
                             <div className="form-input-wrapper">
                                 <div className="form-input-row">
-                                    <h1>Please mention any other priorities of your organisation that were covered above.</h1>
+                                    <h1>Please mention any other priorities of your organisation that were not covered above.</h1>
                                     <div className="form-tag">
                                         <p>Optional</p>
                                     </div>
@@ -464,14 +616,45 @@ const EarlyAccessForm = () => {
 
                             <div className="form-input-wrapper">
                                 <div className="form-input-row">
-                                    <h1>Link(s) related to your organisation (eg. Twitter, Discord, Website)</h1>
+                                    <h1>{`Link(s) related to your organisation`}</h1>
                                     <div className="form-tag">
                                         <p>Optional</p>
                                     </div>
                                 </div>
-                                <div className="form-input-row">
-                                    <input type="text" placeholder="Answer" value={links} onChange={(e) => setLinks(e.target.value)} />
+                                <div className="form-input-row mt-15">
+                                    <div className="box-input-div md">
+                                        <input className="box-input" placeholder="Title" value={title} onChange={(e) => { setTitle(e.target.value); document.getElementById('title-error').innerHTML = '' }} />
+                                        <span className="error-msg" id="title-error"></span>
+                                    </div>
+                                    <div className="box-input-div lg">
+                                        <input className="box-input" placeholder="Link" value={link} onChange={(e) => { setLink(e.target.value); document.getElementById('link-error').innerHTML = '' }} />
+                                        <span className="error-msg" id="link-error"></span>
+                                    </div>
+                                    <div className="box-input-div">
+                                        <button className="form-add-btn" style={link !== '' && title !== '' ? { background: '#C84A32' } : null} onClick={handleAddResource}><HiOutlinePlus size={24} color="#FFF" /></button>
+                                    </div>
                                 </div>
+
+                                {
+                                    resourceList.length > 0 &&
+                                    <div className="resource-list">
+                                        {
+                                            resourceList.map((item, index) => {
+                                                return (
+                                                    <div className="list-row" key={index}>
+                                                        <div className="list-title">
+                                                            <span>{item.title}</span>
+                                                        </div>
+                                                        <div className="list-link">
+                                                            <span>{item.link}</span>
+                                                        </div>
+                                                        <button onClick={() => handleRemoveResource(index)}>X</button>
+                                                    </div>
+                                                )
+                                            })
+                                        }
+                                    </div>
+                                }
                             </div>
 
                             <div className="form-input-wrapper">
