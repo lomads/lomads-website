@@ -31,12 +31,11 @@
 
 .dashboard-container .dashboard-body {
     width: 100%;
-    height: 90vh;
+    height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    /* background-color: yellow; */
 }
 
 .dashboard-container .dashboard-body .imgSm {
@@ -100,10 +99,9 @@
 
 .dashboard-container .dashboard-text-container {
     width: 100%;
-    height: 60vh;
+    height: 500px;
     display: flex;
     position: relative;
-    margin-top: 5vh;
 }
 
 .dashboard-container .dashboard-text-container .dashboard-text {
@@ -216,6 +214,7 @@
 
     .dashboard-container .dashboard-text-container {
         width: 100%;
+        height: 430px;
         flex-direction: column;
         margin: 0;
     }
@@ -316,6 +315,7 @@
         width: 100%;
         flex-direction: column;
         margin: 0;
+        height: 400px;
     }
 
     .dashboard-container .dashboard-text-container .dashboard-text {
@@ -413,6 +413,7 @@
         width: 100%;
         flex-direction: column;
         margin: 0;
+        height: 400px;
     }
 
     .dashboard-container .dashboard-text-container .dashboard-text {
