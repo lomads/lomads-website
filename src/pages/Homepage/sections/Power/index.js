@@ -19,20 +19,20 @@ const Power = () => {
             </h1>
 
             <div className="power-content-container">
-                <p className="power-content" data-scroll data-scroll-speed={1}>You will be assigned a pass token for each organization you work for.<br />This unique token has three key features.</p>
+                <p className="power-content" data-scroll data-scroll-speed={1}>You can now launch Soulbound Token for the members of your organization. <br/>The unique Soulbound Token for each member performs three key roles:</p>
             </div>
             <div className="power-section-container">
                 <div className="power-section" data-scroll data-scroll-speed={1}>
                     <h1>It personalizes</h1>
-                    <p>the information you see on the dashboard based on your unique needs.</p>
+                    <p>the information they see on the dashboard based on their unique needs.</p>
                 </div>
                 <div className="power-section" data-scroll data-scroll-speed={1}>
                     <h1>It automates</h1>
-                    <p>your access within the platform and across various third-party tools.</p>
+                    <p>your members’ access within the platform and across various third-party tools.</p>
                 </div>
                 <div className="power-section" data-scroll data-scroll-speed={1}>
                     <h1>It records</h1>
-                    <p>your contribution while giving you the ownership of your data.</p>
+                    <p>the contributions of members while giving them ownership of their data.</p>
                 </div>
             </div>
         </section>

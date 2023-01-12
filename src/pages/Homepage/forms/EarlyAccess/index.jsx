@@ -378,32 +378,24 @@ const EarlyAccessForm = () => {
                                             <div className="scale-div">
                                                 <p>Send and receive funds (crypto)</p>
                                             </div>
-
-                                            <div className="scale-div">
-                                                <div className={cryptoTransaction === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(1)}>
-                                                    {cryptoTransaction === 1 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={cryptoTransaction === 2 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(2)}>
-                                                    {cryptoTransaction === 2 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={cryptoTransaction === 3 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(3)}>
-                                                    {cryptoTransaction === 3 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={cryptoTransaction === 4 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(4)}>
-                                                    {cryptoTransaction === 4 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={cryptoTransaction === 5 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(5)}>
-                                                    {cryptoTransaction === 5 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
+                                            {
+                                                [1,2,3,4,5].map(index => {
+                                                    return (
+                                                        <div className="scale-div">
+                                                            {/* <div className={cryptoTransaction === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(1)}>
+                                                                {cryptoTransaction === 1 && <div className="inner-circle"></div>}
+                                                            </div> */}
+                                                            <div className="form-checkbox-row" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                                                <div className="form-checkbox" style={{ marginRight: 0 }} onClick={() => setCryptoTransaction(index)}>
+                                                                    {
+                                                                        cryptoTransaction === index ? <div className="checked"><FiCheck color="#FFF" /></div> : <div className="unchecked"></div>
+                                                                    }
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                })
+                                            }
                                         </div>
 
                                         <div className="scale-row">
@@ -411,31 +403,24 @@ const EarlyAccessForm = () => {
                                                 <p>Divide work as projects with milestones</p>
                                             </div>
 
-                                            <div className="scale-div">
-                                                <div className={projectMilestones === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setProjectMilestones(1)}>
-                                                    {projectMilestones === 1 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={projectMilestones === 2 ? "radio-checked" : "radio-unchecked"} onClick={() => setProjectMilestones(2)}>
-                                                    {projectMilestones === 2 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={projectMilestones === 3 ? "radio-checked" : "radio-unchecked"} onClick={() => setProjectMilestones(3)}>
-                                                    {projectMilestones === 3 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={projectMilestones === 4 ? "radio-checked" : "radio-unchecked"} onClick={() => setProjectMilestones(4)}>
-                                                    {projectMilestones === 4 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={projectMilestones === 5 ? "radio-checked" : "radio-unchecked"} onClick={() => setProjectMilestones(5)}>
-                                                    {projectMilestones === 5 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
+                                            {
+                                                [1,2,3,4,5].map(index => {
+                                                    return (
+                                                        <div className="scale-div">
+                                                            {/* <div className={cryptoTransaction === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(1)}>
+                                                                {cryptoTransaction === 1 && <div className="inner-circle"></div>}
+                                                            </div> */}
+                                                            <div className="form-checkbox-row" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                                                <div className="form-checkbox" style={{ marginRight: 0 }} onClick={() => setProjectMilestones(index)}>
+                                                                    {
+                                                                        projectMilestones === index ? <div className="checked"><FiCheck color="#FFF" /></div> : <div className="unchecked"></div>
+                                                                    }
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                })
+                                            }
                                         </div>
 
                                         <div className="scale-row">
@@ -443,31 +428,24 @@ const EarlyAccessForm = () => {
                                                 <p>Divide work as tasks and bounties</p>
                                             </div>
 
-                                            <div className="scale-div">
-                                                <div className={bounties === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setBounties(1)}>
-                                                    {bounties === 1 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={bounties === 2 ? "radio-checked" : "radio-unchecked"} onClick={() => setBounties(2)}>
-                                                    {bounties === 2 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={bounties === 3 ? "radio-checked" : "radio-unchecked"} onClick={() => setBounties(3)}>
-                                                    {bounties === 3 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={bounties === 4 ? "radio-checked" : "radio-unchecked"} onClick={() => setBounties(4)}>
-                                                    {bounties === 4 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={bounties === 5 ? "radio-checked" : "radio-unchecked"} onClick={() => setBounties(5)}>
-                                                    {bounties === 5 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
+                                            {
+                                                [1,2,3,4,5].map(index => {
+                                                    return (
+                                                        <div className="scale-div">
+                                                            {/* <div className={cryptoTransaction === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(1)}>
+                                                                {cryptoTransaction === 1 && <div className="inner-circle"></div>}
+                                                            </div> */}
+                                                            <div className="form-checkbox-row" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                                                <div className="form-checkbox" style={{ marginRight: 0 }} onClick={() => setBounties(index)}>
+                                                                    {
+                                                                        bounties === index ? <div className="checked"><FiCheck color="#FFF" /></div> : <div className="unchecked"></div>
+                                                                    }
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                })
+                                            }
                                         </div>
 
                                         <div className="scale-row">
@@ -475,31 +453,24 @@ const EarlyAccessForm = () => {
                                                 <p>Keep track of contribution of members</p>
                                             </div>
 
-                                            <div className="scale-div">
-                                                <div className={contributionTrack === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setContributionTrack(1)}>
-                                                    {contributionTrack === 1 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={contributionTrack === 2 ? "radio-checked" : "radio-unchecked"} onClick={() => setContributionTrack(2)}>
-                                                    {contributionTrack === 2 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={contributionTrack === 3 ? "radio-checked" : "radio-unchecked"} onClick={() => setContributionTrack(3)}>
-                                                    {contributionTrack === 3 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={contributionTrack === 4 ? "radio-checked" : "radio-unchecked"} onClick={() => setContributionTrack(4)}>
-                                                    {contributionTrack === 4 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={contributionTrack === 5 ? "radio-checked" : "radio-unchecked"} onClick={() => setContributionTrack(5)}>
-                                                    {contributionTrack === 5 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
+                                            {
+                                                [1,2,3,4,5].map(index => {
+                                                    return (
+                                                        <div className="scale-div">
+                                                            {/* <div className={cryptoTransaction === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(1)}>
+                                                                {cryptoTransaction === 1 && <div className="inner-circle"></div>}
+                                                            </div> */}
+                                                            <div className="form-checkbox-row" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                                                <div className="form-checkbox" style={{ marginRight: 0 }} onClick={() => setContributionTrack(index)}>
+                                                                    {
+                                                                        contributionTrack === index ? <div className="checked"><FiCheck color="#FFF" /></div> : <div className="unchecked"></div>
+                                                                    }
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                })
+                                            }
                                         </div>
 
                                         <div className="scale-row">
@@ -507,31 +478,24 @@ const EarlyAccessForm = () => {
                                                 <p>Manage access across various tools (eg. Google, Notion, Snapshot))</p>
                                             </div>
 
-                                            <div className="scale-div">
-                                                <div className={accessControl === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setAccessControl(1)}>
-                                                    {accessControl === 1 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={accessControl === 2 ? "radio-checked" : "radio-unchecked"} onClick={() => setAccessControl(2)}>
-                                                    {accessControl === 2 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={accessControl === 3 ? "radio-checked" : "radio-unchecked"} onClick={() => setAccessControl(3)}>
-                                                    {accessControl === 3 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={accessControl === 4 ? "radio-checked" : "radio-unchecked"} onClick={() => setAccessControl(4)}>
-                                                    {accessControl === 4 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={accessControl === 5 ? "radio-checked" : "radio-unchecked"} onClick={() => setAccessControl(5)}>
-                                                    {accessControl === 5 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
+                                            {
+                                                [1,2,3,4,5].map(index => {
+                                                    return (
+                                                        <div className="scale-div">
+                                                            {/* <div className={cryptoTransaction === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(1)}>
+                                                                {cryptoTransaction === 1 && <div className="inner-circle"></div>}
+                                                            </div> */}
+                                                            <div className="form-checkbox-row" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                                                <div className="form-checkbox" style={{ marginRight: 0 }} onClick={() => setAccessControl(index)}>
+                                                                    {
+                                                                        accessControl === index ? <div className="checked"><FiCheck color="#FFF" /></div> : <div className="unchecked"></div>
+                                                                    }
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                })
+                                            }
                                         </div>
 
                                         <div className="scale-row">
@@ -539,31 +503,24 @@ const EarlyAccessForm = () => {
                                                 <p>Managing proposals and voting</p>
                                             </div>
 
-                                            <div className="scale-div">
-                                                <div className={governance === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setGovernance(1)}>
-                                                    {governance === 1 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={governance === 2 ? "radio-checked" : "radio-unchecked"} onClick={() => setGovernance(2)}>
-                                                    {governance === 2 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={governance === 3 ? "radio-checked" : "radio-unchecked"} onClick={() => setGovernance(3)}>
-                                                    {governance === 3 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={governance === 4 ? "radio-checked" : "radio-unchecked"} onClick={() => setGovernance(4)}>
-                                                    {governance === 4 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={governance === 5 ? "radio-checked" : "radio-unchecked"} onClick={() => setGovernance(5)}>
-                                                    {governance === 5 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
+                                            {
+                                                [1,2,3,4,5].map(index => {
+                                                    return (
+                                                        <div className="scale-div">
+                                                            {/* <div className={cryptoTransaction === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(1)}>
+                                                                {cryptoTransaction === 1 && <div className="inner-circle"></div>}
+                                                            </div> */}
+                                                            <div className="form-checkbox-row" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                                                <div className="form-checkbox" style={{ marginRight: 0 }} onClick={() => setGovernance(index)}>
+                                                                    {
+                                                                        governance === index ? <div className="checked"><FiCheck color="#FFF" /></div> : <div className="unchecked"></div>
+                                                                    }
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                })
+                                            }
                                         </div>
 
                                         <div className="scale-row">
@@ -571,31 +528,24 @@ const EarlyAccessForm = () => {
                                                 <p>Launching token (incl. NFT) for your organisation</p>
                                             </div>
 
-                                            <div className="scale-div">
-                                                <div className={tokenLaunch === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setTokenLaunch(1)}>
-                                                    {tokenLaunch === 1 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={tokenLaunch === 2 ? "radio-checked" : "radio-unchecked"} onClick={() => setTokenLaunch(2)}>
-                                                    {tokenLaunch === 2 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={tokenLaunch === 3 ? "radio-checked" : "radio-unchecked"} onClick={() => setTokenLaunch(3)}>
-                                                    {tokenLaunch === 3 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={tokenLaunch === 4 ? "radio-checked" : "radio-unchecked"} onClick={() => setTokenLaunch(4)}>
-                                                    {tokenLaunch === 4 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
-                                            <div className="scale-div">
-                                                <div className={tokenLaunch === 5 ? "radio-checked" : "radio-unchecked"} onClick={() => setTokenLaunch(5)}>
-                                                    {tokenLaunch === 5 && <div className="inner-circle"></div>}
-                                                </div>
-                                            </div>
+                                            {
+                                                [1,2,3,4,5].map(index => {
+                                                    return (
+                                                        <div className="scale-div">
+                                                            {/* <div className={cryptoTransaction === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(1)}>
+                                                                {cryptoTransaction === 1 && <div className="inner-circle"></div>}
+                                                            </div> */}
+                                                            <div className="form-checkbox-row" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                                                <div className="form-checkbox" style={{ marginRight: 0 }} onClick={() => setTokenLaunch(index)}>
+                                                                    {
+                                                                        tokenLaunch === index ? <div className="checked"><FiCheck color="#FFF" /></div> : <div className="unchecked"></div>
+                                                                    }
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                })
+                                            }
                                         </div>
 
                                     </div>
