@@ -8,6 +8,7 @@ import tasks from '../../../../assets/Tasks.svg';
 import payment from '../../../../assets/recurring_payment.svg';
 import milestones from '../../../../assets/milestones.svg';
 import notify from '../../../../assets/NOTIF.svg';
+import notify2 from '../../../../assets/NOTIF2.svg';
 import project from '../../../../assets/project_card.svg';
 
 const Dashboard = () => {
@@ -29,7 +30,7 @@ const Dashboard = () => {
                 <img className="img3" src={payment} alt="" />
                 <img className="img4" src={milestones} alt="" />
                 <img className="img5" src={notify} alt="" />
-                <img className="img6" src={notify} alt="" />
+                <img className="img6" src={notify2} alt="" />
                 <img className="img7" src={project} alt="" />
                 {/* <img className="imgMilestone" src={milestonesm} alt="" /> */}
             </div>

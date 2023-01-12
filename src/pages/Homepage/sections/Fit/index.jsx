@@ -14,9 +14,9 @@ const Fit = () => {
                     trigger: ".fit-container",
                     scrub: 1,
                     pin: false,
-                    start: "top+=15%",
+                    start: "top+=50",
                     // markers: true,
-                    end: "top+=30%"
+                    end: "top+=150"
                 }
             })
         })
