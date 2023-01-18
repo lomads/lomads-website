@@ -64,9 +64,9 @@
 
 .contributors-container .contributor-row .contributor-card {
     height: 220px;
-    min-width: 130px !important;
-    width: 130px !important;
-    border-radius: 20px;
+    min-width: 131px !important;
+    width: 131px !important;
+    border-radius: 20px !important;
     position: relative;
     display: flex;
     align-items: center;
@@ -78,14 +78,14 @@
 
 .contributors-container .contributor-row .contributor-card img {
     /* transform: rotate(10.65deg); */
-    width: 151px;
-    height: auto;
+    width: 131px !important;
+    height: 100%;
     object-fit: cover;
 }
 
 .contributors-container .contributor-row .contributor-card .contributor-overlay {
     height: 100%;
-    width: 100%;
+    width: 131px !important;
     position: absolute;
     top: 0;
     left: 0;
