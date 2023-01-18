@@ -55,7 +55,7 @@ const EarlyAccessForm = () => {
     // }, [success]);
 
     const handleEraseForm = () => {
-        setCheck("YES");
+        setCheck("");
         setName("");
         setEmail("");
         setAddress("");
@@ -379,7 +379,7 @@ const EarlyAccessForm = () => {
                                                 <p>Send and receive funds (crypto)</p>
                                             </div>
                                             {
-                                                [1,2,3,4,5].map(index => {
+                                                [1, 2, 3, 4, 5].map(index => {
                                                     return (
                                                         <div className="scale-div">
                                                             {/* <div className={cryptoTransaction === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(1)}>
@@ -404,7 +404,7 @@ const EarlyAccessForm = () => {
                                             </div>
 
                                             {
-                                                [1,2,3,4,5].map(index => {
+                                                [1, 2, 3, 4, 5].map(index => {
                                                     return (
                                                         <div className="scale-div">
                                                             {/* <div className={cryptoTransaction === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(1)}>
@@ -429,7 +429,7 @@ const EarlyAccessForm = () => {
                                             </div>
 
                                             {
-                                                [1,2,3,4,5].map(index => {
+                                                [1, 2, 3, 4, 5].map(index => {
                                                     return (
                                                         <div className="scale-div">
                                                             {/* <div className={cryptoTransaction === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(1)}>
@@ -454,7 +454,7 @@ const EarlyAccessForm = () => {
                                             </div>
 
                                             {
-                                                [1,2,3,4,5].map(index => {
+                                                [1, 2, 3, 4, 5].map(index => {
                                                     return (
                                                         <div className="scale-div">
                                                             {/* <div className={cryptoTransaction === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(1)}>
@@ -479,7 +479,7 @@ const EarlyAccessForm = () => {
                                             </div>
 
                                             {
-                                                [1,2,3,4,5].map(index => {
+                                                [1, 2, 3, 4, 5].map(index => {
                                                     return (
                                                         <div className="scale-div">
                                                             {/* <div className={cryptoTransaction === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(1)}>
@@ -504,7 +504,7 @@ const EarlyAccessForm = () => {
                                             </div>
 
                                             {
-                                                [1,2,3,4,5].map(index => {
+                                                [1, 2, 3, 4, 5].map(index => {
                                                     return (
                                                         <div className="scale-div">
                                                             {/* <div className={cryptoTransaction === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(1)}>
@@ -529,7 +529,7 @@ const EarlyAccessForm = () => {
                                             </div>
 
                                             {
-                                                [1,2,3,4,5].map(index => {
+                                                [1, 2, 3, 4, 5].map(index => {
                                                     return (
                                                         <div className="scale-div">
                                                             {/* <div className={cryptoTransaction === 1 ? "radio-checked" : "radio-unchecked"} onClick={() => setCryptoTransaction(1)}>

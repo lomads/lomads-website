@@ -63,24 +63,24 @@ const Contributors = () => {
 
     function LeftArrow() {
         const { isFirstItemVisible, scrollPrev } =
-          React.useContext(VisibilityContext);
-      
+            React.useContext(VisibilityContext);
+
         return (
-          <div style={{  cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }} disabled={isFirstItemVisible} onClick={() => scrollPrev()}>
-            <img style={{ height: 80, width: 40 }} src={ChevronLeft} alt="" />
-          </div>
+            <div style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }} disabled={isFirstItemVisible} onClick={() => scrollPrev()}>
+                <img style={{ height: 80, width: 40 }} src={ChevronLeft} alt="" />
+            </div>
         );
-      }
-      
-      function RightArrow() {
+    }
+
+    function RightArrow() {
         const { isLastItemVisible, scrollNext } = React.useContext(VisibilityContext);
-      
+
         return (
-          <div style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }} disabled={isLastItemVisible} onClick={() => scrollNext()}>
-            <img style={{ height: 80, width: 40 }} src={ChevronRight} alt="" />
-          </div>
+            <div style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }} disabled={isLastItemVisible} onClick={() => scrollNext()}>
+                <img style={{ height: 80, width: 40 }} src={ChevronRight} alt="" />
+            </div>
         );
-      }
+    }
 
     return (
         <section className='contributors-container'>
@@ -89,118 +89,118 @@ const Contributors = () => {
                 <div className="scale">
                     <h1 className='contributors-title'>{`We <3 `}<span>web3</span></h1>
                     <p className='contributors-p'>Meet our core contributors and backers.</p>
-                        <ScrollMenu scrollContainerClassName="contributor-row-scroll" wrapperClassName="contributor-row" LeftArrow={LeftArrow} RightArrow={RightArrow}>
-                            <div key={"Nishant"} onClick={() => { window.open("https://twitter.com/nbhaskar888") }} className='contributor-card' style={{ transform: 'rotate(-10.65deg) !important', zIndex: '1' }}>
-                                <img src={nishant} alt="nishant" />
-                                <div className='contributor-overlay'></div>
-                                <div className='contributor-content'>
-                                    <FaTwitter size={20} color="#FFF" />
-                                    <h1>Nishant<br />Bhaskar</h1>
-                                    <p>Co founder</p>
-                                </div>
+                    <ScrollMenu scrollContainerClassName="contributor-row-scroll" wrapperClassName="contributor-row" LeftArrow={LeftArrow} RightArrow={RightArrow}>
+                        <div key={"Nishant"} onClick={() => { window.open("https://twitter.com/nbhaskar888") }} className='contributor-card' style={{ transform: 'rotate(-10.65deg) !important', zIndex: '1' }}>
+                            <img src={nishant} alt="nishant" />
+                            <div className='contributor-overlay'></div>
+                            <div className='contributor-content'>
+                                <FaTwitter size={20} color="#FFF" />
+                                <h1>Nishant</h1>
+                                <p>Co founder</p>
                             </div>
+                        </div>
 
-                            <div onClick={() => { window.open("https://www.linkedin.com/in/namansnegi/") }} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '2' }}>
-                                <img src={naman} alt="nishant" />
-                                <div className='contributor-overlay'></div>
-                                <div className='contributor-content'>
-                                    <FaLinkedin  size={20} color="#FFF" />
-                                    <h1>Naman<br />Negi</h1>
-                                    <p>Co founder</p>
-                                </div>
+                        <div onClick={() => { window.open("https://www.linkedin.com/in/namansnegi/") }} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '2' }}>
+                            <img src={naman} alt="nishant" />
+                            <div className='contributor-overlay'></div>
+                            <div className='contributor-content'>
+                                <FaLinkedin size={20} color="#FFF" />
+                                <h1>Naman</h1>
+                                <p>Co founder</p>
                             </div>
+                        </div>
 
-                            <div onClick={() => { window.open("https://twitter.com/FredericRamet") }} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '4' }} >
-                                <img src={Fred} alt="nishant" />
-                                <div className='contributor-overlay'></div>
-                                <div className='contributor-content'>
-                                    <FaTwitter size={20} color="#FFF" />
-                                    <h1>Frederic<br />Ramet</h1>
-                                    <p>BD & Ops</p>
-                                </div>
+                        <div onClick={() => { window.open("https://twitter.com/FredericRamet") }} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '4' }} >
+                            <img src={Fred} alt="nishant" />
+                            <div className='contributor-overlay'></div>
+                            <div className='contributor-content'>
+                                <FaTwitter size={20} color="#FFF" />
+                                <h1>Frederic</h1>
+                                <p>BD & Ops</p>
                             </div>
+                        </div>
 
 
-                            <div onClick={() => { window.open("https://www.linkedin.com/in/zélie-dethorey-8ab09669/") }} className='contributor-card' style={{ transform: 'rotate(13.48deg)', zIndex: '5' }}>
-                                <img src={Zelie} alt="nishant" />
-                                <div className='contributor-overlay'></div>
-                                <div className='contributor-content'>
-                                    <FaLinkedin size={20} color="#FFF" />
-                                    <h1>Zelie<br />Dethorey</h1>
-                                    <p>Full stack designer</p>
-                                </div>
+                        <div onClick={() => { window.open("https://www.linkedin.com/in/zélie-dethorey-8ab09669/") }} className='contributor-card' style={{ transform: 'rotate(13.48deg)', zIndex: '5' }}>
+                            <img src={Zelie} alt="nishant" />
+                            <div className='contributor-overlay'></div>
+                            <div className='contributor-content'>
+                                <FaLinkedin size={20} color="#FFF" />
+                                <h1>Zelie</h1>
+                                <p>Full stack designer</p>
                             </div>
+                        </div>
 
-                            <div onClick={() => { window.open("https://www.linkedin.com/in/rish6ix/") }} className='contributor-card' style={{ transform: 'rotate(-4.26deg)', zIndex: '3' }}>
-                                <img src={harish} alt="nishant" />
-                                <div className='contributor-overlay'></div>
-                                <div className='contributor-content'>
-                                    <FaLinkedin size={20} color="#FFF" />
-                                    <h1>Harish<br />S N</h1>
-                                    <p>Full stack dev Sr.</p>
-                                </div>
+                        <div onClick={() => { window.open("https://www.linkedin.com/in/rish6ix/") }} className='contributor-card' style={{ transform: 'rotate(-4.26deg)', zIndex: '3' }}>
+                            <img src={harish} alt="nishant" />
+                            <div className='contributor-overlay'></div>
+                            <div className='contributor-content'>
+                                <FaLinkedin size={20} color="#FFF" />
+                                <h1>Harish</h1>
+                                <p>Full stack dev Sr.</p>
                             </div>
+                        </div>
 
-                            <div onClick={() => { window.open("https://www.linkedin.com/in/zohaib-kibria-221890137/") }} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '6' }}>
-                                <img src={Zohaib} alt="nishant" style={{ height: '100%' }} />
-                                <div className='contributor-overlay'></div>
-                                <div className='contributor-content'>
-                                    <FaLinkedin size={20} color="#FFF" />
-                                    <h1>Zohaib<br />Kibria</h1>
-                                    <p>Full stack dev.</p>
-                                </div>
+                        <div onClick={() => { window.open("https://www.linkedin.com/in/zohaib-kibria-221890137/") }} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '6' }}>
+                            <img src={Zohaib} alt="nishant" style={{ height: '100%' }} />
+                            <div className='contributor-overlay'></div>
+                            <div className='contributor-content'>
+                                <FaLinkedin size={20} color="#FFF" />
+                                <h1>Zohaib</h1>
+                                <p>Full stack dev.</p>
                             </div>
+                        </div>
 
-                            <div onClick={() => { window.open("https://www.linkedin.com/in/roshi-sharma-lawbeam/") }} className='contributor-card' style={{ transform: 'rotate(-0.71deg)', zIndex: '7' }}>
-                                <img src={Roshi} alt="nishant" style={{ height: '100%' }} />
-                                <div className='contributor-overlay'></div>
-                                <div className='contributor-content'>
-                                    <FaLinkedin size={20} color="#FFF" />
-                                    <h1>Roshi<br />Sharma</h1>
-                                    <p>Legal</p>
-                                </div>
+                        <div onClick={() => { window.open("https://www.linkedin.com/in/roshi-sharma-lawbeam/") }} className='contributor-card' style={{ transform: 'rotate(-0.71deg)', zIndex: '7' }}>
+                            <img src={Roshi} alt="nishant" style={{ height: '100%' }} />
+                            <div className='contributor-overlay'></div>
+                            <div className='contributor-content'>
+                                <FaLinkedin size={20} color="#FFF" />
+                                <h1>Roshi</h1>
+                                <p>Legal</p>
                             </div>
+                        </div>
 
-                            <div onClick={() => { window.open("https://twitter.com/iam_tamaghna") }} className='contributor-card' style={{ transform: 'rotate(13.48deg)', zIndex: '5' }}>
-                                <img src={Tamaghna} alt="nishant" />
-                                <div className='contributor-overlay'></div>
-                                <div className='contributor-content'>
-                                    <FaTwitter size={20} color="#FFF" />
-                                    <h1>Tamaghna<br />Chowdhury</h1>
-                                    <p>Product Mngt.</p>
-                                </div>
+                        <div onClick={() => { window.open("https://twitter.com/iam_tamaghna") }} className='contributor-card' style={{ transform: 'rotate(13.48deg)', zIndex: '5' }}>
+                            <img src={Tamaghna} alt="nishant" />
+                            <div className='contributor-overlay'></div>
+                            <div className='contributor-content'>
+                                <FaTwitter size={20} color="#FFF" />
+                                <h1>Tamaghna</h1>
+                                <p>Product Mngt.</p>
                             </div>
+                        </div>
 
-                            <div onClick={() => { window.open("https://twitter.com/aethe_re") }} className='contributor-card' style={{ transform: 'rotate(-0.71deg)', zIndex: '8' }}>
-                                <img src={Joshua} alt="nishant" style={{ height: '100%' }} />
-                                <div className='contributor-overlay'></div>
-                                <div className='contributor-content'>
-                                    <FaTwitter size={20} color="#FFF" />
-                                    <h1>Joshua<br /></h1>
-                                    <p>Partnerships</p>
-                                </div>
+                        <div onClick={() => { window.open("https://twitter.com/aethe_re") }} className='contributor-card' style={{ transform: 'rotate(-0.71deg)', zIndex: '8' }}>
+                            <img src={Joshua} alt="nishant" style={{ height: '100%' }} />
+                            <div className='contributor-overlay'></div>
+                            <div className='contributor-content'>
+                                <FaTwitter size={20} color="#FFF" />
+                                <h1>Joshua</h1>
+                                <p>Partnerships</p>
                             </div>
+                        </div>
 
-                            <div onClick={() => { window.open("https://twitter.com/HypnoJimmy") }} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '8' }}>
-                                <img src={Jared} alt="nishant" style={{ height: '100%' }} />
-                                <div className='contributor-overlay'></div>
-                                <div className='contributor-content'>
-                                    <FaTwitter  size={20} color="#FFF" />
-                                    <h1>Jimmy<br /></h1>
-                                    <p>Marketing</p>
-                                </div>
+                        <div onClick={() => { window.open("https://twitter.com/HypnoJimmy") }} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '8' }}>
+                            <img src={Jared} alt="nishant" style={{ height: '100%' }} />
+                            <div className='contributor-overlay'></div>
+                            <div className='contributor-content'>
+                                <FaTwitter size={20} color="#FFF" />
+                                <h1>Jimmy</h1>
+                                <p>Marketing</p>
                             </div>
+                        </div>
 
-                            <div  onClick={() => { window.open("https://www.linkedin.com/in/fernandobcruzperez/") }} className='contributor-card' style={{ transform: 'rotate(-0.71deg)', zIndex: '8' }}>
-                                <img src={Fernando} alt="nishant" style={{ height: '100%' }} />
-                                <div className='contributor-overlay'></div>
-                                <div className='contributor-content'>
-                                    <FaLinkedin size={20} color="#FFF" />
-                                    <h1>Fernando<br /></h1>
-                                    <p>Operations</p>
-                                </div>
+                        <div onClick={() => { window.open("https://www.linkedin.com/in/fernandobcruzperez/") }} className='contributor-card' style={{ transform: 'rotate(-0.71deg)', zIndex: '8' }}>
+                            <img src={Fernando} alt="nishant" style={{ height: '100%' }} />
+                            <div className='contributor-overlay'></div>
+                            <div className='contributor-content'>
+                                <FaLinkedin size={20} color="#FFF" />
+                                <h1>Fernando</h1>
+                                <p>Operations</p>
                             </div>
-                        </ScrollMenu>
+                        </div>
+                    </ScrollMenu>
                 </div>
             </div>
         </section>
