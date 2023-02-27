@@ -12,6 +12,7 @@ import axios from "axios";
 
 const Contact = () => {
     const [showInput, setShowInput] = useState(false);
+    const [showSuccess, setShowSuccess] = useState(false);
     const [email, setEmail] = useState('');
 
     const handleKeyDown = (e) => {
@@ -21,14 +22,20 @@ const Contact = () => {
                 element.innerHTML = 'Enter valid email';
             }
             else {
-                let formData = {};
-                formData.Email = email;
-
-                axios.post("https://sheetdb.io/api/v1/x4sjofyeerfgg", formData)
-                    .then((data) => { setEmail(""); setShowInput(false); })
-                    .catch((error) => console.error("Error : ", error));
+                handleSubmit(e);
             }
         }
+    }
+
+    const handleSubmit = (e) => {
+        console.log("hello")
+        e.preventDefault();
+        let formData = {};
+        formData.Email = email;
+
+        axios.post("https://sheetdb.io/api/v1/x4sjofyeerfgg", formData)
+            .then((data) => { setEmail(""); setShowInput(false); setShowSuccess(true); })
+            .catch((error) => console.error("Error : ", error));
     }
 
     return (
@@ -59,16 +66,28 @@ const Contact = () => {
                         {
                             showInput
                                 ?
-                                <input
-                                    placeholder='Enter your email'
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    onKeyDown={handleKeyDown}
-                                />
+                                <div>
+                                    <input
+                                        placeholder='Enter your email'
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
+                                        onKeyDown={handleKeyDown}
+                                    />
+                                    <button onClick={handleSubmit}>JOIN</button>
+                                </div>
                                 :
-                                <div className='newsletter' onClick={() => setShowInput(true)}>
-                                    <p>Join our newsletter</p>
-                                    <HiOutlineArrowRight size={22} color="#FFF" />
+                                <div className='newsletter' onClick={() => { !showSuccess && setShowInput(true) }}>
+                                    {
+                                        showSuccess
+                                            ?
+                                            <p>You have subscribed !</p>
+                                            :
+                                            <>
+                                                <p>Join our newsletter</p>
+                                                <HiOutlineArrowRight size={22} color="#FFF" />
+                                            </>
+                                    }
+
                                 </div>
                         }
                     </div>
