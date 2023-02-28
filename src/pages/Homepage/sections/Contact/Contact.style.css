@@ -141,6 +141,7 @@
     padding: 10px;
     border: none;
     outline: none;
+    border-left: 1px solid #76808D55;
 }
 
 .contact-container .contact-row .contact-wrapper .newsletter-container button {
@@ -229,9 +230,9 @@
         padding: 20px;
     }
 
-    /* .contact-container .contact-row .contact-wrapper .newsletter-container {
-        padding: 20px;
-    } */
+    .contact-container .contact-row .contact-wrapper .newsletter-container .newsletter {
+        padding: 20px 0;
+    }
 
     .contact-container .contact-row .contact-wrapper .newsletter-container .newsletter p {
         font-size: 14px;
@@ -244,6 +245,8 @@
 
     .contact-container .contact-row .contact-wrapper .newsletter-container div input {
         width: 70%;
+        border: none;
+        border-top: 1px solid #76808D55;
     }
 
     .contact-container .contact-row .contact-wrapper .newsletter-container div button {
@@ -304,9 +307,9 @@
         padding: 20px;
     }
 
-    /* .contact-container .contact-row .contact-wrapper .newsletter-container {
-        padding: 20px;
-    } */
+    .contact-container .contact-row .contact-wrapper .newsletter-container .newsletter {
+        padding: 20px 0;
+    }
 
     .contact-container .contact-row .contact-wrapper .newsletter-container .newsletter p {
         font-size: 14px;
@@ -319,6 +322,8 @@
 
     .contact-container .contact-row .contact-wrapper .newsletter-container div input {
         width: 70%;
+        border: none;
+        border-top: 1px solid #76808D55;
     }
 
     .contact-container .contact-row .contact-wrapper .newsletter-container div button {
@@ -379,9 +384,9 @@
         padding: 20px;
     }
 
-    /* .contact-container .contact-row .contact-wrapper .newsletter-container {
-        padding: 20px;
-    } */
+    .contact-container .contact-row .contact-wrapper .newsletter-container .newsletter {
+        padding: 20px 0;
+    }
 
     .contact-container .contact-row .contact-wrapper .newsletter-container .newsletter p {
         font-size: 14px;
@@ -394,6 +399,8 @@
 
     .contact-container .contact-row .contact-wrapper .newsletter-container div input {
         width: 70%;
+        border: none;
+        border-top: 1px solid #76808D55;
     }
 
     .contact-container .contact-row .contact-wrapper .newsletter-container div button {

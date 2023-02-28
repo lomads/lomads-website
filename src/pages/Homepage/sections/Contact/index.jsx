@@ -97,9 +97,9 @@ const Contact = () => {
 
 
             <div className='contact-tnc'>
-                <a href='https://docs.google.com/document/d/1OcpjNlWg2N91ixZ9jENg5SuVCJVGia2c/edit?usp=sharing&ouid=110632288440070539099&rtpof=true&sd=true' target='_blank'>PRIVACY POLICY</a>
+                <a href='/privacyPolicy'>PRIVACY POLICY</a>
                 <div className='dash'></div>
-                <a href='https://docs.google.com/document/d/1bmGfFhF-H4uCTIfDEm5RVnThvYOz1hYm/edit#heading=h.qkijrj5agehs' target='_blank'>TERMS OF SERVICE</a>
+                <a href='/termsOfService'>TERMS OF SERVICE</a>
             </div>
         </section>
     )
