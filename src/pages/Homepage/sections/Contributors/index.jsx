@@ -171,7 +171,7 @@ const Contributors = () => {
                             </div>
                         </div>
 
-                        <div onClick={() => { window.open("https://twitter.com/aethe_re") }} className='contributor-card' style={{ transform: 'rotate(-0.71deg)', zIndex: '8' }}>
+                        {/* <div onClick={() => { window.open("https://twitter.com/aethe_re") }} className='contributor-card' style={{ transform: 'rotate(-0.71deg)', zIndex: '8' }}>
                             <img src={Joshua} alt="nishant" style={{ height: '100%' }} />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
@@ -199,7 +199,7 @@ const Contributors = () => {
                                 <h1>Fernando</h1>
                                 <p>Operations</p>
                             </div>
-                        </div>
+                        </div> */}
                     </ScrollMenu>
                 </div>
             </div>
