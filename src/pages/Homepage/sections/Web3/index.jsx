@@ -18,8 +18,8 @@ const Web3 = () => {
             <img className='polygon-img' src={polygon} />
             <img className='safe-img' src={safe} alt="safe" />
             <p data-speed={window.innerWidth > 1024 ? "0.9" : "1"}>More integrations in the pipeline</p>
-            <button data-speed={window.innerWidth > 1024 ? "0.9" : "1"} onClick={() => { window.location.href = "/partner" }}>join as a partner <HiOutlineArrowRight size={22} /></button>
-        </section>
+{/*             <button data-speed={window.innerWidth > 1024 ? "0.9" : "1"} onClick={() => { window.location.href = "/partner" }}>join as a partner <HiOutlineArrowRight size={22} /></button>
+ */}         </section>
     )
 }
 
