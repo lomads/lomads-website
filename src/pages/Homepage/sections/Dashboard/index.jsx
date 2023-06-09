@@ -36,7 +36,8 @@ const Dashboard = () => {
             </div>
 
             <div className="dashboard-text-container">
-                <div className="dashboard-text pos1">
+            {/*
+                 <div className="dashboard-text pos1">
                     <h1>Easy information access</h1>
                     <p>The Lomads dashboard is expertly designed to help you focus on tasks that matter,<span> without overwhelming you with information.</span></p>
                 </div>
@@ -45,6 +46,8 @@ const Dashboard = () => {
                     <h1>Efficient workflow automation</h1>
                     <p>Our in-built automations help you save time by eliminating repetitive tasks. With just a click, a project milestone can be approved and in just a snap, a transaction is created for the respective team, automatically. <span>Sleek OP!</span></p>
                 </div>
+                
+                */}
             </div>
 
             <img className="imgMilestone" src={milestonesm} alt="" />
