@@ -57,7 +57,7 @@
 
 .power-container .power-section-container .power-section {
     width: 25%;
-    height: 120px;
+    height: 150px;
     display: flex;
     flex-direction: column;
 }
