@@ -140,12 +140,13 @@
     text-align: center;
     font-style: normal;
     font-weight: 800;
-    font-size: 130px;
+    font-size: 100px;
     text-align: center;
     text-transform: uppercase;
     color: #1B2B41;
     margin-top: 50px;
     line-height: 120px;
+    padding: 0 32px;
 }
 
 .banner-container .heading-section h1 span {
@@ -357,7 +358,7 @@
     }
 
     .banner-container .heading-section h1 {
-        font-size: 60px;
+        font-size: 40px;
         line-height: normal;
         margin: 0;
     }
