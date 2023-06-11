@@ -17,7 +17,7 @@ const Banner = () => {
     return (
         <section className="banner-container">
             <div className="heading-section">
-                <h1 data-speed={window.innerWidth > 1024 ? "1.2" : "1"} className="animate__animated animate__fadeIn animate__fast" style={{ fontSize: 100, padding: "0 32px" }}>WHERE CAPITAL AND<br/> PEOPLE TANGO TO<bt/> GREATNESS</h1>
+                <h1 data-speed={window.innerWidth > 1024 ? "1.2" : "1"} className="animate__animated animate__fadeIn animate__fast">WHERE CAPITAL AND<br/> PEOPLE TANGO TO<bt/> GREATNESS</h1>
                 <div data-speed={window.innerWidth > 1024 ? "0.8" : "1"} className="heading-pill pos1 animate__animated animate__bounceIn animate__delay-2s animate__faster">
                     <img src={pill1} alt="pill1" />
                     <span>+1</span>

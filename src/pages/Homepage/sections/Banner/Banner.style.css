@@ -140,7 +140,8 @@
     text-align: center;
     font-style: normal;
     font-weight: 800;
-    font-size: 130px;
+    padding: 0 32px;
+    font-size: 100px;
     text-align: center;
     text-transform: uppercase;
     color: #1B2B41;
@@ -244,7 +245,7 @@
     }
 
     .banner-container .heading-section h1 {
-        font-size: 45px;
+        font-size: 30px;
         line-height: normal;
         margin: 0;
     }
@@ -286,7 +287,7 @@
     }
 }
 
-@media only screen and (min-width: 345px) and (max-width : 375px) {
+@media only screen and (min-width: 341px) and (max-width : 375px) {
     .banner-container {
         overflow-x: hidden;
     }
@@ -300,7 +301,7 @@
     }
 
     .banner-container .heading-section h1 {
-        font-size: 60px;
+        font-size: 40px;
         line-height: normal;
         margin: 0;
     }
@@ -357,7 +358,7 @@
     }
 
     .banner-container .heading-section h1 {
-        font-size: 60px;
+        font-size: 40px;
         line-height: normal;
         margin: 0;
     }
@@ -417,7 +418,8 @@
     }
 
     .banner-container .heading-section h1 {
-        font-size: 100px;
+        font-size: 38px;
+        line-height: 50px
     }
 
     .banner-container .heading-section h1 span {
@@ -474,7 +476,8 @@
     }
 
     .banner-container .heading-section h1 {
-        font-size: 100px;
+        font-size: 50px;
+        line-height: 50px;
     }
 
     .banner-container .heading-section h1 span {
