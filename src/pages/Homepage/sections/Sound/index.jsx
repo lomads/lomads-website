@@ -112,19 +112,18 @@ const Sound = () => {
 
             <div ref={ref} className="sound-content scale-down">
                 <div className="sound-section">
-                    <h1>Deploy capital efficiently</h1>
-                    <p>Deploy capital to create maximum impact through batch transactions, recurring payments, task-based and milestone-based compensations.<br />
-                        <span>Say goodbye to repetition and hello to automation!</span></p>
+                    <h1>Streamlined Finances</h1>
+                    <p>With a single, intuitive dashboard, effortlessly <span>navigate across multiple treasuries</span> and blockchains, simplifying your crypto transactions.
+                    Say goodbye to cumbersome record-keeping with our <span>built-in auto-labelling</span> feature.</p>
                 </div>
                 <div className="sound-section">
-                    <h1>Build accountability</h1>
-                    <p>Capture the work and time contribution of your organization’s members. Utilize these metrics to automatically assign shares of voice in decision-making, permissions and rewards.<br />
-                        <span>Sweat counts!</span></p>
+                    <h1>Personal Data Ownership</h1>
+                    <p>Embrace the future with Soul Bound Tokens (SBTs). These revolutionary tokens enable members to maintain a personal <span>record of their contributions and roles,ushering in a new era of personal data ownership</span>.</p>
                 </div>
                 <div className="sound-section">
-                    <h1>Streamline decisions</h1>
-                    <p>Cultivate an efficient and autonomous decision-making environment by clearly defining the scope of decision-making across various groups and levels in the organization.<br />
-                        <span>And, implement decisions in a heartbeat.</span></p>
+                    <h1>Seamless Operations</h1>
+                    <p>Integrate with popular platforms like Trello, Github, and Discord. <span>Automate permissions</span> based on roles or criteria using SBTs. Easily <span>add compensation to tasks</span> imported from these tools and facilitate payments.<br />
+                        </p>
                 </div>
             </div>
 

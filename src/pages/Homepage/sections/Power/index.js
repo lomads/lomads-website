@@ -19,20 +19,20 @@ const Power = () => {
             </h1>
 
             <div className="power-content-container">
-                <p className="power-content" data-scroll data-scroll-speed={1}>You can now launch Soulbound Token for the members of your organization. <br/>The unique Soulbound Token for each member performs three key roles:</p>
+                <p className="power-content" data-scroll data-scroll-speed={1}>With SBTs, your members will no longer be passive passengers.<br/>Instead, they can take command of their personal data and credentials.</p>
             </div>
             <div className="power-section-container">
                 <div className="power-section" data-scroll data-scroll-speed={1}>
-                    <h1>It personalizes</h1>
-                    <p>the information they see on the dashboard based on their unique needs.</p>
+                    <h1>Flexible Membership Choices</h1>
+                    <p>Choose between free or one-time payment, and open access or whitelisted entry.</p>
                 </div>
                 <div className="power-section" data-scroll data-scroll-speed={1}>
-                    <h1>It automates</h1>
-                    <p>your members’ access within the platform and across various third-party tools.</p>
+                    <h1>Inclusive <br/>Onboarding </h1>
+                    <p>Embrace newcomers by accepting social login and credit card payments (if applicable).</p>
                 </div>
                 <div className="power-section" data-scroll data-scroll-speed={1}>
-                    <h1>It records</h1>
-                    <p>the contributions of members while giving them ownership of their data.</p>
+                    <h1>Gas Fee <br/>Coverage</h1>
+                    <p>Go the extra mile by offering free minting of SBTs.</p>
                 </div>
             </div>
         </section>
