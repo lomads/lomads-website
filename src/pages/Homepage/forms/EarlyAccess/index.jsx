@@ -356,7 +356,7 @@ const EarlyAccessForm = () => {
                                 </div>
                             </div>
 
-                            <div className="form-input-wrapper">
+                            {/* <div className="form-input-wrapper">
                                 <div className="form-input-row">
                                     <h1>On a scale of 1 to 5 (1- least important, 5-most important), how important are the following for your organisation 'now'?</h1>
                                     <div className="form-tag required">
@@ -550,9 +550,9 @@ const EarlyAccessForm = () => {
 
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
-                            <div className="form-input-wrapper">
+                           {/* <div className="form-input-wrapper">
                                 <div className="form-input-row">
                                     <h1>Please mention any other priorities of your organisation that were not covered above.</h1>
                                     <div className="form-tag">
@@ -562,7 +562,7 @@ const EarlyAccessForm = () => {
                                 <div className="form-input-row">
                                     <input type="text" placeholder="Answer" value={priorities} onChange={(e) => setPriorities(e.target.value)} />
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div className="form-input-wrapper">
                                 <div className="form-input-row">
