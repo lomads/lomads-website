@@ -253,6 +253,19 @@ const EarlyAccessForm = () => {
 
                             <div className="form-input-wrapper">
                                 <div className="form-input-row">
+                                    <h1>Your ETH address</h1>
+                                    <div className="form-tag required">
+                                        <p>Required</p>
+                                    </div>
+                                </div>
+                                <div className="form-input-row">
+                                    <input type="text" placeholder="Answer" value={address} onChange={(e) => { setAddress(e.target.value); document.getElementById('address-error').innerHTML = '' }} />
+                                </div>
+                                <span className="error-msg" id="address-error"></span>
+                            </div>
+
+                            <div className="form-input-wrapper">
+                                <div className="form-input-row">
                                     <h1>Your organisation's name</h1>
                                     <div className="form-tag">
                                         <p>Optional</p>
