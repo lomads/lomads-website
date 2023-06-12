@@ -251,7 +251,7 @@ const EarlyAccessForm = () => {
                                 <span className="error-msg" id="email-error"></span>
                             </div>
 
-                            <div className="form-input-wrapper">
+                            {/* <div className="form-input-wrapper">
                                 <div className="form-input-row">
                                     <h1>Your ETH address (to add you as an admin in the test dashboard)</h1>
                                     <div className="form-tag required">
@@ -262,7 +262,7 @@ const EarlyAccessForm = () => {
                                     <input type="text" placeholder="Answer" value={address} onChange={(e) => { setAddress(e.target.value); document.getElementById('address-error').innerHTML = '' }} />
                                 </div>
                                 <span className="error-msg" id="address-error"></span>
-                            </div>
+                            </div> */}
 
                             <div className="form-input-wrapper">
                                 <div className="form-input-row">
