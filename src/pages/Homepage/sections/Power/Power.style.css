@@ -8,6 +8,38 @@
     background: transparent;
 }
 
+.power-container .access-btn {
+    background-color: #C94B32;
+    border-radius: 5px;
+    width: 265px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.011em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    transition: background-color 0.5s linear;
+    transition: box-shadow 0.25s linear;
+    margin-top: 40px;
+}
+
+.power-container .access-btn:hover {
+    background-color: #EA6447;
+    box-shadow: 3px 5px 20px rgba(27, 43, 65, 0.12), 0px 0px 20px rgba(201, 75, 50, 0.18);
+}
+
+.power-container .access-btn:focus {
+    background-color: #b12e15;
+}
+
+
 .power-container img {
     margin-top: 100px;
 }
@@ -80,6 +112,12 @@
 }
 
 @media only screen and (max-width: 340px) {
+    .power-container .access-btn {
+        margin: 0;
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+
     .power-container img {
         margin-top: 80px;
         height: 50%;
@@ -125,12 +163,22 @@
         margin-bottom: 70px;
     }
 
+    .power-container .power-section-container .power-section h1 {
+        text-align: center;
+    }
+
     .power-container .power-section-container .power-section p {
         text-align: center;
     }
 }
 
 @media only screen and (min-width: 345px) and (max-width : 375px) {
+    .power-container .access-btn {
+        margin: 0;
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+
     .power-container img {
         margin-top: 80px;
         height: 50%;
@@ -173,6 +221,10 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 70px;
+    }
+
+    .power-container .power-section-container .power-section h1 {
+        text-align: center;
     }
 
     .power-container .power-section-container .power-section p {
@@ -181,6 +233,12 @@
 }
 
 @media only screen and (min-width: 376px) and (max-width : 425px) {
+    .power-container .access-btn {
+        margin: 0;
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+
     .power-container img {
         margin-top: 80px;
         height: 50%;
@@ -223,6 +281,10 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 70px;
+    }
+
+    .power-container .power-section-container .power-section h1 {
+        text-align: center;
     }
 
     .power-container .power-section-container .power-section p {

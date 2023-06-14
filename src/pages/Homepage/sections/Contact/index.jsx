@@ -73,7 +73,9 @@ const Contact = () => {
                                         onChange={(e) => setEmail(e.target.value)}
                                         onKeyDown={handleKeyDown}
                                     />
-                                    <button onClick={handleSubmit}>JOIN</button>
+                                    <button onClick={handleSubmit}>
+                                        JOIN
+                                    </button>
                                 </div>
                                 :
                                 <div className='newsletter' onClick={() => { !showSuccess && setShowInput(true) }}>

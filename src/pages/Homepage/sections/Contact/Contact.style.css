@@ -101,9 +101,6 @@
 }
 
 .contact-container .contact-row .contact-wrapper .newsletter-container {
-    background: #C94B32;
-    /* width: 300px; */
-    /* padding: 0 20px; */
     height: 100%;
     display: flex;
     align-items: center;
@@ -111,17 +108,19 @@
     cursor: pointer;
 }
 
-.contact-container .contact-row .contact-wrapper .newsletter-container:hover {
-    cursor: pointer;
-    background-color: #EA6447;
-}
 
 .contact-container .contact-row .contact-wrapper .newsletter-container .newsletter {
     width: 300px;
+    background: #C94B32;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.contact-container .contact-row .contact-wrapper .newsletter-container .newsletter:hover {
+    cursor: pointer;
+    background-color: #EA6447;
 }
 
 .contact-container .contact-row .contact-wrapper .newsletter-container .newsletter p {
@@ -135,7 +134,7 @@
     margin-right: 20px;
 }
 
-.contact-container .contact-row .contact-wrapper .newsletter-container input {
+.contact-container .contact-row .contact-wrapper .newsletter-container div input {
     width: 200px;
     height: 75px;
     padding: 10px;
@@ -144,14 +143,23 @@
     border-left: 1px solid #76808D55;
 }
 
-.contact-container .contact-row .contact-wrapper .newsletter-container button {
+.contact-container .contact-row .contact-wrapper .newsletter-container div button {
     width: 100px;
     height: 75px;
     background: #C94B32;
     color: #FFF;
+    font-size: 20px;
+    margin: 0;
+    border: none;
 }
 
-.contact-container .contact-row .contact-wrapper .newsletter-container button:hover {
+/* .contact-container .contact-row .contact-wrapper .newsletter-container div button p {
+    color: #FFF;
+    
+    margin: 0;
+} */
+
+.contact-container .contact-row .contact-wrapper .newsletter-container div button:hover {
     background-color: #EA6447;
 }
 
