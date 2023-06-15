@@ -7,7 +7,29 @@
     justify-content: space-between;
     background-color: transparent;
     position: absolute;
+}
 
+.navbar-container .menu-p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    /* or 112% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.011em;
+    text-transform: uppercase;
+
+    /* RED */
+
+    color: #C94B32;
+    margin-right: 30px;
+}
+
+.navbar-container .menu-p:last-child {
+    margin: 0;
 }
 
 .navbar-container button {

@@ -25,7 +25,11 @@ const Navbar = () => {
         <>
             <section className="navbar-container">
                 <img src={logo} alt="logo" />
-                {/* <button onClick={handleSlideDownAnimation}><img className="menu" src={menu} alt="logo" /></button> */}
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <a className="menu-p" href="https://lomads.medium.com/" target="_blank">BLOG</a>
+                    <a className="menu-p" href="https://lomads-1.gitbook.io/lomads/" target="_blank">DOCS</a>
+                    {/* <button onClick={handleSlideDownAnimation}><img className="menu" src={menu} alt="logo" /></button> */}
+                </div>
             </section>
 
             {/* open menu  */}
