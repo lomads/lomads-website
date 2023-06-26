@@ -21,6 +21,7 @@
     text-transform: uppercase;
     color: #1B2B41;
     text-align: center;
+    z-index: 2;
 }
 
 .web3-container div h1 span {
@@ -79,14 +80,33 @@
 
 .web3-container .polygon-img {
     position: absolute;
-    right: 13%;
-    bottom: 32%;
+    right: 11%;
+    bottom: 27%;
 }
 
 .web3-container .safe-img {
     position: absolute;
     left: 10%;
     bottom: 45%;
+}
+
+.web3-container .eth-img {
+    position: absolute;
+    left: 17%;
+    top: 17%;
+    z-index: 1;
+}
+
+.web3-container .web-img {
+    position: absolute;
+    right: 16%;
+    top: 17%;
+}
+
+.web3-container .biconomy-img {
+    position: absolute;
+    left: 18%;
+    bottom: 22%;
 }
 
 @media only screen and (max-width: 340px) {
@@ -113,19 +133,31 @@
     .web3-container .ipfs-img {
         position: static;
         height: 90px;
-        width: 150px;
     }
 
     .web3-container .polygon-img {
         position: static;
         height: 90px;
-        width: 290px;
+    }
+
+    .web3-container .eth-img {
+        position: static;
+        height: 90px;
+    }
+
+    .web3-container .web-img {
+        position: static;
+        height: 90px;
+    }
+
+    .web3-container .biconomy-img {
+        position: static;
+        height: 90px;
     }
 
     .web3-container .safe-img {
         position: static;
         height: 90px;
-        width: 220px;
     }
 
     .web3-container p {
@@ -189,6 +221,21 @@
         width: 220px;
     }
 
+    .web3-container .eth-img {
+        position: static;
+        height: 90px;
+    }
+
+    .web3-container .web-img {
+        position: static;
+        height: 90px;
+    }
+
+    .web3-container .biconomy-img {
+        position: static;
+        height: 90px;
+    }
+
     .web3-container p {
         font-size: 20px;
     }
@@ -248,6 +295,21 @@
         position: static;
         height: 90px;
         width: 220px;
+    }
+
+    .web3-container .eth-img {
+        position: static;
+        height: 90px;
+    }
+
+    .web3-container .web-img {
+        position: static;
+        height: 90px;
+    }
+
+    .web3-container .biconomy-img {
+        position: static;
+        height: 90px;
     }
 
     .web3-container p {
