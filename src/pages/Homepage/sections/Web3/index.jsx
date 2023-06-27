@@ -16,6 +16,14 @@ const Web3 = () => {
             <div>
                 <h1 data-speed={window.innerWidth > 1024 ? "0.9" : "1"} >Built using <span>best-in-class</span> components</h1>
             </div>
+            <div className='mobile-img'>
+                <img className='ipfs-img-1' src={ipfs} alt="ipfs" />
+                <img className='polygon-img-1' src={polygon} />
+                <img className='safe-img-1' src={safe} alt="safe" />
+                <img className='eth-img-1' src={eth} />
+                <img className='web-img-1' src={web3auth} />
+                <img className='biconomy-img-1' src={biconomy} />
+            </div>
             <img className='ipfs-img' src={ipfs} alt="ipfs" />
             <img className='polygon-img' src={polygon} />
             <img className='safe-img' src={safe} alt="safe" />

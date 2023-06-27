@@ -143,6 +143,10 @@
     border-left: 1px solid #76808D55;
 }
 
+.contact-container .contact-row .contact-wrapper .newsletter-container div input::placeholder {
+    font-size: 18px;
+}
+
 .contact-container .contact-row .contact-wrapper .newsletter-container div button {
     width: 100px;
     height: 75px;

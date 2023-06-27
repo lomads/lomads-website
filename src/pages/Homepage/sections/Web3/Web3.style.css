@@ -109,6 +109,10 @@
     bottom: 22%;
 }
 
+.web3-container .mobile-img {
+    display: none;
+}
+
 @media only screen and (max-width: 340px) {
 
     .web3-container {
@@ -130,38 +134,83 @@
         font-size: 30px;
     }
 
+    .web3-container .mobile-img {
+        display: block;
+        width: 80%;
+        height: 280px;
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    .web3-container .mobile-img .ipfs-img-1 {
+        position: absolute;
+        height: 70px;
+        top: 0;
+        right: 10%;
+    }
+
+    .web3-container .safe-img-1 {
+        position: absolute;
+        height: 70px;
+        top: 5%;
+        left: 10%;
+    }
+
+    .web3-container .mobile-img .polygon-img-1 {
+        position: absolute;
+        height: 70px;
+        top: 29%;
+        left: -5%;
+    }
+
+    .web3-container .mobile-img .eth-img-1 {
+        position: absolute;
+        height: 70px;
+        top: 20%;
+        right: 0%;
+    }
+
+    .web3-container .mobile-img .web-img-1 {
+        position: absolute;
+        height: 70px;
+        bottom: 32%;
+        right: 0%;
+    }
+
+    .web3-container .mobile-img .biconomy-img-1 {
+        position: absolute;
+        height: 70px;
+        bottom: 8%;
+        left: 0%;
+    }
+
     .web3-container .ipfs-img {
-        position: static;
-        height: 90px;
+        display: none;
     }
 
     .web3-container .polygon-img {
-        position: static;
-        height: 90px;
+        display: none;
     }
 
     .web3-container .eth-img {
-        position: static;
-        height: 90px;
+        display: none;
     }
 
     .web3-container .web-img {
-        position: static;
-        height: 90px;
+        display: none;
     }
 
     .web3-container .biconomy-img {
-        position: static;
-        height: 90px;
+        display: none;
     }
 
     .web3-container .safe-img {
-        position: static;
-        height: 90px;
+        display: none;
     }
 
     .web3-container p {
         font-size: 20px;
+        margin-top: 0;
     }
 
     .web3-container button {
@@ -203,41 +252,83 @@
         font-size: 40px;
     }
 
-    .web3-container .ipfs-img {
-        position: static;
+    .web3-container .mobile-img {
+        display: block;
+        width: 80%;
+        height: 340px;
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    .web3-container .mobile-img .ipfs-img-1 {
+        position: absolute;
         height: 90px;
-        width: 150px;
+        top: 0;
+        right: 5%;
+    }
+
+    .web3-container .safe-img-1 {
+        position: absolute;
+        height: 90px;
+        top: 5%;
+        left: 5%;
+    }
+
+    .web3-container .mobile-img .polygon-img-1 {
+        position: absolute;
+        height: 90px;
+        top: 30%;
+        left: -5%;
+    }
+
+    .web3-container .mobile-img .eth-img-1 {
+        position: absolute;
+        height: 90px;
+        top: 20%;
+        right: 0%;
+    }
+
+    .web3-container .mobile-img .web-img-1 {
+        position: absolute;
+        height: 90px;
+        bottom: 28%;
+        right: 0%;
+    }
+
+    .web3-container .mobile-img .biconomy-img-1 {
+        position: absolute;
+        height: 90px;
+        bottom: 0%;
+        left: 0%;
+    }
+
+    .web3-container .ipfs-img {
+        display: none;
     }
 
     .web3-container .polygon-img {
-        position: static;
-        height: 90px;
-        width: 290px;
-    }
-
-    .web3-container .safe-img {
-        position: static;
-        height: 90px;
-        width: 220px;
+        display: none;
     }
 
     .web3-container .eth-img {
-        position: static;
-        height: 90px;
+        display: none;
     }
 
     .web3-container .web-img {
-        position: static;
-        height: 90px;
+        display: none;
     }
 
     .web3-container .biconomy-img {
-        position: static;
-        height: 90px;
+        display: none;
+    }
+
+    .web3-container .safe-img {
+        display: none;
     }
 
     .web3-container p {
         font-size: 20px;
+        margin-top: 0;
     }
 
     .web3-container button {
@@ -279,41 +370,83 @@
         font-size: 40px;
     }
 
-    .web3-container .ipfs-img {
-        position: static;
+    .web3-container .mobile-img {
+        display: block;
+        width: 80%;
+        height: 340px;
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    .web3-container .mobile-img .ipfs-img-1 {
+        position: absolute;
         height: 90px;
-        width: 150px;
+        top: 0;
+        right: 10%;
+    }
+
+    .web3-container .safe-img-1 {
+        position: absolute;
+        height: 90px;
+        top: 5%;
+        left: 10%;
+    }
+
+    .web3-container .mobile-img .polygon-img-1 {
+        position: absolute;
+        height: 90px;
+        top: 30%;
+        left: -5%;
+    }
+
+    .web3-container .mobile-img .eth-img-1 {
+        position: absolute;
+        height: 90px;
+        top: 20%;
+        right: 2%;
+    }
+
+    .web3-container .mobile-img .web-img-1 {
+        position: absolute;
+        height: 90px;
+        bottom: 28%;
+        right: 0%;
+    }
+
+    .web3-container .mobile-img .biconomy-img-1 {
+        position: absolute;
+        height: 90px;
+        bottom: 0%;
+        left: 0%;
+    }
+
+    .web3-container .ipfs-img {
+        display: none;
     }
 
     .web3-container .polygon-img {
-        position: static;
-        height: 90px;
-        width: 290px;
-    }
-
-    .web3-container .safe-img {
-        position: static;
-        height: 90px;
-        width: 220px;
+        display: none;
     }
 
     .web3-container .eth-img {
-        position: static;
-        height: 90px;
+        display: none;
     }
 
     .web3-container .web-img {
-        position: static;
-        height: 90px;
+        display: none;
     }
 
     .web3-container .biconomy-img {
-        position: static;
-        height: 90px;
+        display: none;
+    }
+
+    .web3-container .safe-img {
+        display: none;
     }
 
     .web3-container p {
         font-size: 20px;
+        margin-top: 0;
     }
 
     .web3-container button {
