@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import './Banner.style.css';
 
 import hero from '../../../../assets/HERO.svg';
@@ -10,7 +10,6 @@ import box2 from '../../../../assets/bannerBox2.svg'
 import box3 from '../../../../assets/bannerBox3.svg'
 
 import { HiOutlineArrowRight } from 'react-icons/hi'
-import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
 

@@ -1,5 +1,5 @@
 
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, { useEffect } from "react";
 import './Hands.style.css';
 
 import left from '../../../../assets/left.svg';

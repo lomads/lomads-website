@@ -1,0 +1,126 @@
+.page-container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(169.22deg, #FDF7F7 12.19%, #EFEFEF 100%, #DD6149 92%) !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+.page-container .page-header {
+  width: 100%;
+  height: 10vh;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-container .page-header button {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+}
+
+.page-container h1 {
+  font-weight: 800;
+  font-size: 100px;
+  line-height: 100px;
+  text-transform: uppercase;
+  color: #1B2B41;
+  margin: 10vh 0;
+}
+
+.page-container h1 span {
+  font-weight: 300;
+  font-style: italic;
+  color: #C94B32;
+}
+
+.page-container .page-section {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.page-container .page-section .page-h {
+  font-weight: 400;
+  font-size: 22px;
+  color: #B12F15;
+  margin-bottom: 20px;
+}
+
+.page-container .page-section .page-p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  /* or 133% */
+
+  /* Grey */
+  color: #76808D;
+  margin-bottom: 20px;
+}
+
+.page-container .page-section .page-subSection {
+  margin-bottom: 20px;
+}
+
+.page-container .page-section .page-subSection h5 {
+  /* font-weight: 400; */
+  font-size: 15px;
+  line-height: 20px;
+  /* or 133% */
+
+  /* Grey */
+  color: #76808D;
+}
+
+.page-container .page-section .page-subSection p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  /* or 133% */
+
+  /* Grey */
+  color: #76808D;
+}
+
+.page-container .page-section button {
+  width: 175px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #C94B32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.page-container .page-section button:hover {
+  background-color: #EA6447;
+  box-shadow: 3px 5px 20px rgba(27, 43, 65, 0.12), 0px 0px 20px rgba(201, 75, 50, 0.18);
+}
+
+@media only screen and (max-width: 340px) {
+  .page-container .page-header {
+      padding: 0 20px;
+  }
+
+  .page-container h1 {
+      font-size: 28px;
+      margin: 2.5vh 0;
+  }
+
+  .page-container .page-section {
+      width: 100%;
+      padding: 0 20px;
+  }
+
+  .page-container .page-section .page-h {
+      font-size: 20px;
+  }
+}

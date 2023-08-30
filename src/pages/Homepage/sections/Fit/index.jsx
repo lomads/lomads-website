@@ -32,7 +32,7 @@ const Fit = () => {
             <div className='bars-row'>
                 <div className='bars-gray' style={{ width: '338px' }}></div>
                 <div className='bars-gray' style={{ width: '338px', marginLeft: '1rem' }}></div>
-                <img className='hold' src={dropbtn} />
+                <img className='hold' src={dropbtn} alt="" />
                 <div className='bars-gray' style={{ width: '338px' }}></div>
                 <div className='bars-gray' style={{ width: '338px', marginLeft: '1rem' }}></div>
             </div>

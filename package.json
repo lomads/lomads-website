@@ -2,10 +2,12 @@
   "name": "lomads-website",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
+  "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@testing-library/user-event": "^13.5.0"
+  },
+  "dependencies": {
     "animate.css": "^4.1.1",
     "axios": "^1.2.2",
     "locomotive-scroll": "^4.1.4",

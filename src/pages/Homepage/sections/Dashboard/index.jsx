@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import './Dashboard.style.css';
 
 import dashboard from '../../../../assets/DASHBOARD.svg';
@@ -12,11 +12,6 @@ import notify2 from '../../../../assets/NOTIF2.svg';
 import project from '../../../../assets/project_card.svg';
 
 const Dashboard = () => {
-
-    useEffect(() => {
-
-    }, [])
-
     return (
         <section className="dashboard-container panel">
             <div className="dashboard-header">

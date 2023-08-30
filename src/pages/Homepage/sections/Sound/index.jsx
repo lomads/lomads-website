@@ -1,11 +1,11 @@
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import './Sound.style.css';
 
-import useOnScreen from "../../../../hooks/useOnScreen";
+// import useOnScreen from "../../../../hooks/useOnScreen";
 
 const Sound = () => {
     const ref = useRef();
-    const isVisible = useOnScreen(ref);
+    // const isVisible = useOnScreen(ref);
 
     useEffect(() => {
         if (window.innerWidth > 768) {
