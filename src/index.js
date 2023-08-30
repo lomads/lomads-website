@@ -4,7 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import ReactGA from 'react-ga4';
 import { BrowserRouter } from "react-router-dom";
+
+ReactGA.initialize("G-SCDQ6XE7QK");
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
