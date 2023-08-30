@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import logo from '../../../../assets/logo.svg';
 
 import { IoCloseOutline } from 'react-icons/io5'
 import { HiOutlinePlus } from 'react-icons/hi'
 import { useNavigate } from "react-router-dom";
-import { FaDiscord, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { FaDiscord, FaTwitter } from 'react-icons/fa';
 
 import { isValidUrl } from '../../../../utils';
 

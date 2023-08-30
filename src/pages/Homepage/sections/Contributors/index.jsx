@@ -1,5 +1,5 @@
 import './Contributors.style.css';
-import React from 'react';
+import React, { useCallback } from 'react';
 import nishant from '../../../../assets/team/Nishant.jpg';
 import naman from '../../../../assets/team/Naman.jpg';
 import harish from '../../../../assets/team/Harish.png';
@@ -8,9 +8,6 @@ import Tamaghna from '../../../../assets/team/Tamaghna.jpg';
 import Zelie from '../../../../assets/team/Zelie.jpg';
 import Zohaib from '../../../../assets/team/Zohaib.png';
 import Roshi from '../../../../assets/team/Roshi.jpg';
-import Joshua from '../../../../assets/team/Joshua.jpg';
-import Jared from '../../../../assets/team/Jared.jpg';
-import Fernando from '../../../../assets/team/Fernando.jpg';
 
 import ChevronLeft from '../../../../assets/chevron-left.svg';
 import ChevronRight from '../../../../assets/chevron-right.svg';
@@ -22,18 +19,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import { useEffect } from 'react';
 
-import Slider from "react-slick";
-
 import { FaTwitter, FaLinkedin } from 'react-icons/fa';
-
-const settings = {
-    dots: false,
-    infinite: false,
-    slidesToShow: 9,
-    slidesToScroll: 9,
-    centerMode: false,
-    arrows: true,
-};
 
 const Contributors = () => {
 
@@ -61,27 +47,10 @@ const Contributors = () => {
         }
     }, [])
 
-    function LeftArrow() {
-        const { isFirstItemVisible, scrollPrev } =
-            React.useContext(VisibilityContext);
-
-        return (
-            <div style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }} disabled={isFirstItemVisible} onClick={() => scrollPrev()}>
-                <img style={{ height: 80, width: 40 }} src={ChevronLeft} alt="" />
-            </div>
-        );
-    }
-
-    function RightArrow() {
-        const { isLastItemVisible, scrollNext } = React.useContext(VisibilityContext);
-
-        return (
-            <div style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }} disabled={isLastItemVisible} onClick={() => scrollNext()}>
-                <img style={{ height: 80, width: 40 }} src={ChevronRight} alt="" />
-            </div>
-        );
-    }
-
+    const openPage = useCallback((link) => () => {
+        window.open(link);
+    }, []);
+    
     return (
         <section className='contributors-container'>
             <div style={{ height: '100vh', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
@@ -90,7 +59,7 @@ const Contributors = () => {
                     <h1 className='contributors-title'>{`We <3 `}<span>web3</span></h1>
                     <p className='contributors-p'>Meet our core contributors and backers.</p>
                     <ScrollMenu scrollContainerClassName="contributor-row-scroll" wrapperClassName="contributor-row" LeftArrow={LeftArrow} RightArrow={RightArrow}>
-                        <div key={"Nishant"} onClick={() => { window.open("https://twitter.com/nbhaskar888") }} className='contributor-card' style={{ transform: 'rotate(-10.65deg) !important', zIndex: '1' }}>
+                        <div key={"Nishant"} onClick={openPage("https://twitter.com/nbhaskar888")} className='contributor-card' style={{ transform: 'rotate(-10.65deg) !important', zIndex: '1' }}>
                             <img src={nishant} alt="nishant" />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
@@ -100,7 +69,7 @@ const Contributors = () => {
                             </div>
                         </div>
 
-                        <div onClick={() => { window.open("https://www.linkedin.com/in/namansnegi/") }} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '2' }}>
+                        <div onClick={openPage("https://www.linkedin.com/in/namansnegi/")} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '2' }}>
                             <img src={naman} alt="nishant" />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
@@ -110,7 +79,7 @@ const Contributors = () => {
                             </div>
                         </div>
 
-                        <div onClick={() => { window.open("https://twitter.com/FredericRamet") }} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '4' }} >
+                        <div onClick={openPage("https://twitter.com/FredericRamet")} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '4' }} >
                             <img src={Fred} alt="nishant" />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
@@ -121,7 +90,7 @@ const Contributors = () => {
                         </div>
 
 
-                        <div onClick={() => { window.open("https://www.linkedin.com/in/zélie-dethorey-8ab09669/") }} className='contributor-card' style={{ transform: 'rotate(13.48deg)', zIndex: '5' }}>
+                        <div onClick={openPage("https://www.linkedin.com/in/zélie-dethorey-8ab09669/")} className='contributor-card' style={{ transform: 'rotate(13.48deg)', zIndex: '5' }}>
                             <img src={Zelie} alt="nishant" />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
@@ -131,7 +100,7 @@ const Contributors = () => {
                             </div>
                         </div>
 
-                        <div onClick={() => { window.open("https://www.linkedin.com/in/rish6ix/") }} className='contributor-card' style={{ transform: 'rotate(-4.26deg)', zIndex: '3' }}>
+                        <div onClick={openPage("https://www.linkedin.com/in/rish6ix/")} className='contributor-card' style={{ transform: 'rotate(-4.26deg)', zIndex: '3' }}>
                             <img src={harish} alt="nishant" />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
@@ -141,7 +110,7 @@ const Contributors = () => {
                             </div>
                         </div>
 
-                        <div onClick={() => { window.open("https://www.linkedin.com/in/zohaib-kibria-221890137/") }} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '6' }}>
+                        <div onClick={openPage("https://www.linkedin.com/in/zohaib-kibria-221890137/")} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '6' }}>
                             <img src={Zohaib} alt="nishant" style={{ height: '100%' }} />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
@@ -151,7 +120,7 @@ const Contributors = () => {
                             </div>
                         </div>
 
-                        <div onClick={() => { window.open("https://www.linkedin.com/in/roshi-sharma-lawbeam/") }} className='contributor-card' style={{ transform: 'rotate(-0.71deg)', zIndex: '7' }}>
+                        <div onClick={openPage("https://www.linkedin.com/in/roshi-sharma-lawbeam/")} className='contributor-card' style={{ transform: 'rotate(-0.71deg)', zIndex: '7' }}>
                             <img src={Roshi} alt="nishant" style={{ height: '100%' }} />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
@@ -161,7 +130,7 @@ const Contributors = () => {
                             </div>
                         </div>
 
-                        <div onClick={() => { window.open("https://twitter.com/iam_tamaghna") }} className='contributor-card' style={{ transform: 'rotate(13.48deg)', zIndex: '5' }}>
+                        <div onClick={openPage("https://twitter.com/iam_tamaghna")} className='contributor-card' style={{ transform: 'rotate(13.48deg)', zIndex: '5' }}>
                             <img src={Tamaghna} alt="nishant" />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
@@ -205,6 +174,27 @@ const Contributors = () => {
             </div>
         </section>
     )
+}
+
+function LeftArrow() {
+    const { isFirstItemVisible, scrollPrev } =
+        React.useContext(VisibilityContext);
+
+    return (
+        <div style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }} disabled={isFirstItemVisible} onClick={() => scrollPrev()}>
+            <img style={{ height: 80, width: 40 }} src={ChevronLeft} alt="" />
+        </div>
+    );
+}
+
+function RightArrow() {
+    const { isLastItemVisible, scrollNext } = React.useContext(VisibilityContext);
+
+    return (
+        <div style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }} disabled={isLastItemVisible} onClick={() => scrollNext()}>
+            <img style={{ height: 80, width: 40 }} src={ChevronRight} alt="" />
+        </div>
+    );
 }
 
 export default Contributors;

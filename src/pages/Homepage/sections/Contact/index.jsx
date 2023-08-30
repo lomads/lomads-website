@@ -4,7 +4,7 @@ import logo from '../../../../assets/logo.svg'
 
 import { HiOutlineArrowRight } from 'react-icons/hi'
 import { FaDiscord, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import axios from "axios";
 

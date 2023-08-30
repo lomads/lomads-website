@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useState } from "react";
 import '../style.css';
 
 import logo from '../../../../assets/logo.svg';
@@ -6,7 +6,7 @@ import logo from '../../../../assets/logo.svg';
 import { IoCloseOutline } from 'react-icons/io5'
 import { FiCheck } from 'react-icons/fi'
 import { HiOutlinePlus } from 'react-icons/hi'
-import { FaDiscord, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { FaDiscord, FaTwitter } from 'react-icons/fa';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -54,7 +54,7 @@ const EarlyAccessForm = () => {
     //     }
     // }, [success]);
 
-    const handleEraseForm = () => {
+    const handleEraseForm = useCallback(() => {
         setCheck("");
         setName("");
         setEmail("");
@@ -76,7 +76,7 @@ const EarlyAccessForm = () => {
         setAccessControl("");
         setGovernance("");
         setTokenLaunch("");
-    }
+    }, []);
 
     const handleAddResource = () => {
         if (title === '') {

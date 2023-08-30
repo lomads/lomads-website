@@ -1,33 +1,33 @@
-import React from "react";
+import React, { useCallback } from "react";
 import './Navbar.style.css';
 
 import logo from '../../assets/logo.svg'
 import logolight from '../../assets/logo-light.svg'
-import menu from '../../assets/menu.svg';
+// import menu from '../../assets/menu.svg';
 
 import { IoCloseOutline } from 'react-icons/io5'
 
 const Navbar = () => {
 
-    const handleSlideDownAnimation = () => {
-        const menu = document.getElementById('full-screen-menu');
-        menu.classList.remove('slideUp');
-        menu.classList.add('slideDown');
-    }
+    // const handleSlideDownAnimation = () => {
+    //     const menu = document.getElementById('full-screen-menu');
+    //     menu.classList.remove('slideUp');
+    //     menu.classList.add('slideDown');
+    // }
 
-    const handleSlideUpAnimation = () => {
+    const handleSlideUpAnimation = useCallback(() => {
         const menu = document.getElementById('full-screen-menu');
         menu.classList.remove('slideDown');
         menu.classList.add('slideUp');
-    }
+    }, []);
 
     return (
         <>
             <section className="navbar-container">
                 <img src={logo} alt="logo" />
                 <div style={{ display: 'flex', alignItems: 'center' }}>
-                    <a className="menu-p" href="https://lomads.medium.com/" target="_blank">BLOG</a>
-                    <a className="menu-p" href="https://lomads-1.gitbook.io/lomads/" target="_blank">DOCS</a>
+                    <a className="menu-p" href="https://lomads.medium.com/" target="_blank" rel="noreferrer">BLOG</a>
+                    <a className="menu-p" href="https://lomads-1.gitbook.io/lomads/" target="_blank" rel="noreferrer">DOCS</a>
                     {/* <button onClick={handleSlideDownAnimation}><img className="menu" src={menu} alt="logo" /></button> */}
                 </div>
             </section>
