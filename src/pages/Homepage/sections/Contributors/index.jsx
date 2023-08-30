@@ -1,13 +1,13 @@
 import './Contributors.style.css';
 import React, { useCallback } from 'react';
-import nishant from '../../../../assets/team/Nishant.jpg';
-import naman from '../../../../assets/team/Naman.jpg';
-import harish from '../../../../assets/team/Harish.png';
-import Fred from '../../../../assets/team/Fred.jpg';
-import Tamaghna from '../../../../assets/team/Tamaghna.jpg';
-import Zelie from '../../../../assets/team/Zelie.jpg';
-import Zohaib from '../../../../assets/team/Zohaib.png';
-import Roshi from '../../../../assets/team/Roshi.jpg';
+import nishant from '../../../../assets/team/Nishant.webp';
+import naman from '../../../../assets/team/Naman.webp';
+import harish from '../../../../assets/team/Harish.webp';
+import Fred from '../../../../assets/team/Fred.webp';
+import Tamaghna from '../../../../assets/team/Tamaghna.webp';
+import Zelie from '../../../../assets/team/Zelie.webp';
+import Zohaib from '../../../../assets/team/Zohaib.webp';
+import Roshi from '../../../../assets/team/Roshi.webp';
 
 import ChevronLeft from '../../../../assets/chevron-left.svg';
 import ChevronRight from '../../../../assets/chevron-right.svg';
