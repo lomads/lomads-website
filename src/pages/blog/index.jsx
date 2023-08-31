@@ -2,7 +2,7 @@ import React, { useCallback, useState } from "react";
 import styles from "./style.module.css";
 import Navbar from "../../components/Navbar";
 import BlogPageHeader from "./components/header";
-import data from "./data.json";
+import data from "../../utils/blog.json";
 import Post from "./components/post";
 
 const Blogs = () => {

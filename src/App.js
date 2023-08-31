@@ -14,6 +14,7 @@ function App() {
   const PrivacyPolicy = lazy(() => import("./pages/Privacy"));
   const TermsOfService = lazy(() => import("./pages/Tnc"));
   const Blog = lazy(() => import("./pages/blog"));
+  const BlogPost = lazy(() => import("./pages/blogPost"));
 
   return (
     <div className="App">
@@ -25,6 +26,7 @@ function App() {
           <Route path="/termsOfService" element={<TermsOfService />} />
           <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:url" element={<BlogPost />} />
         </Routes>
       </Suspense>
     </div>
