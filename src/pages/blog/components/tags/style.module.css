@@ -1,0 +1,43 @@
+.tagsWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 30px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: #76808d;
+  background-color: white;
+  min-height: 22px;
+  border-radius: 100px;
+  border: 1px solid #909090;
+  padding: 4px;
+  padding-left: 3.22px;
+  padding-right: 6.78px;
+}
+
+.dot {
+  border-radius: 100%;
+  background-color: #909090;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.postTag {
+  border: none;
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    column-gap: 18px;
+  }
+}

@@ -9,6 +9,21 @@
     position: absolute;
 }
 
+.navbar-container .logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.navbar-container .logo-wrapper .blog-logo {
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: -0.176px;
+    font-family: 'Open Sans';
+    position: relative;
+    top: -10px;
+}
+
 .navbar-container .menu-p {
     font-style: normal;
     font-weight: 400;
