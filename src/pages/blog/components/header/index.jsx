@@ -15,6 +15,10 @@ const BlogPageHeader = ({ onSearch }) => {
     setSearch(e.target.value);
   }, []);
 
+  const onSearchClick = useCallback(() => {
+    onSearch(search);
+  }, [search, onSearch]);
+
   return (
     <div className={styles.wrapper}>
       <Tags tags={tags} />
@@ -28,7 +32,7 @@ const BlogPageHeader = ({ onSearch }) => {
         />
         <button
           type="button"
-          onClick={onSearch}
+          onClick={onSearchClick}
           className={styles.searchButton}
         >
           <svg

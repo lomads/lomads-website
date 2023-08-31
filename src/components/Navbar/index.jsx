@@ -35,9 +35,10 @@ const Navbar = ({ useBlogLogo }) => {
         </div>
 
         <div style={{ display: "flex", alignItems: "center" }}>
-          <Link className="menu-p" to="/blog" target="_blank" rel="noreferrer">
+          <Link className="menu-p" to="/blog">
             BLOG
           </Link>
+          
           <a
             className="menu-p"
             href="https://lomads-1.gitbook.io/lomads/"
