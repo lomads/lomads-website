@@ -1,7 +1,6 @@
 import React from "react";
 import './Banner.style.css';
 
-import hero from '../../../../assets/HERO.svg';
 import pill1 from '../../../../assets/pill1.svg';
 import pill2 from '../../../../assets/pill2.svg';
 
@@ -34,7 +33,7 @@ const Banner = () => {
             <button data-speed={window.innerWidth > 1024 ? "1.2" : "1"} className="access-btn animate__animated animate__fadeIn animate__delay-1s" onClick={() => { window.location.href = "/earlyAccess" }}>JOIN OUR WAITLIST <HiOutlineArrowRight size={20} /></button>
 
             <div id="hero-section" className="hero-section animate__animated animate__fadeInUp animate__slow">
-                <img src={hero} className="hero-img" alt="hero" data-speed="1" />
+                <img src="https://raw.githubusercontent.com/lomads/lomads-website/main/src/assets/HERO.svg" className="hero-img" alt="hero" data-speed="1" />
                 <img src={box1} className="whitebox pos1" alt="box1" data-speed={window.innerWidth > 1024 ? "1.2" : "1"} />
                 <img src={box2} className="whitebox pos2" alt="box2" data-speed={window.innerWidth > 1024 ? "1.5" : "1"} />
                 <img src={box3} className="whitebox pos3" alt="box3" data-speed={window.innerWidth > 1024 ? "1.2" : "1"} />
