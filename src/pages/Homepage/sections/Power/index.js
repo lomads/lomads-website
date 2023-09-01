@@ -33,9 +33,8 @@ const Power = () => {
                     <p>Member contact information and details are safely encrypted.</p>
                 </div>
             </div>
-            
-        </section>
+            </section>
     )
 }
+
 export default Power;
-/* <button className="access-btn" onClick={() => { window.open("https://twitter.com/lomads_co") }}>SEND US DM <HiOutlineArrowRight size={20} /></button> */
