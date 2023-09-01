@@ -94,7 +94,7 @@
 }
 
 .hands-container .hands-section-row {
-    width: 50%;
+    width: 45%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,7 +133,7 @@
     color: #76808D;
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 344px) {
     .hands-container {
         height: 0;
         height: 100%;
@@ -152,11 +152,19 @@
 
     .hands-container .hands-p-container {
         width: 80%;
-        margin-top: 100px;
+
     }
 
     .hands-container .hands-p-container .hands-p {
+        font-size: 18px;
+        margin-top: 0px; 
+        margin-bottom: 0px;
+    }
+
+    .hands-container .hands-section-row .hands-section h1  {
         font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     .hands-container .hands-section-row {
@@ -219,22 +227,26 @@
     }
 
     .hands-container .hands-title {
-        font-size: 40px;
+        font-size: 30px;
         line-height: normal;
         margin-top: 100px;
     }
 
     .hands-container .hands-title span {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .hands-container .hands-p-container {
         width: 80%;
-        margin-top: 100px;
     }
 
     .hands-container .hands-p-container .hands-p {
-        font-size: 20px;
+        font-size: 16px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .hands-container .hands-section-row .hands-section h1 {
+        font-size: 18px;
     }
 
     .hands-container .hands-section-row {
@@ -287,7 +299,7 @@
     }
 }
 
-@media only screen and (min-width: 376px) and (max-width : 425px) {
+@media only screen and (min-width: 376px) and (max-width : 549px) {
     .hands-container {
         height: 0;
         height: 100%;
@@ -306,11 +318,17 @@
 
     .hands-container .hands-p-container {
         width: 80%;
-        margin-top: 100px;
     }
 
     .hands-container .hands-p-container .hands-p {
-        font-size: 20px;
+        font-size: 16px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .hands-container .hands-section-row .hands-section h1  {
+        font-size: 18px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     .hands-container .hands-section-row {
@@ -363,6 +381,58 @@
     }
 }
 
-@media only screen and (min-width: 426px) and (max-width : 768px) {}
+@media only screen and (min-width: 550px) and (max-width : 768px) {
+    .hands-container .hands-title {
+        font-size: 50px;
+    }
+    .hands-container .hands-title span{
+        font-size: 50px;
+    }
+    .hands-container .left-img {
+        width:50%
+    }
+    .hands-container .right-img {
+        width:50%
+    }
+    .hands-container .hands-p-container .hands-p {
+        font-size: 18px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .hands-container .hands-section-row .hands-section h1  {
+        font-size: 22px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .hands-container .hands-section-row {
+        width: 80%;
+    }
+}
 
-@media only screen and (min-width: 769px) and (max-width : 1024px) {}
+@media only screen and (min-width: 769px) and (max-width : 1024px) {
+    .hands-container .hands-title {
+        font-size: 60px;
+    }
+    .hands-container .hands-title span{
+        font-size: 60px;
+    }
+    .hands-container .left-img {
+        width:50%
+    }
+    .hands-container .right-img {
+        width:50%
+    }
+    .hands-container .hands-p-container .hands-p {
+        font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .hands-container .hands-section-row .hands-section h1  {
+        font-size: 22px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .hands-container .hands-section-row {
+        width: 60%;
+    }
+}
