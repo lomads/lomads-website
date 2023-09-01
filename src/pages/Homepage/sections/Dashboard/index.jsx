@@ -2,7 +2,7 @@ import React from "react";
 import './Dashboard.style.css';
 
 import dashboard from '../../../../assets/DASHBOARD.svg';
-import dashboardsm from '../../../../assets/dashboard-mobile.svg';
+import dashboardsm from '../../../../assets/MobileDash.svg';
 import milestonesm from '../../../../assets/milestone-mobile.svg';
 import tasks from '../../../../assets/Tasks.svg';
 import payment from '../../../../assets/recurring_payment.svg';
@@ -18,6 +18,18 @@ const Dashboard = () => {
                 <h1>ONE <span>DASHING</span><br />DASHBOARD</h1>
             </div>
 
+            <div className="dashboard-text-container" style={{"width" : "70%"}}>
+            {
+                 <div className="dashboard-text pos1">
+                    <h1>A one-glance dashboard that cuts through data silos, creating a central source of truth.</h1>
+                    <p></p>
+                </div>}
+                
+            </div>
+
+            <div className="dashboard-text-container">
+      
+
             <div className="dashboard-body">
                 <img className="imgSm" src={dashboardsm} alt="" />
                 <img className="img1" src={dashboard} alt="" />
@@ -30,19 +42,8 @@ const Dashboard = () => {
                 {/* <img className="imgMilestone" src={milestonesm} alt="" /> */}
             </div>
 
-            <div className="dashboard-text-container">
-            {/*
-                 <div className="dashboard-text pos1">
-                    <h1>Easy information access</h1>
-                    <p>The Lomads dashboard is expertly designed to help you focus on tasks that matter,<span> without overwhelming you with information.</span></p>
-                </div>
 
-                <div className="dashboard-text pos2">
-                    <h1>Efficient workflow automation</h1>
-                    <p>Our in-built automations help you save time by eliminating repetitive tasks. With just a click, a project milestone can be approved and in just a snap, a transaction is created for the respective team, automatically. <span>Sleek OP!</span></p>
-                </div>
-                
-                */}
+
             </div>
 
             <img className="imgMilestone" src={milestonesm} alt="" />
