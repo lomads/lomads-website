@@ -170,6 +170,7 @@
     }
 
     .power-container .power-section-container .power-section p {
+        font-size: 14px;
         text-align: center;
     }
 }
@@ -222,7 +223,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /*margin-bottom: 70px;*/
+        margin-bottom: 70px;
     }
 
     .power-container .power-section-container .power-section h1 {
@@ -283,7 +284,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /*margin-bottom: 70px;*/
+        margin-bottom: 70px;
     }
 
     .power-container .power-section-container .power-section h1 {
