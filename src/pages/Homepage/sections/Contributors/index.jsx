@@ -1,14 +1,14 @@
 import './Contributors.style.css';
 import React, { useCallback } from 'react';
-import nishant from '../../../../assets/team/Nishant.webp';
-import naman from '../../../../assets/team/Naman.webp';
-import harish from '../../../../assets/team/Harish.webp';
-import Fred from '../../../../assets/team/Fred.webp';
-import Tamaghna from '../../../../assets/team/Tamaghna.webp';
-import Zelie from '../../../../assets/team/Zelie.webp';
-import Zohaib from '../../../../assets/team/Zohaib.webp';
-import Roshi from '../../../../assets/team/Roshi.webp';
-import Anais from 'src/assets/team/Anais.webp';
+import nishant from '../../../../assets/Nishant.svg';
+import naman from '../../../../assets/Naman.svg';
+import harish from '../../../../assets/Harish.svg';
+import Fred from '../../../../assets/Fred.svg';
+import Tamaghna from '../../../../assets/Tamaghna.svg';
+import Zelie from '../../../../assets/Zelie.svg';
+import Zohaib from '../../../../assets/Zohaib.svg';
+import Roshi from '../../../../assets/Roshi.svg';
+import Anais from 'src/assets/Anais.svg';
 
 
 import ChevronLeft from '../../../../assets/chevron-left.svg';
