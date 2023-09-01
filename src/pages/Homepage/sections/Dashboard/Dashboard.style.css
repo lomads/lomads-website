@@ -156,6 +156,10 @@
 }
 
 @media only screen and (max-width: 344px) {
+    .dashboard-container {
+        height: 125vh;
+    }
+
     .dashboard-container .dashboard-header {
         margin-bottom: 60px;
     }
@@ -170,7 +174,6 @@
 
     .dashboard-container .dashboard-body {
         height: 0;
-        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -252,6 +255,10 @@
 }
 
 @media only screen and (min-width: 345px) and (max-width : 375px) {
+
+    .dashboard-container {
+        height: 125vh;
+    }
     .dashboard-container .dashboard-header {
         margin-bottom: 30px;
     }
@@ -266,7 +273,6 @@
 
     .dashboard-container .dashboard-body {
         height: 0;
-        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -347,6 +353,11 @@
 }
 
 @media only screen and (min-width: 376px) and (max-width : 549px) {
+
+
+    .dashboard-container {
+        height: 125vh;
+    }
     .dashboard-container .dashboard-header {
         margin-bottom: 30px;
     }
@@ -361,7 +372,6 @@
 
     .dashboard-container .dashboard-body {
         height: 0;
-        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -443,6 +453,10 @@
 }
 
 @media only screen and (min-width: 550px) and (max-width : 768px) {
+
+    .dashboard-container {
+        height: 125vh;
+    }
     .dashboard-container .dashboard-header {
         margin-bottom: 30px;
     }
@@ -457,7 +471,6 @@
 
     .dashboard-container .dashboard-body {
         height: 0;
-        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -542,6 +555,7 @@
 }
 
 @media only screen and (min-width: 769px) and (max-width : 1024px) {
+    
     .dashboard-container .dashboard-header {
         margin-bottom: 30px;
     }
