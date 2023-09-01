@@ -102,7 +102,7 @@ const Sound = () => {
         <section className="sound-container" id="sound-container">
             <div className="overlay"></div>
             <div className="sound-header-container">
-                <div className="sound-header" >
+            <div className="sound-header" >
                     <h1>DECENTRALIZED DOESN'T MEAN</h1>
                 </div>
                 <div className="sound-header">
@@ -111,7 +111,7 @@ const Sound = () => {
             </div>
 
             <div ref={ref} className="sound-content scale-down">
-                <div className="sound-section">
+            <div className="sound-section">
                     <h1>Scalable Access Management</h1>
                     <p>Integrate and streamline access across diverse tools and platforms like Discord and Notion. Free up project facilitators to <span>focus on high-value tasks</span>, rather than administrative overhead.</p>
                 </div>
