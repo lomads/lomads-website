@@ -128,14 +128,14 @@
 
 .banner-container .heading-section .heading-pill.pos1 {
     position: absolute;
-    top: 0%;
-    left: 22%;
+    top: 15%;
+    left: 15%;
 }
 
 .banner-container .heading-section .heading-pill.pos2 {
     position: absolute;
     bottom: 5%;
-    right: 23%;
+    right: 20%;
 }
 
 .banner-container .heading-section .heading-container {
@@ -243,7 +243,7 @@
     right: 5%;
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 344px) {
     .banner-container {
         overflow-x: hidden;
         padding-top: 0;
@@ -262,13 +262,13 @@
     }
 
     .banner-container .heading-section .heading-container h1 {
-        font-size: 24px;
+        font-size: 30px;
         line-height: normal;
         margin: 0;
     }
 
     .banner-container .heading-section .heading-container h1 span {
-        font-size: 24px;
+        font-size: 30px;
     }
 
     .banner-container .heading-section .heading-pill {
@@ -288,7 +288,7 @@
     } */
 
     .banner-container p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .banner-container .hero-section {
@@ -296,7 +296,7 @@
     }
 
     .banner-container .hero-section img {
-        width: 225%;
+        width: 100%;
     }
 
     .banner-container .hero-section .whitebox {
@@ -362,7 +362,7 @@
     }
 
     .banner-container .hero-section img {
-        width: 225%;
+        width: 100%;
     }
 
     .banner-container .hero-section .whitebox {
@@ -374,7 +374,7 @@
     }
 }
 
-@media only screen and (min-width: 376px) and (max-width : 425px) {
+@media only screen and (min-width: 376px) and (max-width : 549px) {
     .banner-container {
         overflow-x: hidden;
     }
@@ -430,7 +430,7 @@
     }
 
     .banner-container .hero-section img {
-        width: 225%;
+        width: 100%;
     }
 
     .banner-container .hero-section .whitebox {
@@ -440,9 +440,23 @@
     .banner-container .access-btn {
         font-size: 16px;
     }
+    .banner-container .hero-section .whitebox {
+        height: 70px;
+        width: 200px;
+    }
+
+    .banner-container .hero-section .whitebox.pos1 {
+        left: 0%;
+    }
+
+    .banner-container .hero-section .whitebox.pos3 {
+        position: absolute;
+        bottom: 25%;
+        right: 2%;
+    }
 }
 
-@media only screen and (min-width: 426px) and (max-width : 768px) {
+@media only screen and (min-width: 550px) and (max-width : 768px) {
     .banner-container {
         overflow-x: hidden;
     }
@@ -497,6 +511,18 @@
         position: absolute;
         bottom: 25%;
         right: 2%;
+    }
+    .banner-container .heading-section .heading-container h1 {
+        font-size: 50px;
+        line-height: normal;
+        margin: 0;
+    }
+
+    .banner-container .heading-section .heading-container h1 span {
+        font-size: 50px;
+    }
+    .banner-container .heading-section .heading-pill {
+        display: none;
     }
 }
 
@@ -555,5 +581,17 @@
         position: absolute;
         bottom: 25%;
         right: 2%;
+    }
+    .banner-container .heading-section .heading-container h1 {
+        font-size: 70px;
+        line-height: normal;
+        margin: 0;
+    }
+
+    .banner-container .heading-section .heading-container h1 span {
+        font-size: 70px;
+    }
+    .banner-container .heading-section .heading-pill {
+        display: none;
     }
 }
