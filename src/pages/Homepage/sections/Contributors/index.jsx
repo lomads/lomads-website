@@ -8,7 +8,7 @@ import Tamaghna from '../../../../assets/team/Tamaghna.webp';
 import Zelie from '../../../../assets/team/Zelie.webp';
 import Zohaib from '../../../../assets/team/Zohaib.webp';
 import Roshi from '../../../../assets/team/Roshi.webp';
-import Anais from '../../../../assets/team/Anais.jpeg';
+import Anais from '../../../../assets/team/Anais.webp';
 
 import ChevronLeft from '../../../../assets/chevron-left.svg';
 import ChevronRight from '../../../../assets/chevron-right.svg';
