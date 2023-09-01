@@ -17,25 +17,25 @@ const Power = () => {
             </h1>
 
             <div className="power-content-container">
-                <p className="power-content" data-scroll data-scroll-speed={1}>With SBTs, your members will no longer be passive passengers.<br />Instead, they can take command of their personal data and credentials.</p>
+                <p className="power-content" data-scroll data-scroll-speed={1}>With Soulbound Tokens, members become active participants, <br />controlling their personal data and credentials.</p>
             </div>
             <div className="power-section-container">
                 <div className="power-section" data-scroll data-scroll-speed={1}>
                     <h1>Flexible Membership Choices</h1>
-                    <p>Choose between free or one-time payment, and open access or whitelisted entry.</p>
+                    <p>Opt for free or one-time payments, and open or whitelisted membership.</p>
                 </div>
                 <div className="power-section" data-scroll data-scroll-speed={1}>
                     <h1>Inclusive <br />Onboarding </h1>
-                    <p>Embrace newcomers by accepting social login and credit card payments (if applicable).</p>
+                    <p>Welcome all with social logins and credit card payments.</p>
                 </div>
                 <div className="power-section" data-scroll data-scroll-speed={1}>
-                    <h1>Gas Fee <br />Coverage</h1>
-                    <p>Go the extra mile by offering free minting of SBTs.</p>
+                    <h1>Secure Data<br />Encryption</h1>
+                    <p>Member contact information and details are safely encrypted.</p>
                 </div>
             </div>
-            <button className="access-btn" onClick={() => { window.open("https://twitter.com/lomads_co") }}>SEND US DM <HiOutlineArrowRight size={20} /></button>
+            
         </section>
     )
 }
-
 export default Power;
+/* <button className="access-btn" onClick={() => { window.open("https://twitter.com/lomads_co") }}>SEND US DM <HiOutlineArrowRight size={20} /></button> */
