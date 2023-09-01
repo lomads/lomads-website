@@ -6,6 +6,7 @@ import safe from '../../../../assets/safe.svg'
 import web3auth from '../../../../assets/web3auth.svg'
 import biconomy from '../../../../assets/biconomy.svg'
 import eth from '../../../../assets/eth.svg'
+import { HiOutlineArrowRight } from 'react-icons/hi'
 
 const Web3 = () => {
 
@@ -29,8 +30,8 @@ const Web3 = () => {
             <img className='web-img' src={web3auth} alt="" />
             <img className='biconomy-img' src={biconomy} alt="" />
             <p data-speed={window.innerWidth > 1024 ? "0.9" : "1"}>More integrations in the pipeline</p>
-            {/*             <button data-speed={window.innerWidth > 1024 ? "0.9" : "1"} onClick={() => { window.location.href = "/partner" }}>join as a partner <HiOutlineArrowRight size={22} /></button>
- */}         </section>
+            {<button style={{marginTop:100}} data-speed={window.innerWidth > 1024 ? "0.9" : "1"} onClick={() => { window.location.href = "/partner" }}>JOIN OUR WAITLIST <HiOutlineArrowRight size={22} /></button>}         
+            </section>
     )
 }
 
