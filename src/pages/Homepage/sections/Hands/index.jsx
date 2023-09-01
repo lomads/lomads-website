@@ -51,17 +51,18 @@ const Hands = () => {
 
             <h1 data-speed={window.innerWidth > 1024 ? "1.5" : "1"} className='hands-title'>You <span>use</span><br />You <span>own</span></h1>
             <div data-speed={window.innerWidth > 1024 ? "1.5" : "1"} className='hands-p-container'>
-                <p className='hands-p'>The future of customer-platform relationships is here. Here, everyone matters, everyone contributes, and everyone thrives, together.</p>
+                <p className='hands-p'>At Lomads, you're not just a user; you're a stakeholder vested in our collective future. Our platform is powered by our native token, LMD, and is geared towards progressive decentralization.</p>
             </div>
 
             <div data-speed={window.innerWidth > 1024 ? "1.5" : "1"} className='hands-section-row'>
                 <div className='hands-section'>
-                    <h1>A piece of Lomads</h1>
-                    <p>Pay for what you use in USDC or fiat, and in return own a piece of the platform.</p>
+                    <h1>Tokens with Benefits</h1>
+                    <p>Lower your fees and unlock unique perks when you stake your Lomads tokens.<br/> </p>
+
                 </div>
                 <div className='hands-section'>
-                    <h1>A voice in Lomads</h1>
-                    <p>Have a say in the decisions related to the platform</p>
+                    <h1>A Seat at the Table</h1>
+                    <p>Stake tokens, steer the platform. Your input directly shapes our future, making Lomads work for you.</p>
                 </div>
             </div>
         </section>
@@ -69,3 +70,12 @@ const Hands = () => {
 }
 
 export default Hands;
+
+
+
+
+
+
+
+
+
