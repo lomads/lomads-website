@@ -8,6 +8,7 @@ import Tamaghna from '../../../../assets/team/Tamaghna.webp';
 import Zelie from '../../../../assets/team/Zelie.webp';
 import Zohaib from '../../../../assets/team/Zohaib.webp';
 import Roshi from '../../../../assets/team/Roshi.webp';
+import Anais from '../../../../assets/team/Anais.jpeg';
 
 import ChevronLeft from '../../../../assets/chevron-left.svg';
 import ChevronRight from '../../../../assets/chevron-right.svg';
@@ -110,13 +111,13 @@ const Contributors = () => {
                             </div>
                         </div>
 
-                        <div onClick={openPage("https://www.linkedin.com/in/zohaib-kibria-221890137/")} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '6' }}>
-                            <img src={Zohaib} alt="nishant" style={{ height: '100%' }} />
+                        <div onClick={openPage("https://www.linkedin.com/in/anais-rachel-0a0b43a2")} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '6' }}>
+                            <img src={Anais} alt="nishant" style={{ height: '100%' }} />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
                                 <FaLinkedin size={20} color="#FFF" />
-                                <h1>Zohaib</h1>
-                                <p>Full stack dev.</p>
+                                <h1>Anais</h1>
+                                <p>Partnerships</p>
                             </div>
                         </div>
 
