@@ -40,7 +40,6 @@ const Homepage = () => {
                         <Power />
                         <Web3 />
                         <Hands />
-                        <Fit />
                         <Contributors />
                         <Contact />
                     </div>
