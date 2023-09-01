@@ -1,6 +1,6 @@
 .dashboard-container {
     width: 100%;
-    /* height: 200vh; */
+    height: 175vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,6 +13,7 @@
     display: flex;
     justify-content: center;
     margin-top: 100px;
+    
 }
 
 .dashboard-container .dashboard-header h1 {
@@ -36,6 +37,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    top: 100px;
 }
 
 .dashboard-container .dashboard-body .imgSm {
@@ -99,14 +101,14 @@
 
 .dashboard-container .dashboard-text-container {
     width: 100%;
-    height: 250px;
+    height: 50px;
     /* height: 0px; */
     display: flex;
     position: relative;
 }
 
 .dashboard-container .dashboard-text-container .dashboard-text {
-    width: 25%;
+    width: 70%;
     /* background-color: red; */
 }
 
@@ -114,13 +116,13 @@
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
-    line-height: 25px;
-    /* identical to box height, or 100% */
-    letter-spacing: -0.011em;
-
+    line-height: 30px;
+    margin-bottom: -50px;
+    /* identical to box height, or 100% letter-spacing: -0.011em; */
     /* WHITE */
     color: #FFFFFF;
-    margin-bottom: 15px;
+    text-align: center;
+
 }
 
 .dashboard-container .dashboard-text-container .dashboard-text p {
@@ -142,6 +144,8 @@
 
 .dashboard-container .dashboard-text-container .dashboard-text.pos1 {
     position: absolute;
+    margin-top: 10%;
+    bottom: 10%;
     left: 15%;
 }
 
@@ -151,7 +155,7 @@
     right: 15%;
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 344px) {
     .dashboard-container .dashboard-header {
         margin-bottom: 60px;
     }
@@ -176,14 +180,9 @@
     .dashboard-container .dashboard-body .imgSm {
         display: block;
         width: 100%;
-        margin-bottom: 80px;
+        margin-bottom: -800px;
     }
 
-    .dashboard-container .imgMilestone {
-        display: block;
-        width: 100%;
-        margin-bottom: 100px;
-    }
 
     .dashboard-container .dashboard-body .img1 {
         display: none;
@@ -243,6 +242,7 @@
     }
 
     .dashboard-container .dashboard-text-container .dashboard-text h1 {
+        font-size: 18px;
         text-align: center;
     }
 
@@ -257,11 +257,11 @@
     }
 
     .dashboard-container .dashboard-header h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .dashboard-container .dashboard-header h1 span {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .dashboard-container .dashboard-body {
@@ -276,14 +276,9 @@
     .dashboard-container .dashboard-body .imgSm {
         display: block;
         width: 100%;
-        margin-bottom: 80px;
+        margin-bottom: -800px;
     }
 
-    .dashboard-container .imgMilestone {
-        display: block;
-        width: 100%;
-        margin-bottom: 100px;
-    }
 
     .dashboard-container .dashboard-body .img1 {
         display: none;
@@ -342,6 +337,7 @@
     }
 
     .dashboard-container .dashboard-text-container .dashboard-text h1 {
+        font-size: 18px;
         text-align: center;
     }
 
@@ -350,7 +346,7 @@
     }
 }
 
-@media only screen and (min-width: 376px) and (max-width : 425px) {
+@media only screen and (min-width: 376px) and (max-width : 549px) {
     .dashboard-container .dashboard-header {
         margin-bottom: 30px;
     }
@@ -374,15 +370,11 @@
 
     .dashboard-container .dashboard-body .imgSm {
         display: block;
-        width: 100%;
-        margin-bottom: 80px;
+        /*width: 100%;*/
+        margin-bottom: -800px;
     }
 
-    .dashboard-container .imgMilestone {
-        display: block;
-        width: 100%;
-        margin-bottom: 100px;
-    }
+
 
     .dashboard-container .dashboard-body .img1 {
         display: none;
@@ -441,6 +433,7 @@
     }
 
     .dashboard-container .dashboard-text-container .dashboard-text h1 {
+        font-size: 18px;
         text-align: center;
     }
 
@@ -449,7 +442,7 @@
     }
 }
 
-@media only screen and (min-width: 426px) and (max-width : 768px) {
+@media only screen and (min-width: 550px) and (max-width : 768px) {
     .dashboard-container .dashboard-header {
         margin-bottom: 30px;
     }
@@ -463,107 +456,89 @@
     }
 
     .dashboard-container .dashboard-body {
-        width: 100%;
-        height: 100vh;
+        height: 0;
+        height: 100%;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        position: relative;
     }
 
+
+    .dashboard-container .dashboard-body .imgSm {
+        display: block;
+       /*width: 100%;*/
+        margin-bottom: -780px;
+    }
+
+
+
     .dashboard-container .dashboard-body .img1 {
-        z-index: 2;
-        position: absolute;
-        top: -20%;
-        left: 0%;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+        display: none;
     }
 
     .dashboard-container .dashboard-body .img2 {
-        z-index: 1;
-        position: absolute;
-        top: -15%;
-        right: 0%;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        /* display: none; */
+        display: none;
     }
 
     .dashboard-container .dashboard-body .img3 {
-        z-index: 3;
-        position: absolute;
-        top: 0;
-        right: 5%;
-        /* display: none; */
-
+        display: none;
     }
 
     .dashboard-container .dashboard-body .img4 {
-        z-index: 3;
-        position: absolute;
-        top: 40%;
-        right: 0%;
-        /* display: none; */
+        display: none;
     }
 
     .dashboard-container .dashboard-body .img5 {
-        z-index: 3;
-        position: absolute;
-        top: 0%;
-        left: 5%;
+        display: none;
     }
 
     .dashboard-container .dashboard-body .img6 {
-        /* z-index: 3;
-        position: absolute;
-        top: 350px;
-        left: 5%; */
         display: none;
     }
 
     .dashboard-container .dashboard-body .img7 {
-        z-index: 3;
-        position: absolute;
-        top: 55%;
-        left: 5%;
+        display: none;
     }
 
     .dashboard-container .dashboard-text-container {
         width: 100%;
-        /* height: 15vh; */
         flex-direction: column;
-        margin-bottom: 100px;
-        margin-top: -15vh;
+        margin: 0;
+        /* height: 400px; */
         height: 0px;
     }
 
     .dashboard-container .dashboard-text-container .dashboard-text {
-        width: 45%;
+        width: 100%;
+        margin-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 27px;
+
     }
 
+
     .dashboard-container .dashboard-text-container .dashboard-text.pos1 {
-        position: absolute;
-        top: 0%;
-        left: 0%;
+        position: static;
     }
 
     .dashboard-container .dashboard-text-container .dashboard-text.pos2 {
-        position: absolute;
-        top: 0%;
-        right: 0%;
         margin: 0;
+        position: static;
     }
 
     .dashboard-container .dashboard-text-container .dashboard-text h1 {
+        font-size: 22px;
         text-align: center;
     }
 
     .dashboard-container .dashboard-text-container .dashboard-text p {
         text-align: center;
     }
+
 }
 
 @media only screen and (min-width: 769px) and (max-width : 1024px) {
