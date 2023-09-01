@@ -70,12 +70,3 @@ const Hands = () => {
 }
 
 export default Hands;
-
-
-
-
-
-
-
-
-
