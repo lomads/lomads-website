@@ -102,28 +102,26 @@ const Sound = () => {
         <section className="sound-container" id="sound-container">
             <div className="overlay"></div>
             <div className="sound-header-container">
-                <div className="sound-header">
-                    <h1 className="right_to_left" id="right_to_left" >Why hear just <span>sounds</span></h1>
+                <div className="sound-header" >
+                    <h1>DECENTRALIZED DOESN'T MEAN</h1>
                 </div>
                 <div className="sound-header">
-                    <h1 className="left_to_right">when you can listen to <span>music?</span></h1>
+                    <h1><span>DISORGANIZED</span></h1>
                 </div>
             </div>
 
             <div ref={ref} className="sound-content scale-down">
                 <div className="sound-section">
-                    <h1>Streamlined Finances</h1>
-                    <p>With a single, intuitive dashboard, effortlessly <span>navigate across multiple treasuries</span> and blockchains, simplifying your crypto transactions.
-                    Say goodbye to cumbersome record-keeping with our <span>built-in auto-labelling</span> feature.</p>
+                    <h1>Scalable Access Management</h1>
+                    <p>Integrate and streamline access across diverse tools and platforms like Discord and Notion. Free up project facilitators to <span>focus on high-value tasks</span>, rather than administrative overhead.</p>
                 </div>
                 <div className="sound-section">
-                    <h1>Personal Data Ownership</h1>
-                    <p>Embrace the future with Soul Bound Tokens (SBTs). These revolutionary tokens enable members to maintain a personal <span>record of their contributions and roles,ushering in a new era of personal data ownership</span>.</p>
+                    <h1>Easy Monitoring & Validation</h1>
+                    <p>Track <span>progress markers</span> and validate results efficiently. Membership soulbound tokens launched through Lomads ensure every<span> member's contribution is recognized.</span></p>
                 </div>
                 <div className="sound-section">
-                    <h1>Seamless Operations</h1>
-                    <p>Integrate with popular platforms like Trello, Github, and Discord. <span>Automate permissions</span> based on roles or criteria using SBTs. Easily <span>add compensation to tasks</span> imported from these tools and facilitate payments.<br />
-                        </p>
+                    <h1>Streamlined Fund Disbursal</h1>
+                    <p>One-stop solution for financial management, from allocations to payouts, complete with <span> web3-tailored financial reporting</span> and powered by Safe multisig.</p>
                 </div>
             </div>
 
