@@ -41,7 +41,7 @@ const Contact = () => {
     return (
         <section className='contact-container' data-scroll-section style={{ perspective: '1px' }}>
             <img src={logo} alt="logo" />
-            <h1><span>CONTACT</span> US</h1>
+            <h1><span>KEEP</span> UPDATED</h1>
             <p>The best is yet to come! Be a part of our journey.</p>
 
             <div className='contact-row'>
@@ -102,6 +102,8 @@ const Contact = () => {
                 <a href='/privacyPolicy'>PRIVACY POLICY</a>
                 <div className='dash'></div>
                 <a href='/termsOfService'>TERMS OF SERVICE</a>
+                <div className='dash'></div>
+                <a href='https://drive.google.com/drive/folders/1vrSFcAAR0KelL3FDcsDiqyNakZ18zuYr?usp=sharing' target="_blank">PRESS KIT</a>
             </div>
         </section>
     )
