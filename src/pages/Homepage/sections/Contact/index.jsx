@@ -104,6 +104,7 @@ const Contact = () => {
                 <a href='/termsOfService'>TERMS OF SERVICE</a>
                 <div className='dash'></div>
                 <a href='https://drive.google.com/drive/folders/1vrSFcAAR0KelL3FDcsDiqyNakZ18zuYr?usp=sharing' target="_blank">PRESS KIT</a>
+
             </div>
         </section>
     )
