@@ -233,6 +233,7 @@
 }
 
 @media only screen and (min-width: 345px) and (max-width : 375px) {
+   
     .web3-container {
         height: 0;
         height: 100%;
@@ -255,50 +256,50 @@
     .web3-container .mobile-img {
         display: block;
         width: 80%;
-        height: 340px;
+        height: 280px;
         position: relative;
         margin-bottom: 0;
     }
 
     .web3-container .mobile-img .ipfs-img-1 {
         position: absolute;
-        height: 90px;
+        height: 70px;
         top: 0;
-        right: 5%;
+        right: 10%;
     }
 
     .web3-container .safe-img-1 {
         position: absolute;
-        height: 90px;
+        height: 70px;
         top: 5%;
-        left: 5%;
+        left: 10%;
     }
 
     .web3-container .mobile-img .polygon-img-1 {
         position: absolute;
-        height: 90px;
-        top: 30%;
+        height: 70px;
+        top: 29%;
         left: -5%;
     }
 
     .web3-container .mobile-img .eth-img-1 {
         position: absolute;
-        height: 90px;
+        height: 70px;
         top: 20%;
         right: 0%;
     }
 
     .web3-container .mobile-img .web-img-1 {
         position: absolute;
-        height: 90px;
-        bottom: 28%;
+        height: 70px;
+        bottom: 32%;
         right: 0%;
     }
 
     .web3-container .mobile-img .biconomy-img-1 {
         position: absolute;
-        height: 90px;
-        bottom: 0%;
+        height: 70px;
+        bottom: 8%;
         left: 0%;
     }
 
@@ -380,43 +381,43 @@
 
     .web3-container .mobile-img .ipfs-img-1 {
         position: absolute;
-        height: 90px;
+        height: 80px;
         top: 0;
         right: 10%;
     }
 
     .web3-container .safe-img-1 {
         position: absolute;
-        height: 90px;
+        height: 80px;
         top: 5%;
         left: 10%;
     }
 
     .web3-container .mobile-img .polygon-img-1 {
         position: absolute;
-        height: 90px;
+        height: 80px;
         top: 30%;
         left: -5%;
     }
 
     .web3-container .mobile-img .eth-img-1 {
         position: absolute;
-        height: 90px;
+        height: 80px;
         top: 20%;
         right: 2%;
     }
 
     .web3-container .mobile-img .web-img-1 {
         position: absolute;
-        height: 90px;
+        height: 80px;
         bottom: 28%;
         right: 0%;
     }
 
     .web3-container .mobile-img .biconomy-img-1 {
         position: absolute;
-        height: 90px;
-        bottom: 0%;
+        height: 80px;
+        bottom: 15%;
         left: 0%;
     }
 
