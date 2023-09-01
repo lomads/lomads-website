@@ -71,7 +71,7 @@ const Contributors = () => {
                         </div>
 
                         <div onClick={openPage("https://www.linkedin.com/in/namansnegi/")} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '2' }}>
-                            <img src={naman} alt="nishant" />
+                            <img src={naman} alt="naman" />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
                                 <FaLinkedin size={20} color="#FFF" />
@@ -81,7 +81,7 @@ const Contributors = () => {
                         </div>
 
                         <div onClick={openPage("https://twitter.com/FredericRamet")} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '4' }} >
-                            <img src={Fred} alt="nishant" />
+                            <img src={Fred} alt="Fred" />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
                                 <FaTwitter size={20} color="#FFF" />
@@ -92,7 +92,7 @@ const Contributors = () => {
 
 
                         <div onClick={openPage("https://www.linkedin.com/in/zélie-dethorey-8ab09669/")} className='contributor-card' style={{ transform: 'rotate(13.48deg)', zIndex: '5' }}>
-                            <img src={Zelie} alt="nishant" />
+                            <img src={Zelie} alt="Zelie" />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
                                 <FaLinkedin size={20} color="#FFF" />
@@ -102,7 +102,7 @@ const Contributors = () => {
                         </div>
 
                         <div onClick={openPage("https://www.linkedin.com/in/rish6ix/")} className='contributor-card' style={{ transform: 'rotate(-4.26deg)', zIndex: '3' }}>
-                            <img src={harish} alt="nishant" />
+                            <img src={harish} alt="harish" />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
                                 <FaLinkedin size={20} color="#FFF" />
@@ -112,7 +112,7 @@ const Contributors = () => {
                         </div>
 
                         <div onClick={openPage("https://www.linkedin.com/in/anais-rachel-0a0b43a2")} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '6' }}>
-                            <img src={Anais} alt="nishant" style={{ height: '100%' }} />
+                            <img src={Anais} alt="anais" style={{ height: '100%' }} />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
                                 <FaLinkedin size={20} color="#FFF" />
@@ -122,7 +122,7 @@ const Contributors = () => {
                         </div>
 
                         <div onClick={openPage("https://www.linkedin.com/in/roshi-sharma-lawbeam/")} className='contributor-card' style={{ transform: 'rotate(-0.71deg)', zIndex: '7' }}>
-                            <img src={Roshi} alt="nishant" style={{ height: '100%' }} />
+                            <img src={Roshi} alt="roshi" style={{ height: '100%' }} />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
                                 <FaLinkedin size={20} color="#FFF" />
@@ -132,7 +132,7 @@ const Contributors = () => {
                         </div>
 
                         <div onClick={openPage("https://twitter.com/iam_tamaghna")} className='contributor-card' style={{ transform: 'rotate(13.48deg)', zIndex: '5' }}>
-                            <img src={Tamaghna} alt="nishant" />
+                            <img src={Tamaghna} alt="tamaghna" />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
                                 <FaTwitter size={20} color="#FFF" />
@@ -142,7 +142,7 @@ const Contributors = () => {
                         </div>
 
                         {/* <div onClick={() => { window.open("https://twitter.com/aethe_re") }} className='contributor-card' style={{ transform: 'rotate(-0.71deg)', zIndex: '8' }}>
-                            <img src={Joshua} alt="nishant" style={{ height: '100%' }} />
+                            <img src={Joshua} alt="joshua" style={{ height: '100%' }} />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
                                 <FaTwitter size={20} color="#FFF" />
@@ -152,7 +152,7 @@ const Contributors = () => {
                         </div>
 
                         <div onClick={() => { window.open("https://twitter.com/HypnoJimmy") }} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '8' }}>
-                            <img src={Jared} alt="nishant" style={{ height: '100%' }} />
+                            <img src={Jared} alt="jared" style={{ height: '100%' }} />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
                                 <FaTwitter size={20} color="#FFF" />
@@ -162,7 +162,7 @@ const Contributors = () => {
                         </div>
 
                         <div onClick={() => { window.open("https://www.linkedin.com/in/fernandobcruzperez/") }} className='contributor-card' style={{ transform: 'rotate(-0.71deg)', zIndex: '8' }}>
-                            <img src={Fernando} alt="nishant" style={{ height: '100%' }} />
+                            <img src={Fernando} alt="fernando" style={{ height: '100%' }} />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
                                 <FaLinkedin size={20} color="#FFF" />
