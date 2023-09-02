@@ -250,7 +250,6 @@
     }
 
     .banner-container .heading-section {
-        height: 25vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -262,13 +261,13 @@
     }
 
     .banner-container .heading-section .heading-container h1 {
-        font-size: 30px;
+        font-size: 25px;
         line-height: normal;
         margin: 0;
     }
 
     .banner-container .heading-section .heading-container h1 span {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .banner-container .heading-section .heading-pill {
@@ -288,7 +287,7 @@
     } */
 
     .banner-container p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .banner-container .hero-section {
@@ -374,7 +373,7 @@
     }
 }
 
-@media only screen and (min-width: 376px) and (max-width : 549px) {
+@media only screen and (min-width: 376px) and (max-width : 425px) {
     .banner-container {
         overflow-x: hidden;
     }
@@ -391,13 +390,13 @@
     }
 
     .banner-container .heading-section .heading-container h1 {
-        font-size: 32px;
+        font-size: 35px;
         line-height: normal;
         margin: 0;
     }
 
     .banner-container .heading-section .heading-container h1 span {
-        font-size: 32px;
+        font-size: 35px;
     }
 
     .banner-container .heading-section .heading-pill {
@@ -456,7 +455,7 @@
     }
 }
 
-@media only screen and (min-width: 550px) and (max-width : 768px) {
+@media only screen and (min-width: 426px) and (max-width : 768px) {
     .banner-container {
         overflow-x: hidden;
     }
@@ -469,12 +468,12 @@
     }
 
     .banner-container .heading-section h1 {
-        font-size: 38px;
+        font-size: 40px;
         line-height: 50px
     }
 
     .banner-container .heading-section h1 span {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .banner-container .heading-section .heading-pill.pos1 {
@@ -490,7 +489,7 @@
     }
 
     .banner-container p {
-        font-size: 18px;
+        font-size: 20px;
         margin: 0px 30px 20px 30px;
     }
 
@@ -513,13 +512,13 @@
         right: 2%;
     }
     .banner-container .heading-section .heading-container h1 {
-        font-size: 50px;
+        font-size: 40px;
         line-height: normal;
         margin: 0;
     }
 
     .banner-container .heading-section .heading-container h1 span {
-        font-size: 50px;
+        font-size: 40px;
     }
     .banner-container .heading-section .heading-pill {
         display: none;
@@ -560,7 +559,6 @@
     }
 
     .banner-container p {
-        font-size: 18px;
         margin: 0px 30px 30px 30px;
     }
 
