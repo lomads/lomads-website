@@ -339,7 +339,7 @@
     }
 
     .sound-container .sound-content .sound-section h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .sound-container .sound-content .sound-section p {
@@ -348,7 +348,7 @@
 
 }
 
-@media only screen and (min-width: 376px) and (max-width : 549px) {
+@media only screen and (min-width: 376px) and (max-width : 425px) {
     .sound-container {
         justify-content: center;
         padding: 0;
@@ -410,7 +410,7 @@
     }
 
     .sound-container .sound-content .sound-section p {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .sound-container .sound-content .sound-section h1 {
@@ -431,7 +431,7 @@
     }
 }
 
-@media only screen and (min-width: 550px) and (max-width : 768px) {
+@media only screen and (min-width: 426px) and (max-width : 768px) {
     .sound-container {
         justify-content: center;
         padding: 0 27px;
@@ -470,7 +470,7 @@
     }
 
     .sound-container .sound-content .sound-section p {
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
@@ -493,12 +493,12 @@
 
     .sound-container .sound-header-container .sound-header h1 {
         font-weight: 700;
-        font-size: 50px;
+        font-size: 70px;
         text-align: center;
     }
 
     .sound-container .sound-header-container .sound-header h1 span {
-        font-size: 50px;
+        font-size: 70px;
         text-align: center;
     }
 
@@ -510,10 +510,10 @@
     }
 
     .sound-container .sound-content .sound-section h1 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .sound-container .sound-content .sound-section p {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
