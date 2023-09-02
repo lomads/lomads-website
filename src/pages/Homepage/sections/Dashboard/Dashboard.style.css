@@ -157,19 +157,15 @@
 
 @media only screen and (max-width: 344px) {
     .dashboard-container {
-        height: 125vh;
-    }
-
-    .dashboard-container .dashboard-header {
-        margin-bottom: 60px;
+        height: 150vh;
     }
 
     .dashboard-container .dashboard-header h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .dashboard-container .dashboard-header h1 span {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .dashboard-container .dashboard-body {
@@ -183,7 +179,7 @@
     .dashboard-container .dashboard-body .imgSm {
         display: block;
         width: 100%;
-        margin-bottom: -800px;
+        margin-bottom: -700px;
     }
 
 
@@ -245,7 +241,7 @@
     }
 
     .dashboard-container .dashboard-text-container .dashboard-text h1 {
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
     }
 
@@ -349,22 +345,19 @@
     }
 }
 
-@media only screen and (min-width: 376px) and (max-width : 549px) {
+@media only screen and (min-width: 376px) and (max-width : 425px) {
 
 
-    .dashboard-container {
-        height: 125vh;
-    }
     .dashboard-container .dashboard-header {
         margin-bottom: 30px;
     }
 
     .dashboard-container .dashboard-header h1 {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .dashboard-container .dashboard-header h1 span {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .dashboard-container .dashboard-body {
@@ -449,21 +442,18 @@
     }
 }
 
-@media only screen and (min-width: 550px) and (max-width : 768px) {
+@media only screen and (min-width: 426px) and (max-width : 768px) {
 
-    .dashboard-container {
-        height: 125vh;
-    }
     .dashboard-container .dashboard-header {
         margin-bottom: 30px;
     }
 
     .dashboard-container .dashboard-header h1 {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .dashboard-container .dashboard-header h1 span {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .dashboard-container .dashboard-body {
@@ -541,7 +531,7 @@
     }
 
     .dashboard-container .dashboard-text-container .dashboard-text h1 {
-        font-size: 22px;
+        font-size: 20px;
         text-align: center;
     }
 
@@ -558,11 +548,11 @@
     }
 
     .dashboard-container .dashboard-header h1 {
-        font-size: 50px;
+        font-size: 70px;
     }
 
     .dashboard-container .dashboard-header h1 span {
-        font-size: 50px;
+        font-size: 70px;
     }
 
     .dashboard-container .dashboard-body {
@@ -651,10 +641,12 @@
     }
 
     .dashboard-container .dashboard-body .dashboard-text h1 {
+        font-size: 25px;
         text-align: center;
     }
 
     .dashboard-container .dashboard-body .dashboard-text p {
+        font-size: 25px;
         text-align: center;
     }
 }
