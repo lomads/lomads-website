@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 import Tags from "../tags";
 
 /**
- *
+ * <Tags tags={tags} />
  * @param {{ onSearch: (value: string) => void }} param0
  * @returns
  */
@@ -21,7 +21,8 @@ const BlogPageHeader = ({ onSearch }) => {
 
   return (
     <div className={styles.wrapper}>
-      <Tags tags={tags} />
+      
+      
 
       <div className={styles.searchWrapper}>
         <input
