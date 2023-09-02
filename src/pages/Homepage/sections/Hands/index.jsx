@@ -49,12 +49,12 @@ const Hands = () => {
             <img className='left-img' src={left} alt="left" />
             <img className='right-img' src={right} alt="left"  />
 
-            <h1 data-speed={window.innerWidth > 1024 ? "1.5" : "1"} className='hands-title'>You <span>use</span><br />You <span>own</span></h1>
-            <div data-speed={window.innerWidth > 1024 ? "1.5" : "1"} className='hands-p-container'>
+            <h1 className='hands-title'>You <span>use</span><br />You <span>own</span></h1>
+            <div className='hands-p-container'>
                 <p className='hands-p'>At Lomads, you're not just a user; you're a stakeholder vested in our collective future. Our platform is powered by our native token, LMD, and is geared towards progressive decentralization.</p>
             </div>
 
-            <div data-speed={window.innerWidth > 1024 ? "1.5" : "1"} className='hands-section-row'>
+            <div  className='hands-section-row'>
                 <div className='hands-section'>
                     <h1>Tokens with Benefits</h1>
                     <p>Lower your fees and unlock unique perks when you stake your Lomads tokens.<br/> </p>
