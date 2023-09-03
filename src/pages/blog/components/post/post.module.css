@@ -23,7 +23,7 @@
 }
 
 .postTitle {
-  color: rgba(177, 47, 21, 1);
+  color: rgb(0, 0, 0);
   letter-spacing: -0.242px;
   font-weight: 700;
   font-size: 1.95312rem;
@@ -35,7 +35,7 @@
 .postSubtitle {
   font-size: 1rem;
   line-height: 1.75;
-  color: rgba(118, 128, 141, 1);
+  color: rgb(0, 0, 0);
   margin-bottom: 24px;
   max-width: 600px;
 }
@@ -76,10 +76,14 @@
   flex-shrink: 0;
 }
 
-.postImage {
+.postImage{
   flex-shrink: 0;
   width: 175px;
   height: 175px;
+
+}
+.postImage[src=""] {
+  display: none;
 }
 
 @media (max-width: 700px) {
