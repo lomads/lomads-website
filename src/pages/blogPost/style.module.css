@@ -1,12 +1,6 @@
 .pageContainer {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(
-    169.22deg,
-    #fdf7f7 12.19%,
-    #efefef 100%,
-    #dd6149 92%
-  ) !important;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -31,7 +25,6 @@
 }
 
 .content {
-  color: #76808d;
   font-size: 15px;
   line-height: 20px;
   margin: 40px 0;
@@ -47,7 +40,6 @@
     /* font-size: 22px; */
     /* line-height: 25px; */
     /* letter-spacing: -0.242px; */
-    color: #b12f15;
     margin: 15px 0;
     /* color: rgb(252, 253, 255); */
     font-weight: 700;
