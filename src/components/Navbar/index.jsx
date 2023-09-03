@@ -30,8 +30,10 @@ const Navbar = ({ useBlogLogo }) => {
     <>
       <section className="navbar-container">
         <div className="logo-wrapper">
-          <img src={logo} alt="logo" />
-          {useBlogLogo && <p className="blog-logo">Blog</p>}
+        <Link to="/">
+        <img src={logo} alt="logo" />
+        </Link>
+        {useBlogLogo && <p className="blog-logo">Blog</p>}
         </div>
 
         <div style={{ display: "flex", alignItems: "center" }}>
