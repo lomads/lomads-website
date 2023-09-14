@@ -218,6 +218,7 @@
         font-weight: 700;
         font-size: 25px;
         text-align: center;
+        width: 0%;
     }
 
     .sound-container .sound-header-container .sound-header h1 span {
