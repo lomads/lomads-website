@@ -42,7 +42,7 @@ const Navbar = ({ useBlogLogo }) => {
 
         <a
             className="menu-p"
-            href="https://www.notion.so/lomads/Lomads-Key-Features-Roadmap-0f0fbc49d063436f95c97f26c57479d8"
+            href="https://lomads.notion.site/Lomads-Feature-Highlights-b8926518ce3c4bf6a8653edfb1cd7f72"
             target="_blank"
             rel="noreferrer"
           >
