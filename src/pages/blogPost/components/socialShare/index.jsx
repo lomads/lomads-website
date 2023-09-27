@@ -19,12 +19,12 @@ const SocialShareSection = ({ minutesToRead,twitter,linkedin }) => {
           <a href={twitter} target="_blank">
             <img src={Twitter} alt="Twitter share button" />
           </a>
-          <a href={linkedin} target="_blank">
+{/*           <a href={linkedin} target="_blank">
             <img src={Linkedin} alt="Twitter share button" />
           </a>
           <a href="https://discord.com/invite/szqhfekbTy" target="_blank">
             <img src={Discord} alt="Twitter share button" />
-          </a>
+          </a> */}
         </div>
       </div>
     </aside>
