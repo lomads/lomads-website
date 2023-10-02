@@ -112,7 +112,8 @@ const Contributors = () => {
                             </div>
                         </div>
 
-                        <div onClick={openPage("https://www.linkedin.com/in/anais-rachel-0a0b43a2")} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '6' }}>
+
+{/*                         <div onClick={openPage("https://www.linkedin.com/in/anais-rachel-0a0b43a2")} className='contributor-card' style={{ transform: 'rotate(5.84deg)', zIndex: '6' }}>
                             <img src={Anais} alt="anais" style={{ height: '100%' }} />
                             <div className='contributor-overlay'></div>
                             <div className='contributor-content'>
@@ -120,7 +121,7 @@ const Contributors = () => {
                                 <h1>Anais</h1>
                                 <p>Partnerships</p>
                             </div>
-                        </div>
+                        </div> */}
 
                         <div onClick={openPage("https://www.linkedin.com/in/roshi-sharma-lawbeam/")} className='contributor-card' style={{ transform: 'rotate(-0.71deg)', zIndex: '7' }}>
                             <img src={Roshi} alt="roshi" style={{ height: '100%' }} />
