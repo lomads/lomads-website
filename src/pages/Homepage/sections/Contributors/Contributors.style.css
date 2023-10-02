@@ -51,6 +51,7 @@
 .contributors-container .contributor-row {
     width: 100%;
     display: flex;
+    align-items: center;
 
 }
 
@@ -59,7 +60,8 @@
     height: 400px !important;
     display: flex;
     align-items: center;
-    padding-left: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .contributors-container .contributor-row .contributor-card {
