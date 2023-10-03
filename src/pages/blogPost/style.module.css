@@ -24,6 +24,10 @@
   max-width: 900px;
 }
 
+figure figcaption {
+  text-align: center;
+}
+
 .content {
   font-size: 15px;
   line-height: 20px;
