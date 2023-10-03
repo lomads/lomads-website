@@ -5,10 +5,17 @@ import { useMemo } from "react";
 import styles from "./style.module.css";
 import Navbar from "../../components/Navbar";
 import SocialShareSection from "./components/socialShare";
+import { useEffect } from "react";
 
 const BlogPost = () => {
   const { url } = useParams();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+    });
+  }, []);
 
   if (!url) {
     throw new Error("Page not found");
@@ -17,10 +24,10 @@ const BlogPost = () => {
   const post = useMemo(() => data.find((post) => post.url === url), [url]);
 
   let props = {
-    minutesToRead:post.minutesToRead,
-    twitter:post.twitter,
-    linkedin:post.linkedin
-    }
+    minutesToRead: post.minutesToRead,
+    twitter: post.twitter,
+    linkedin: post.linkedin,
+  };
 
   if (!post) {
     navigate("/", {
@@ -33,7 +40,7 @@ const BlogPost = () => {
       <Navbar useBlogLogo />
 
       <div className={styles.contentWrapper}>
-        <SocialShareSection {...props}/>
+        <SocialShareSection {...props} />
 
         <article className={styles.article}>
           <h1 className={styles.title}>{post.title}</h1>

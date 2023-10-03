@@ -7,15 +7,14 @@
     #efefef 100%,
     #dd6149 92%
   ) !important;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  font-family: "Open Sans", sans-serif;
 }
 
 .content {
   max-width: 1025px;
   width: 100%;
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
   margin: auto;
   padding: 0px 20px;
@@ -27,4 +26,13 @@
   flex-direction: column;
   gap: 20px;
   margin-bottom: 40px;
+}
+
+.noPosts {
+  margin-top: 55px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.242px;
 }

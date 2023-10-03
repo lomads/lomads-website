@@ -4,10 +4,10 @@ import styles from "./style.module.css";
 
 import Twitter from "../../../../assets/twitter.svg";
 import Linkedin from "../../../../assets/linkedin.svg";
-import Discord from "../../../../assets/discord.svg";
+import { LinkedinShareButton } from "react-share";
+// import Discord from "../../../../assets/discord.svg";
 
-
-const SocialShareSection = ({ minutesToRead,twitter,linkedin }) => {
+const SocialShareSection = ({ minutesToRead, twitter }) => {
   return (
     <aside className={styles.wrapper}>
       <p className={styles.text}>{minutesToRead} min read</p>
@@ -16,13 +16,15 @@ const SocialShareSection = ({ minutesToRead,twitter,linkedin }) => {
         <p className={styles.text}>SHARE</p>
 
         <div className={styles.shareWrapper}>
-          <a href={twitter} target="_blank">
+          <a href={twitter} target="_blank" rel="noreferrer">
             <img src={Twitter} alt="Twitter share button" />
           </a>
-{/*           <a href={linkedin} target="_blank">
-            <img src={Linkedin} alt="Twitter share button" />
-          </a>
-          <a href="https://discord.com/invite/szqhfekbTy" target="_blank">
+
+          <LinkedinShareButton url={window.location.href}>
+            <img src={Linkedin} alt="LinkedIn Share Button" />
+          </LinkedinShareButton>
+
+          {/* <a href="https://discord.com/invite/szqhfekbTy" target="_blank">
             <img src={Discord} alt="Twitter share button" />
           </a> */}
         </div>

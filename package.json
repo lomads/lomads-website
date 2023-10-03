@@ -2,6 +2,7 @@
   "name": "lomads-website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -18,6 +19,7 @@
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.6.1",
     "react-scripts": "^5.0.1",
+    "react-share": "^4.4.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
