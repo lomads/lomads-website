@@ -3,7 +3,7 @@ import React from "react";
 import './Power.style.css';
 
 import powerimg from '../../../../assets/power.svg'
-import { HiOutlineArrowRight } from 'react-icons/hi'
+// import { HiOutlineArrowRight } from 'react-icons/hi'
 
 const Power = () => {
 

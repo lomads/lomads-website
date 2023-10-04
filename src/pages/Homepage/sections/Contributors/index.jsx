@@ -6,9 +6,9 @@ import harish from '../../../../assets/Harish.svg';
 import Fred from '../../../../assets/Fred.svg';
 import Tamaghna from '../../../../assets/Tamaghna.svg';
 import Zelie from '../../../../assets/Zelie.svg';
-import Zohaib from '../../../../assets/Zohaib.svg';
+// import Zohaib from '../../../../assets/Zohaib.svg';
 import Roshi from '../../../../assets/Roshi.svg';
-import Anais from '../../../../assets/Anais.svg';
+// import Anais from '../../../../assets/Anais.svg';
 
 
 import ChevronLeft from '../../../../assets/chevron-left.svg';
