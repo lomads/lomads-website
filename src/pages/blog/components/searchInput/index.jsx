@@ -40,6 +40,7 @@ const SearchInput = () => {
     <div className={styles.bottomHeader}>
       <div className={styles.searchWrapper}>
         <input
+          id="searchField"
           value={searchValue}
           onChange={handleOnChange}
           onKeyDown={handleOnKeyDown}
