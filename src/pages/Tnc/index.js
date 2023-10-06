@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 import logo from '../../assets/logo.svg';
 
 import { HiOutlineArrowLeft } from 'react-icons/hi'
-import { MetaHeader } from '../../components/Meta';
 
 const TermsOfService = () => {
     const navigate = useNavigate();
@@ -117,11 +116,4 @@ const TermsOfService = () => {
     )
 }
 
-const TOCWrapper = () => (
-    <>
-        <MetaHeader />
-        <TermsOfService />
-    </>
-);
-
-export default TOCWrapper;
+export default TermsOfService;

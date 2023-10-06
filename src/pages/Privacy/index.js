@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 import logo from '../../assets/logo.svg';
 
 import { HiOutlineArrowLeft } from 'react-icons/hi'
-import { MetaHeader } from '../../components/Meta';
 
 const PrivacyPolicy = () => {
     const navigate = useNavigate();
@@ -132,11 +131,4 @@ const PrivacyPolicy = () => {
     )
 }
 
-const PrivacyPolicyWrapper = () => (
-    <>
-        <MetaHeader />
-        <PrivacyPolicy />
-    </>
-);
-
-export default PrivacyPolicyWrapper;
+export default PrivacyPolicy;

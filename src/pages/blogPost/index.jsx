@@ -6,7 +6,6 @@ import styles from "./style.module.css";
 import Navbar from "../../components/Navbar";
 import SocialShareSection from "./components/socialShare";
 import { useEffect } from "react";
-import { MetaHeader } from "../../components/Meta";
 
 const BlogPost = () => {
   const { url } = useParams();
@@ -31,29 +30,25 @@ const BlogPost = () => {
   }
 
   return (
-    <>
-      <MetaHeader title={post.title} description={post.subtitle} image={post.image} />
+    <div className={styles.pageContainer}>
+      <Navbar />
 
-      <div className={styles.pageContainer}>
-        <Navbar />
+      <div className={styles.contentWrapper}>
+        <SocialShareSection post={post} />
 
-        <div className={styles.contentWrapper}>
-          <SocialShareSection post={post} />
+        <article className={styles.article}>
+          <h1 className={styles.title}>{post.title}</h1>
+          <p className={styles.subTitle}>{post.subtitle}</p>
 
-          <article className={styles.article}>
-            <h1 className={styles.title}>{post.title}</h1>
-            <p className={styles.subTitle}>{post.subtitle}</p>
+          <div
+            className={styles.content}
+            dangerouslySetInnerHTML={{ __html: post.content }}
+          />
+        </article>
 
-            <div
-              className={styles.content}
-              dangerouslySetInnerHTML={{ __html: post.content }}
-            />
-          </article>
-
-          <div className={styles.emptyContainer} />
-        </div>
+        <div className={styles.emptyContainer} />
       </div>
-    </>
+    </div>
   );
 };
 
