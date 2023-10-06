@@ -10,6 +10,7 @@ import Hands from "./sections/Hands";
 import Power from "./sections/Power";
 import Sound from "./sections/Sound";
 import Web3 from "./sections/Web3";
+import { MetaHeader } from "../../components/Meta";
 
 //import LocomotiveScroll from 'locomotive-scroll';
 
@@ -49,4 +50,11 @@ const Homepage = () => {
     )
 }
 
-export default Homepage;
+const HomePageWrapper = () => (
+    <>
+        <MetaHeader />
+        <Homepage />
+    </>
+);
+
+export default HomePageWrapper;

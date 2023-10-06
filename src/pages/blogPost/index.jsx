@@ -6,7 +6,7 @@ import styles from "./style.module.css";
 import Navbar from "../../components/Navbar";
 import SocialShareSection from "./components/socialShare";
 import { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import { MetaHeader } from "../../components/Meta";
 
 const BlogPost = () => {
   const { url } = useParams();
@@ -31,15 +31,10 @@ const BlogPost = () => {
   }
 
   return (
-      <div className={styles.pageContainer}>
-        <Helmet>
-          <meta name="title" property="og:title" content={post.title} />
-          <meta name="description" property="og:description" content={post.subtitle} />
-          <meta name="image" property="og:image" content={post.image} />
-          <meta property="og:url" content={window.location.href} />
-          <meta property="og:type" content="website" />
-        </Helmet>
+    <>
+      <MetaHeader title={post.title} description={post.subtitle} image={post.image} />
 
+      <div className={styles.pageContainer}>
         <Navbar />
 
         <div className={styles.contentWrapper}>
@@ -58,6 +53,7 @@ const BlogPost = () => {
           <div className={styles.emptyContainer} />
         </div>
       </div>
+    </>
   );
 };
 

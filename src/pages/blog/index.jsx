@@ -5,6 +5,7 @@ import BlogPageHeader from "./components/header";
 import data from "../../utils/blog.json";
 import Post from "./components/post";
 import { useSearchParams } from "react-router-dom";
+import { MetaHeader } from "../../components/Meta";
 
 const Blogs = () => {
   const [params] = useSearchParams();
@@ -44,4 +45,11 @@ const Blogs = () => {
   );
 };
 
-export default Blogs;
+const BlogWrapper = () => (
+  <>
+    <MetaHeader />
+    <Blogs />
+  </>
+)
+
+export default BlogWrapper;
