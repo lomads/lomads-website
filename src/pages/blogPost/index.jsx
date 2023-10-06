@@ -23,12 +23,6 @@ const BlogPost = () => {
 
   const post = useMemo(() => data.find((post) => post.url === url), [url]);
 
-  let props = {
-    minutesToRead: post.minutesToRead,
-    twitter: post.twitter,
-    linkedin: post.linkedin,
-  };
-
   if (!post) {
     navigate("/", {
       replace: true,
@@ -37,10 +31,10 @@ const BlogPost = () => {
 
   return (
     <div className={styles.pageContainer}>
-      <Navbar useBlogLogo />
+      <Navbar />
 
       <div className={styles.contentWrapper}>
-        <SocialShareSection {...props} />
+        <SocialShareSection post={post} />
 
         <article className={styles.article}>
           <h1 className={styles.title}>{post.title}</h1>

@@ -25,7 +25,7 @@ const Blogs = () => {
 
   return (
     <div className={styles.pageContainer}>
-      <Navbar useBlogLogo />
+      <Navbar />
 
       <div className={styles.content}>
         <BlogPageHeader />

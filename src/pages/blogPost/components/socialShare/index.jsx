@@ -7,7 +7,14 @@ import Linkedin from "../../../../assets/linkedin.svg";
 import { LinkedinShareButton } from "react-share";
 // import Discord from "../../../../assets/discord.svg";
 
-const SocialShareSection = ({ minutesToRead, twitter }) => {
+/**
+ * 
+ * @param {{ post: typeof import('../../../../utils/blog.json')[0]}} param0 
+ * @returns 
+ */
+const SocialShareSection = ({ post }) => {
+  const { minutesToRead, twitter, title, subtitle } = post;
+
   return (
     <aside className={styles.wrapper}>
       <p className={styles.text}>{minutesToRead} min read</p>
@@ -20,7 +27,7 @@ const SocialShareSection = ({ minutesToRead, twitter }) => {
             <img src={Twitter} alt="Twitter share button" />
           </a>
 
-          <LinkedinShareButton url={window.location.href}>
+          <LinkedinShareButton url={window.location.href} title={title} summary={subtitle}>
             <img src={Linkedin} alt="LinkedIn Share Button" />
           </LinkedinShareButton>
 
