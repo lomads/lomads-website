@@ -6,6 +6,7 @@ import styles from "./style.module.css";
 import Navbar from "../../components/Navbar";
 import SocialShareSection from "./components/socialShare";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const BlogPost = () => {
   const { url } = useParams();
@@ -31,6 +32,12 @@ const BlogPost = () => {
 
   return (
     <div className={styles.pageContainer}>
+      <Helmet>
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={post.subtitle} />
+        <meta property="og:image" content={post.image} />
+      </Helmet>
+
       <Navbar />
 
       <div className={styles.contentWrapper}>

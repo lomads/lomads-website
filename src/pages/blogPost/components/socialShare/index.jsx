@@ -13,7 +13,7 @@ import { LinkedinShareButton } from "react-share";
  * @returns 
  */
 const SocialShareSection = ({ post }) => {
-  const { minutesToRead, twitter, title, subtitle } = post;
+  const { minutesToRead, twitter } = post;
 
   return (
     <aside className={styles.wrapper}>
@@ -27,7 +27,7 @@ const SocialShareSection = ({ post }) => {
             <img src={Twitter} alt="Twitter share button" />
           </a>
 
-          <LinkedinShareButton url={window.location.href} title={title} summary={subtitle}>
+          <LinkedinShareButton url={window.location.href}>
             <img src={Linkedin} alt="LinkedIn Share Button" />
           </LinkedinShareButton>
 
