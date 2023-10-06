@@ -31,31 +31,31 @@ const BlogPost = () => {
   }
 
   return (
-    <div className={styles.pageContainer}>
-      <Helmet>
-        <meta property="og:title" content={post.title} />
-        <meta property="og:description" content={post.subtitle} />
-        <meta property="og:image" content={post.image} />
-      </Helmet>
+      <div className={styles.pageContainer}>
+        <Helmet>
+          <meta name="title" property="og:title" content={post.title} />
+          <meta name="description" property="og:description" content={post.subtitle} />
+          <meta name="image" property="og:image" content={post.image} />
+        </Helmet>
 
-      <Navbar />
+        <Navbar />
 
-      <div className={styles.contentWrapper}>
-        <SocialShareSection post={post} />
+        <div className={styles.contentWrapper}>
+          <SocialShareSection post={post} />
 
-        <article className={styles.article}>
-          <h1 className={styles.title}>{post.title}</h1>
-          <p className={styles.subTitle}>{post.subtitle}</p>
+          <article className={styles.article}>
+            <h1 className={styles.title}>{post.title}</h1>
+            <p className={styles.subTitle}>{post.subtitle}</p>
 
-          <div
-            className={styles.content}
-            dangerouslySetInnerHTML={{ __html: post.content }}
-          />
-        </article>
+            <div
+              className={styles.content}
+              dangerouslySetInnerHTML={{ __html: post.content }}
+            />
+          </article>
 
-        <div className={styles.emptyContainer} />
+          <div className={styles.emptyContainer} />
+        </div>
       </div>
-    </div>
   );
 };
 
