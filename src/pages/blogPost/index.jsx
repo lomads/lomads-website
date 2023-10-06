@@ -36,6 +36,8 @@ const BlogPost = () => {
           <meta name="title" property="og:title" content={post.title} />
           <meta name="description" property="og:description" content={post.subtitle} />
           <meta name="image" property="og:image" content={post.image} />
+          <meta property="og:url" content={window.location.href} />
+          <meta property="og:type" content="website" />
         </Helmet>
 
         <Navbar />
