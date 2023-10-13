@@ -20,8 +20,7 @@ const BlogPageHeader = () => {
             <h3 className={styles.heading}>Lomads Blog</h3>
 
             <p className={styles.subheading}>
-              CommandCentral for Collectives: Streamline Access, Monitor &
-              Validate Effortlessly, Disburse Funds Easily
+              At Lomads, we're shaping a platform for DeSci and open source, prioritizing seamless collaboration and fair value sharing.
             </p>
           </>
         )}
