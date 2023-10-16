@@ -27,13 +27,13 @@ const SocialShareSection = ({ post }) => {
             <img src={Twitter} alt="Twitter share button" />
           </a>
 
-          <a target="_blank" rel="noreferrer" href={getLinkedinUrl(window.location.href, title, subtitle)} title={title}>
-            <img src={Linkedin} alt="LinkedIn Share Button" />
+{/*           <a href={linkedin} target="_blank">
+            <img src={Linkedin} alt="Twitter share button" />
           </a>
-
-          {/* <a href="https://discord.com/invite/szqhfekbTy" target="_blank">
+          <a href="https://discord.com/invite/szqhfekbTy" target="_blank">
             <img src={Discord} alt="Twitter share button" />
           </a> */}
+          
         </div>
       </div>
     </aside>
