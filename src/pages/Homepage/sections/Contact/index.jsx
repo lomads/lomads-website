@@ -52,7 +52,7 @@ const Contact = () => {
                             <HiMail size={22} color="#FFF" />
                         </a>
                     </div> */}
-                        <div className='logo-box' onClick={() => { window.open("https://discord.com/invite/szqhfekbTy") }}>
+                        <div className='logo-box' onClick={() => { window.open("https://discord.gg/5UNEnaw62w") }}>
                             <FaDiscord size={22} color="#FFF" />
                         </div>
                         <div className='logo-box' onClick={() => { window.open("https://twitter.com/lomads_co") }}>
