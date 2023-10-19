@@ -9,6 +9,7 @@ import gnosis from '../../../../assets/chainLogos/gnosis-gno-gno-logo.png'
 import avax from '../../../../assets/chainLogos/avalanche-avax-logo.png'
 import ipfs from '../../../../assets/ipfs.svg'
 
+
 import safe from '../../../../assets/safe.svg'
 import web3auth from '../../../../assets/web3auth.svg'
 import biconomy from '../../../../assets/biconomy.svg'
@@ -23,42 +24,53 @@ const Web3 = () => {
                 <h1>Supported Networks</h1>
             </div>
 
-            <div style={{ display: "flex", alignItems: "center"}}>
-            <div style={{ display: "flex", alignItems: "center"}}>
+            <div className = 'row'>
+
+            <div className = 'column'>
+            <div style={{ display: 'flex', flexDirection: 'column', alignContent: 'flex-start', alignItems: "center"}}>
             <img  src={polygon} alt="" />
             <p>Polygon</p>
             </div>
-            <div style={{ display: "flex", alignItems: "center"}}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignContent: 'flex-start', alignItems: "center"}}>
             <img  src={eth} alt="" />
-            <p>Ethereum</p>
+            <p >Ethereum</p>
             </div>
-            <div style={{ display: "flex", alignItems: "center"}}>
+            </div>
+
+            <div className = 'column'>
+            <div style={{ display: 'flex', flexDirection: 'column', alignContent: 'flex-start', alignItems: "center"}}>
             <img  src={celo} alt="" />
             <p>Celo</p>
             </div>
-            <div style={{ display: "flex", alignItems: "center"}}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignContent: 'flex-start', alignItems: "center"}}>
             <img  src={avax} alt="" />
             <p>Avalanche</p>
             </div>
             </div>
 
-            <div style={{ display: "flex", alignItems: "center"}}>
-            <div style={{ display: "flex", alignItems: "center"}}>
+            <div className = 'column' >
+
+            <div style={{ display: 'flex', flexDirection: 'column', alignContent: 'flex-start', alignItems: "center"}}>
             <img  src={gnosis} alt="" />
             <p>Gnosis</p>
             </div>
-            <div style={{ display: "flex", alignItems: "center"}}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignContent: 'flex-start', alignItems: "center"}}>
             <img  src={base} alt="" />
             <p>Base</p>
             </div>
-            <div style={{ display: "flex", alignItems: "center"}}>
+            </div>
+            <div className = 'column' >
+
+            <div style={{ display: 'flex', flexDirection: 'column', alignContent: 'flex-start', alignItems: "center"}}>
             <img  src={arb} alt="" />
             <p  >Arbitrum</p>
             </div>
-            <div style={{ display: "flex", alignItems: "center"}}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignContent: 'flex-start', alignItems: "center"}}>
             <img  src={opt} alt="" />
             <p>Optimism</p>
             </div>
+            </div>
+
             </div>
                     </section>
     )

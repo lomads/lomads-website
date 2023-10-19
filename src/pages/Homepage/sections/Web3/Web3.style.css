@@ -8,10 +8,35 @@
     position: relative;
     background: transparent;
 }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    justify-content: center;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  
+
 
 .web3-container div {
     width: 70%;
     justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .web3-container img {
@@ -47,8 +72,8 @@
 
     /* Grey */
     color: #76808D;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .web3-container button {
@@ -217,8 +242,7 @@
 
     .web3-container p {
         font-size: 16px;
-        margin-top: 0px;
-        margin-bottom: 0px;
+
     }
 
     .web3-container button {
@@ -337,8 +361,7 @@
 
     .web3-container p {
         font-size: 18px;
-        margin-top: 0px;
-        margin-bottom: 0px;
+
     }
 
     .web3-container button {
@@ -456,8 +479,6 @@
 
     .web3-container p {
         font-size: 20px;
-        margin-top: 0;
-        margin-bottom: 0;
     }
 
     .web3-container button {
@@ -531,8 +552,6 @@
         }
     .web3-container p {
         font-size: 20px;
-        margin-top: 100px;
-        margin-bottom: 0px;
     }
 }
 
@@ -585,7 +604,12 @@
         bottom: 42%;
         width: 200px;
         }
-    .web3-container p {
-        margin-top: 100px;
-    }
 }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
