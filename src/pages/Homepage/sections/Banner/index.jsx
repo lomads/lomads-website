@@ -3,6 +3,7 @@ import './Banner.style.css';
 
 import pill1 from '../../../../assets/pill1.svg';
 import pill2 from '../../../../assets/pill2.svg';
+import safe from '../../../../assets/logoSafe.svg';
 
 import box1 from '../../../../assets/bannerBox1.svg'
 import box2 from '../../../../assets/bannerBox2.svg'
@@ -30,8 +31,14 @@ const Banner = () => {
                 </div>
             </div>
             <p data-speed={window.innerWidth > 1024 ? "1.2" : "1"} className="animate__animated animate__fadeIn animate__delay-1s"><br /> Lomads Offers A Crisp Framework To Streamline And Formalize Operations</p>
-            <button data-speed={window.innerWidth > 1024 ? "1.2" : "1"} className="access-btn animate__animated animate__fadeIn animate__delay-1s" onClick={() => { window.location.href = "/earlyAccess" }}>JOIN OUR WAITLIST <HiOutlineArrowRight size={20} /></button>
-
+            <div style={{ display: "flex", alignItems: "center"}}>
+            <button data-speed={window.innerWidth > 1024 ? "1.2" : "1"} className="access-btn animate__animated animate__fadeIn animate__delay-1s" style={{ backgroundColor:'white', color:'#C94B32' }} onClick={() => { window.open("https://app.lomads.xyz/login")}}>Launch App </button>
+            <button data-speed={window.innerWidth > 1024 ? "1.2" : "1"} className="access-btn animate__animated animate__fadeIn animate__delay-1s" onClick={() => { window.open("https://calendly.com/lomads-nishant/nishant-lomads-reg")}}>Book a Demo </button>
+            </div>
+            <div style={{ display: "flex", alignItems: "center"}}>
+            <p data-speed={window.innerWidth > 1024 ? "1.2" : "1"} className="animate__animated animate__fadeIn animate__delay-1s"><br /> Powered by</p>
+            <img data-speed={window.innerWidth > 1024 ? "1.2" : "1"} className="animate__animated animate__fadeIn animate__delay-1s" style={{ width:'100px', paddingLeft:'10px', marginTop:'5px'}} src={safe}/>
+            </div>
             <div id="hero-section" className="hero-section animate__animated animate__fadeInUp animate__slow">
                 <img src="https://raw.githubusercontent.com/lomads/lomads-website/main/src/assets/HERO.svg" className="hero-img" alt="hero" data-speed="1" />
                 <img src={box1} className="whitebox pos1" alt="box1" data-speed={window.innerWidth > 1024 ? "1.2" : "1"} />

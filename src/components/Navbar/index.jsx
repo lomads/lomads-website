@@ -30,19 +30,27 @@ const Navbar = ({ useBlogLogo }) => {
   return (
     <>
       <section className="navbar-container">
-        <div className="logo-wrapper">
+ {/*        <div className="logo-wrapper">
         <Link to="/">
         <img src={logo} alt="logo" />
         </Link>
         {useBlogLogo && <p className="blog-logo">Blog</p>}
-        </div>
+        
+        </div> */}
         
 
         <div style={{ display: "flex", alignItems: "center" }}>
+        <div className="logo-wrapper">
+        <Link to="/">
+        <img style={{ width:'200px'}} src={logo} alt="logo" />
+        </Link>
+        {useBlogLogo && <p className="blog-logo">Blog</p>}
+        
+        </div>
 
         <a
             className="menu-p"
-            href="https://lomads.notion.site/Lomads-Key-Features-Roadmap-0f0fbc49d063436f95c97f26c57479d8?pvs=4"
+            href="https://www.notion.so/lomads/Lomads-Key-Features-Roadmap-0f0fbc49d063436f95c97f26c57479d8"
             target="_blank"
             rel="noreferrer"
           >
@@ -61,8 +69,26 @@ const Navbar = ({ useBlogLogo }) => {
           >
             DOCS
           </a>
-          <button onClick={handleSlideDownAnimation}><img className="menu" src={menu} alt="logo" /></button>
+          <a
+            className="menu-p"
+            href="https://lomads.notion.site/Join-Lomads-as-a-Contributor-9678cce3e06744568cf722a09891a5cd"
+            target="_blank"
+            rel="noreferrer"
+          >
+            CONTRIBUTE
+          </a>
+          
         </div>
+        <div style={{ display: "flex", alignItems: "center"}}>
+
+        <button className="access-btn" style={{marginRight:'20px'}} onClick={() => { window.open("https://app.lomads.xyz/login")}}>Launch App</button>
+
+        <button className="access-btn" style={{ backgroundColor:'#C94B32', color:'white' }} onClick={() => { window.open("https://calendly.com/lomads-nishant/nishant-lomads-reg")}}>Book a Demo</button>
+
+        <button onClick={handleSlideDownAnimation}><img className="menu" src={menu} alt="logo" /></button>
+  
+        </div>
+
       </section>
 
       {/* open menu  */}
@@ -105,7 +131,32 @@ const Navbar = ({ useBlogLogo }) => {
               DOCS
           </h1>
           </a>
-  
+          </div>
+
+          <div className="menu-row">
+          <a
+            className="menu-p"
+            href="https://app.lomads.xyz/login"
+            target="_blank"
+            rel="noreferrer"
+          >
+          <h1>
+              Launch App
+          </h1>
+          </a>
+          </div>
+
+          <div className="menu-row">
+          <a
+            className="menu-p"
+            href="https://calendly.com/lomads-nishant/nishant-lomads-reg"
+            target="_blank"
+            rel="noreferrer"
+          >
+          <h1>
+              Book a Demo
+          </h1>
+          </a>
           </div>
 
 
