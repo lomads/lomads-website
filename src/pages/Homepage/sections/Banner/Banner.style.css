@@ -181,8 +181,11 @@
 .banner-container .access-btn {
     background-color: #C94B32;
     border-radius: 5px;
-    width: 265px;
-    height: 50px;
+    border-color:#C94B32;
+    border-width: thin;
+    border-style:solid;
+    width: 235px;
+    height: 65px;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -193,10 +196,11 @@
     z-index: 2;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 20px;
     transition: background-color 0.5s linear;
     transition: box-shadow 0.25s linear;
+    margin: 0 20px;
 }
 
 .banner-container .access-btn:hover {
@@ -558,9 +562,9 @@
         right: 21%;
     }
 
-    .banner-container p {
-        margin: 0px 30px 30px 30px;
-    }
+/*     .banner-container p {
+        margin: 50px 30px 30px 30px;
+    } */
 
     .banner-container .hero-section {
         margin-top: 0px;
