@@ -83,7 +83,7 @@ const Navbar = ({ useBlogLogo }) => {
 
         <button className="access-btn" style={{marginRight:'20px'}} onClick={() => { window.open("https://app.lomads.xyz/login")}}>Launch App</button>
 
-        <button className="access-btn" style={{ backgroundColor:'#C94B32', color:'white' }} onClick={() => { window.open("https://calendly.com/lomads-nishant/nishant-lomads-reg")}}>Book a Demo</button>
+        <button className="access-btn" style={{ backgroundColor:'#C94B32', color:'white' }} onClick={() => { window.open("https://calendly.com/lomads-nishant/lomads-intro")}}>Book a Demo</button>
 
         <button onClick={handleSlideDownAnimation}><img className="menu" src={menu} alt="logo" /></button>
   
