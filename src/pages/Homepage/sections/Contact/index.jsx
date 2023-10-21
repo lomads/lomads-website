@@ -4,6 +4,7 @@ import logo from '../../../../assets/logo.svg'
 
 import { HiOutlineArrowRight } from 'react-icons/hi'
 import { FaDiscord, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import twitterlogo from '../../../../assets/logo_twitter.svg'
 import { useState } from 'react';
 
 import axios from "axios";
@@ -56,9 +57,11 @@ const Contact = () => {
                             <FaDiscord size={22} color="#FFF" />
                         </div>
                         <div className='logo-box' onClick={() => { window.open("https://twitter.com/lomads_co") }}>
-                            <FaTwitter size={22} color="#FFF" />
+                            {/* <FaTwitter size={22} color="#FFF" /> */}
+                            <img src={twitterlogo} style={{height:'20px'}} alt="" />
                         </div>
                         <div className='logo-box' onClick={() => { window.open("https://www.linkedin.com/company/lomads/") }}>
+                            
                             <FaLinkedinIn size={22} color="#FFF" />
                         </div>
                     </div>

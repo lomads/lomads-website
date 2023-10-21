@@ -25,7 +25,7 @@ import { FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 const Contributors = () => {
 
-    useEffect(() => {
+/*     useEffect(() => {
         if (window.innerWidth >= 426) {
             setTimeout(() => {
                 window.ScrollTrigger.create({
@@ -47,7 +47,7 @@ const Contributors = () => {
 
             }, 50)
         }
-    }, [])
+    }, []) */
 
     const openPage = useCallback((link) => () => {
         window.open(link);

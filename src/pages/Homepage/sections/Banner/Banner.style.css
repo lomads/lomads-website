@@ -309,6 +309,15 @@
     .banner-container .access-btn {
         font-size: 14px;
     }
+
+    .banner-container .access-btn{
+        width: 125px;
+        height: 40px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        margin: 0 5px;
+    }
 }
 
 @media only screen and (min-width: 341px) and (max-width : 375px) {
@@ -374,6 +383,15 @@
 
     .banner-container .access-btn {
         font-size: 16px;
+    }
+
+    .banner-container .access-btn{
+        width: 150px;
+        height: 40px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        margin: 0 10px;
     }
 }
 
@@ -457,6 +475,14 @@
         bottom: 25%;
         right: 2%;
     }
+    .banner-container .access-btn{
+        width: 150px;
+        height: 40px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        margin: 0 10px;
+    }
 }
 
 @media only screen and (min-width: 426px) and (max-width : 768px) {
@@ -526,6 +552,13 @@
     }
     .banner-container .heading-section .heading-pill {
         display: none;
+    }
+    .banner-container .access-btn{
+        width: 175px;
+        height: 50px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
     }
 }
 

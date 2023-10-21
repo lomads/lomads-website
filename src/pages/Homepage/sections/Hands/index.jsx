@@ -55,13 +55,13 @@ const Hands = () => {
             </div>
 
             <div  className='hands-section-row'>
-                <div className='hands-section'>
-                    <h1>Tokens with Benefits</h1>
+                <div className='hands-section' style={{ display: 'flex', flexDirection: 'column', alignContent: 'flex-start'}}>
+                    <h1 style={{minHeight:'50px'}}>Tokens with Benefits</h1>
                     <p>Lower your fees and unlock unique perks when you stake your Lomads tokens.<br/> </p>
 
                 </div>
                 <div className='hands-section'>
-                    <h1>A Seat at the Table</h1>
+                    <h1 style={{minHeight:'50px'}}>A Seat at the Table</h1>
                     <p>Stake tokens, steer the platform. Your input directly shapes our future, making Lomads work for you.</p>
                 </div>
             </div>
