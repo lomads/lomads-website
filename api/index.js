@@ -31,11 +31,6 @@ app.get('/*', (req, res, next) => {
           "<title>Lomads</title>",
           `<title>${post.title}</title>`
         )
-        .replace('__META_OG_TITLE__', post.title)
-        .replace('__META_OG_DESCRIPTION__', post.description)
-        .replace('__META_DESCRIPTION__', post.description)
-        .replace('__META_OG_IMAGE__', post.image)
-
         return res.send(htmlData);
     });
 });
