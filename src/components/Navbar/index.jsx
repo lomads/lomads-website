@@ -81,10 +81,10 @@ const Navbar = ({ useBlogLogo }) => {
         </div>
         <div style={{ display: "flex", alignItems: "center"}}>
 
-        <button className="access-btn" style={{marginRight:'20px'}} onClick={() => { window.open("https://app.lomads.xyz/login")}}>Launch App</button>
+        <button className="access-btn" style={{marginRight:'20px',backgroundColor:'#C94B32', color:'white'}} onClick={() => { window.open("https://app.lomads.xyz/login")}}>Launch App</button>
 
-        <button className="access-btn" style={{ backgroundColor:'#C94B32', color:'white' }} onClick={() => { window.open("https://calendly.com/lomads-nishant/lomads-intro")}}>Book a Demo</button>
-
+{/*         <button className="access-btn" style={{ backgroundColor:'#C94B32', color:'white' }} onClick={() => { window.open("https://calendly.com/lomads-nishant/lomads-intro")}}>Book a Demo</button>
+ */}
         <button onClick={handleSlideDownAnimation}><img className="menu" src={menu} alt="logo" /></button>
   
         </div>
@@ -146,7 +146,7 @@ const Navbar = ({ useBlogLogo }) => {
           </a>
           </div>
 
-          <div className="menu-row">
+{/*           <div className="menu-row">
           <a
             className="menu-p"
             href="https://calendly.com/lomads-nishant/nishant-lomads-reg"
@@ -157,7 +157,7 @@ const Navbar = ({ useBlogLogo }) => {
               Book a Demo
           </h1>
           </a>
-          </div>
+          </div> */}
 
 
         </div>
