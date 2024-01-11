@@ -32,8 +32,8 @@ const Banner = () => {
             </div>
             <p data-speed={window.innerWidth > 1024 ? "1.2" : "1"} className="animate__animated animate__fadeIn animate__delay-1s"><br /> Lomads Offers A Crisp Framework To Streamline And Formalize Operations</p>
             <div style={{ display: "flex", alignItems: "center"}}>
-            <button data-speed={window.innerWidth > 1024 ? "1.2" : "1"} className="access-btn animate__animated animate__fadeIn animate__delay-1s" style={{ backgroundColor:'white', color:'#C94B32' }} onClick={() => { window.open("https://app.lomads.xyz/login")}}>Launch App </button>
-            <button data-speed={window.innerWidth > 1024 ? "1.2" : "1"} className="access-btn animate__animated animate__fadeIn animate__delay-1s" onClick={() => { window.open("https://calendly.com/lomads-nishant/lomads-intro")}}>Book a Demo </button>
+            <button data-speed={window.innerWidth > 1024 ? "1.2" : "1"} className="access-btn animate__animated animate__fadeIn animate__delay-1s"  onClick={() => { window.open("https://app.lomads.xyz/login")}}>Launch App </button>
+            {/* <button data-speed={window.innerWidth > 1024 ? "1.2" : "1"} className="access-btn animate__animated animate__fadeIn animate__delay-1s" onClick={() => { window.open("https://calendly.com/lomads-nishant/lomads-intro")}}>Book a Demo </button> */}
             </div>
             <div style={{ display: "flex", alignItems: "center"}}>
             <p data-speed={window.innerWidth > 1024 ? "1.2" : "1"} className="animate__animated animate__fadeIn animate__delay-1s"><br /> Powered by</p>
